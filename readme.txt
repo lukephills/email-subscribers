@@ -27,11 +27,9 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 
 = Main advantage: =
 
-Send notification email to subscribers when new posts are published to your blog.
-
-Create a HTML newsletter and send manually to subscribers.
-
-Auto generate a newsletter with latest available posts in the blog and send to your subscribers via cron job.
+1. Send notification email to subscribers when new posts are published to your blog.
+2. Create a HTML newsletter and send manually to subscribers.
+3. Auto generate a newsletter with latest available posts in the blog and send to your subscribers via cron job.
 
 = Plugin Features: =
 
