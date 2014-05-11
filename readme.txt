@@ -1,4 +1,4 @@
-=== Email subscribers ===
+=== Email Subscribers ===
 Contributors: gopiplus, www.gopiplus.com
 Donate link: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription box, sendmail
 Requires at least: 3.4
 Tested up to: 3.9
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,7 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 *   Q7. How to send static newsletter manually?
 *   Q8. Where to check sent mails?
 *   Q9. How to configure notification email to subscribers when new posts are published?
+*   Q10. How to update default alert message from subscription box?
 
 == Installation ==
 
@@ -65,23 +66,16 @@ Installation Instruction and Configuration [Installation Instruction and Configu
 
 == Frequently Asked Questions ==
 
-= Q1. What are all the steps to do after plugin activation? =
-
-= Q2. How to setup subscription box widget? =
-
-= Q3. How to import and export email address to subscriber list? =
-
-= Q4. How to compose static newsletter? =
-
-= Q5. How to add subscription box in posts? =
-
-= Q6. How to modify the existing mails (Opt-in mail, Welcome mail, Admin mails) content? =
-
-= Q7. How to send static newsletter manually? =
-
-= Q8. Where to check sent mails? =
-
-= Q9. How to configure notification email to subscribers when new posts are published? =
+*   Q1. What are all the steps to do after plugin activation?
+*   Q2. How to setup subscription box widget?
+*   Q3. How to import and export email address to subscriber list?
+*   Q4. How to compose static newsletter?
+*   Q5. How to add subscription box in posts?
+*   Q6. How to modify the existing mails (Opt-in mail, Welcome mail, Admin mails) content?
+*   Q7. How to send static newsletter manually?
+*   Q8. Where to check sent mails?
+*   Q9. How to configure notification email to subscribers when new posts are published?
+*   Q9. How to update default alert message from subscription box?
 
 FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/]
 (http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
@@ -104,8 +98,18 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * First version
 
+= 1.1 =
+
+* Subscriber admin page, Check ALL & Uncheck All bug fixed.
+* Updated Help documents.
+
 == Upgrade Notice ==
 
 = 1.0 =
 
 * First version
+
+= 1.1 =
+
+* Subscriber admin page, Check ALL & Uncheck All bug fixed.
+* Updated Help documents.

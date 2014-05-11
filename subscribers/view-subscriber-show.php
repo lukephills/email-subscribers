@@ -178,7 +178,8 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
       <table width="100%" class="widefat" id="straymanage">
         <thead>
           <tr>
-            <th class="check-column" scope="col"><input type="checkbox" name="chk_delete[]" id="chk_delete[]" /></th>
+            <th class="check-column" scope="col">
+			<input type="checkbox" name="es_checkall" id="es_checkall" onClick="_es_checkall('frm_es_display', 'chk_delete[]', this.checked);" /></th>
             <th scope="col"><?php _e('Sno', ES_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Email', ES_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Name', ES_TDOMAIN); ?></th>
@@ -190,7 +191,8 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
         </thead>
         <tfoot>
           <tr>
-            <th class="check-column" scope="col"><input type="checkbox" name="chk_delete[]" id="chk_delete[]" /></th>
+            <th class="check-column" scope="col">
+			<input type="checkbox" name="es_checkall" id="es_checkall" onClick="_es_checkall('frm_es_display', 'chk_delete[]', this.checked);" /></th>
             <th scope="col"><?php _e('Sno', ES_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Email address', ES_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Name', ES_TDOMAIN); ?></th>

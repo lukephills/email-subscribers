@@ -2,12 +2,17 @@
 <div class="wrap">
   <div id="icon-plugins" class="icon32"></div>
     <h2><?php _e(ES_PLUGIN_DISPLAY, ES_TDOMAIN); ?></h2>
-	<h3><?php _e('Help & Info', ES_TDOMAIN); ?></h3>
     <div class="tool-box">
 	<div>
 	<p>Email subscribers plugin has options to send newsletters to subscribers. It has a separate page with HTML editor to create a HTML newsletter. Also have options to send notification email to subscribers when new posts are published to your blog. Separate page available to include and exclude categories to send notifications. Using plugin Import and Export options admins can easily import registered users and commenters to subscriptions list.</p>
+	<h3>Main advantage of the plugin</h3>
+	<ol>
+		<li>Send notification email to subscribers when new posts are published to your blog.</li>
+		<li>Create a HTML newsletter and send manually to subscribers.</li>
+		<li>Auto generate a newsletter with latest available posts in the blog and send to your subscribers via cron job. <a target="_blank" href="http://www.gopiplus.com/work/2014/03/28/wordpress-plugin-email-posts-to-subscribers/">Click here</a> for this option.</li>
+	</ol>
 	<h3>Plugin Features</h3>
-	<ul>
+	<ol>
 		<li>Send notification email to subscribers when new posts are published.</li>
 		<li>Subscription box.</li>
 		<li>Double opt-in and single opt-in facility for subscriber.</li>
@@ -20,19 +25,20 @@
 		<li>Alphabetized list in send mail page.</li>
 		<li>Sent mail status and when it was viewed.</li>
 		<li>Support localization or internationalization.</li>
-	</ul>
+	</ol>
 	<h3>Frequently Asked Questions</h3>
-	<ul>
-		<li>Q1. What are all the steps to do after plugin activation?</li>
-		<li>Q2. How to setup subscription box widget?</li>
-		<li>Q3. How to import and export email address to subscriber list?</li>
-		<li>Q4. How to compose static newsletter?</li>
-		<li>Q5. How to add subscription box in posts?</li>
-		<li>Q6. How to modify the existing mails (Opt-in mail, Welcome mail, Admin mails) content?</li>
-		<li>Q7. How to send static newsletter manually?</li>
-		<li>Q8. Where to check sent mails?</li>
-		<li>Q9. How to configure notification email to subscribers when new posts are published?</li>
-	</ul>
+	<ol>
+		<li>What are all the steps to do after plugin activation?</li>
+		<li>How to setup subscription box widget?</li>
+		<li>How to import and export email address to subscriber list?</li>
+		<li>How to compose static newsletter?</li>
+		<li>How to add subscription box in posts?</li>
+		<li>How to modify the existing mails (Opt-in mail, Welcome mail, Admin mails) content?</li>
+		<li>How to send static newsletter manually?</li>
+		<li>Where to check sent mails?</li>
+		<li>How to configure notification email to subscribers when new posts are published?</li>
+		<li>How to update default alert message from subscription box?</li>
+	</ol>
 	<p>Check official website for FAQ answer <a target="_blank" href="http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/">click here</a></p>
 	</div>
 	</div>

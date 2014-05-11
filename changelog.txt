@@ -1,4 +1,4 @@
-Plugin Name	: Email subscribers
+Plugin Name	: Email Subscribers
 Plugin URI	: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Author		: Gopi Ramasamy
 Author URI	: http://www.gopiplus.com
@@ -13,3 +13,8 @@ Email subscribers plugin has options to send newsletters to subscribers. It has 
 Also have options to send notification email to subscribers when new posts are published to your blog. Separate page available to include and 
 exclude categories to send notifications. Using plugin Import and Export options admins can easily import registered users and commenters to 
 subscriptions list.
+
+********************************Version 1.1************************************************************
+
+1. Subscriber admin page, Check ALL & Uncheck All bug fixed.
+2. Updated Help documents.
