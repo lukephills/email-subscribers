@@ -41,7 +41,7 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
 <div class="wrap">
   <div id="icon-plugins" class="icon32"></div>
     <h2><?php _e(ES_PLUGIN_DISPLAY, ES_TDOMAIN); ?></h2>
-	<h3><?php _e('Notifications', ES_TDOMAIN); ?>  
+	<h3><?php _e('Notification', ES_TDOMAIN); ?>  
 	<a class="add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-notification&amp;ac=add"><?php _e('Add New', ES_TDOMAIN); ?></a></h3>
     <div class="tool-box">
 	<?php

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Email subscribers\n"
-"POT-Creation-Date: 2014-05-25 14:12+0800\n"
-"PO-Revision-Date: 2014-05-25 14:12+0800\n"
+"POT-Creation-Date: 2014-05-25 20:30+0800\n"
+"PO-Revision-Date: 2014-05-25 20:32+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,62 +13,64 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
+#: ../classes/es-loadwidget.php:28 ../classes/es-register.php:143
+#: ../subscribers/view-subscriber-show.php:185
+#: ../subscribers/view-subscriber-show.php:198
+msgid "Name"
+msgstr "பெயர்"
+
+#: ../classes/es-loadwidget.php:33 ../classes/es-register.php:148
+msgid "Email *"
+msgstr "மின்னஞ்சல் *"
+
+#: ../classes/es-loadwidget.php:38 ../classes/es-register.php:153
+msgid "Subscribe"
+msgstr "சமர்ப்பிக்கவும்"
+
 #: ../classes/es-register.php:43
 msgid "These tables could not be created on installation "
 msgstr ""
 
 #: ../classes/es-register.php:70 ../classes/es-register.php:71
 msgid "Email Subscriber"
-msgstr ""
+msgstr "மின்னஞ்சல் சந்தாதாரர்கள்"
 
 #: ../classes/es-register.php:73 ../classes/es-register.php:74
 msgid "Subscribers"
-msgstr ""
+msgstr "சந்தாதாரர்கள்"
 
 #: ../classes/es-register.php:76 ../classes/es-register.php:77
 msgid "Compose"
-msgstr ""
+msgstr "மின்னஞ்சல் எழுது"
 
 #: ../classes/es-register.php:79 ../classes/es-register.php:80
+#: ../notification/notification-show.php:44
 msgid "Notification"
-msgstr ""
+msgstr "அறிவிப்பு"
 
 #: ../classes/es-register.php:82 ../classes/es-register.php:83
 #: ../sendmail/sendmail.php:71 ../sendmail/sendmail.php:214
 #: ../sendmail/sendmail.php:216
 msgid "Send Email"
-msgstr ""
+msgstr "மின்னஞ்சல் அனுப்பு"
 
 #: ../classes/es-register.php:85 ../classes/es-register.php:86
 #: ../settings/settings-edit.php:164
 msgid "Settings"
-msgstr ""
+msgstr "அமைப்புகள்"
 
 #: ../classes/es-register.php:88 ../classes/es-register.php:89
 #: ../sentmail/sentmail-show.php:53
 msgid "Sent Mails"
-msgstr ""
+msgstr "அனுப்பிய மின்னஞ்சல்"
 
 #: ../classes/es-register.php:91 ../classes/es-register.php:92
 msgid "Help & Info"
-msgstr ""
-
-#: ../classes/es-register.php:143 ../subscribers/view-subscriber-show.php:185
-#: ../subscribers/view-subscriber-show.php:198
-msgid "Name"
-msgstr ""
-
-#: ../classes/es-register.php:148
-msgid "Email *"
-msgstr ""
-
-#: ../classes/es-register.php:153
-msgid "Subscribe"
-msgstr ""
+msgstr "உதவி & தகவல்"
 
 #: ../classes/es-register.php:189
 msgid "Widget Title"
-msgstr ""
+msgstr "விட்ஜெட் தலைப்பு"
 
 #: ../classes/es-register.php:193
 msgid "Display Name Field"
@@ -102,7 +104,7 @@ msgstr ""
 #: ../subscribers/view-subscriber-import.php:70
 #: ../subscribers/view-subscriber-import.php:100
 msgid "Click here"
-msgstr ""
+msgstr "இங்கே கிளிக் செய்யவும்"
 
 #: ../compose/compose-add.php:61 ../compose/compose-edit.php:71
 #: ../notification/notification-add.php:92
@@ -117,12 +119,12 @@ msgstr ""
 #: ../compose/compose-add.php:70 ../compose/compose-edit.php:82
 #: ../compose/compose-show.php:44
 msgid "Compose Mail"
-msgstr ""
+msgstr "மின்னஞ்சல் எழுது"
 
 #: ../compose/compose-add.php:73 ../compose/compose-edit.php:85
 #: ../settings/settings-edit.php:180
 msgid "Mail type"
-msgstr ""
+msgstr "மெயில் வகை"
 
 #: ../compose/compose-add.php:78 ../compose/compose-edit.php:90
 msgid "Please select your mail type."
@@ -151,7 +153,7 @@ msgstr ""
 #: ../subscribers/view-subscriber-show.php:186
 #: ../subscribers/view-subscriber-show.php:199
 msgid "Status"
-msgstr ""
+msgstr "நிலை"
 
 #: ../compose/compose-add.php:95 ../compose/compose-edit.php:106
 msgid "Please select your mail status."
@@ -163,7 +165,7 @@ msgstr ""
 #: ../subscribers/view-subscriber-add.php:140
 #: ../subscribers/view-subscriber-edit.php:127
 msgid "Submit"
-msgstr ""
+msgstr "சமர்ப்பிக்கவும்"
 
 #: ../compose/compose-add.php:100 ../compose/compose-edit.php:112
 #: ../notification/notification-add.php:182
@@ -172,7 +174,7 @@ msgstr ""
 #: ../subscribers/view-subscriber-add.php:141
 #: ../subscribers/view-subscriber-edit.php:128
 msgid "Cancel"
-msgstr ""
+msgstr "ரத்து"
 
 #: ../compose/compose-add.php:101 ../compose/compose-edit.php:113
 #: ../compose/compose-preview.php:30 ../compose/compose-show.php:109
@@ -188,7 +190,7 @@ msgstr ""
 #: ../subscribers/view-subscriber-show.php:174
 #: ../subscribers/view-subscriber-show.php:278
 msgid "Help"
-msgstr ""
+msgstr "உதவி"
 
 #: ../compose/compose-edit.php:10 ../compose/compose-preview.php:9
 #: ../compose/compose-show.php:15 ../notification/notification-edit.php:10
@@ -197,7 +199,7 @@ msgstr ""
 #: ../settings/settings-edit.php:11 ../subscribers/view-subscriber-edit.php:11
 #: ../subscribers/view-subscriber-show.php:19
 msgid "Oops, selected details doesnt exist."
-msgstr ""
+msgstr "தேர்வு விவரங்கள் இல்லை."
 
 #: ../compose/compose-edit.php:54
 msgid "Template was successfully updated."
@@ -212,13 +214,13 @@ msgstr ""
 #: ../subscribers/view-subscriber-export.php:74
 #: ../subscribers/view-subscriber-import.php:121
 msgid "Back"
-msgstr ""
+msgstr "திரும்ப"
 
 #: ../compose/compose-preview.php:29 ../compose/compose-show.php:87
 #: ../notification/notification-show.php:93
 #: ../subscribers/view-subscriber-show.php:226
 msgid "Edit"
-msgstr ""
+msgstr "திருத்து"
 
 #: ../compose/compose-show.php:30 ../notification/notification-show.php:30
 #: ../sentmail/sentmail-show.php:32 ../subscribers/view-subscriber-show.php:36
@@ -233,15 +235,15 @@ msgstr ""
 #: ../subscribers/view-subscriber-show.php:171
 #: ../subscribers/view-subscriber-show.php:275
 msgid "Add New"
-msgstr ""
+msgstr "சேர்க்க"
 
 #: ../compose/compose-show.php:56 ../compose/compose-show.php:65
 msgid "Email subject"
-msgstr ""
+msgstr "மெயில் தலைப்பு"
 
 #: ../compose/compose-show.php:58 ../compose/compose-show.php:67
 msgid "Type"
-msgstr ""
+msgstr "வகை"
 
 #: ../compose/compose-show.php:59 ../compose/compose-show.php:68
 #: ../sentmail/sentmail-show.php:77 ../sentmail/sentmail-show.php:89
@@ -250,22 +252,22 @@ msgstr ""
 #: ../subscribers/view-subscriber-show.php:189
 #: ../subscribers/view-subscriber-show.php:202
 msgid "Action"
-msgstr ""
+msgstr "செயல்"
 
 #: ../compose/compose-show.php:88 ../notification/notification-show.php:96
 #: ../subscribers/view-subscriber-show.php:229
 #: ../subscribers/view-subscriber-show.php:269
 msgid "Delete"
-msgstr ""
+msgstr "நீக்கு"
 
 #: ../compose/compose-show.php:89
 msgid "Preview"
-msgstr ""
+msgstr "முன்னோட்டம்"
 
 #: ../compose/compose-show.php:98 ../notification/notification-show.php:139
 #: ../sentmail/deliverreport-show.php:75 ../sentmail/sentmail-show.php:125
 msgid "No records available."
-msgstr ""
+msgstr "பதிவுகள் இல்லை"
 
 #: ../export/export-email-address.php:39 ../export/export-email-address.php:45
 #: ../export/export-email-address.php:50
@@ -361,14 +363,10 @@ msgstr ""
 msgid "Not allowed to update the subscribers group in edit page."
 msgstr ""
 
-#: ../notification/notification-show.php:44
-msgid "Notifications"
-msgstr ""
-
 #: ../notification/notification-show.php:56
 #: ../notification/notification-show.php:65
 msgid "Mail Subject"
-msgstr ""
+msgstr "மெயில் தலைப்பு"
 
 #: ../sendmail/sendmail.php:19
 msgid "Please select your mail subject."
@@ -429,7 +427,6 @@ msgid "Delivery Report"
 msgstr ""
 
 #: ../sentmail/deliverreport-show.php:35 ../sentmail/deliverreport-show.php:45
-#: ../subscribers/view-subscriber-show.php:184
 msgid "Email"
 msgstr ""
 
@@ -762,7 +759,7 @@ msgstr ""
 #: ../subscribers/view-subscriber-show.php:187
 #: ../subscribers/view-subscriber-show.php:200
 msgid "Group"
-msgstr ""
+msgstr "குழு"
 
 #: ../subscribers/view-subscriber-export.php:24
 msgid "Export email address in csv format"
@@ -773,7 +770,7 @@ msgstr ""
 #: ../subscribers/view-subscriber-show.php:183
 #: ../subscribers/view-subscriber-show.php:196
 msgid "Sno"
-msgstr ""
+msgstr "எண்"
 
 #: ../subscribers/view-subscriber-export.php:31
 #: ../subscribers/view-subscriber-export.php:40
@@ -805,13 +802,13 @@ msgstr ""
 
 #: ../subscribers/view-subscriber-export.php:72
 msgid "Add Email"
-msgstr ""
+msgstr "சந்தாதாரர் சேர்"
 
 #: ../subscribers/view-subscriber-export.php:73
 #: ../subscribers/view-subscriber-show.php:172
 #: ../subscribers/view-subscriber-show.php:276
 msgid "Import Email"
-msgstr ""
+msgstr "மெயில் இறக்கு"
 
 #: ../subscribers/view-subscriber-import.php:66
 msgid "Email(s) was successfully imported."
@@ -868,21 +865,22 @@ msgstr ""
 
 #: ../subscribers/view-subscriber-show.php:151
 msgid "View subscriber"
-msgstr ""
+msgstr "சந்தாதாரர்கள்"
 
 #: ../subscribers/view-subscriber-show.php:173
 #: ../subscribers/view-subscriber-show.php:277
 msgid "Export Email (CSV)"
-msgstr ""
+msgstr "மெயில் ஏற்றுமதி"
 
+#: ../subscribers/view-subscriber-show.php:184
 #: ../subscribers/view-subscriber-show.php:197
 msgid "Email address"
-msgstr ""
+msgstr "மின்னஞ்சல் முகவரி"
 
 #: ../subscribers/view-subscriber-show.php:237
 #: ../subscribers/view-subscriber-show.php:270
 msgid "Resend Confirmation"
-msgstr ""
+msgstr "மறுபடியனுப்பு"
 
 #: ../subscribers/view-subscriber-show.php:253
 msgid ""
@@ -891,8 +889,8 @@ msgstr ""
 
 #: ../subscribers/view-subscriber-show.php:268
 msgid "Bulk Actions"
-msgstr ""
+msgstr "செயல்கள்"
 
 #: ../subscribers/view-subscriber-show.php:272
 msgid "Apply"
-msgstr ""
+msgstr "பயன்படுத்து"

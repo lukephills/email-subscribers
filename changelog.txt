@@ -18,3 +18,8 @@ subscriptions list.
 
 1. Subscriber admin page, Check ALL & Uncheck All bug fixed.
 2. Updated Help documents.
+
+********************************Version 1.2************************************************************
+
+* Widget translation issue has been fixed
+* PHP warning message from Subscribers Export page has been removed.

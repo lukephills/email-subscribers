@@ -3,10 +3,10 @@ Contributors: gopiplus, www.gopiplus.com
 Donate link: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
-Tags: email newsletter, subscription box, sendmail
+Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
-Tested up to: 3.9
-Stable tag: 1.1
+Tested up to: 3.9.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,11 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * Subscriber admin page, Check ALL & Uncheck All bug fixed.
 * Updated Help documents.
 
+= 1.2 =
+
+* Widget translation issue has been fixed
+* PHP warning message from Subscribers Export page has been removed.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -113,3 +118,8 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * Subscriber admin page, Check ALL & Uncheck All bug fixed.
 * Updated Help documents.
+
+= 1.2 =
+
+* Widget translation issue has been fixed
+* PHP warning message from Subscribers Export page has been removed.

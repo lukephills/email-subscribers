@@ -140,17 +140,17 @@ class es_widget_register extends WP_Widget
 			<?php } ?>
 			<div class="es_msg"><span id="es_msg"></span></div>
 			<?php if( $es_name == "YES" ) { ?>
-			<div class="es_lablebox">Name</div>
+			<div class="es_lablebox"><?php _e('Name', ES_TDOMAIN); ?></div>
 			<div class="es_textbox">
 				<input class="es_textbox_class" name="es_txt_name" id="es_txt_name" value="" maxlength="225" type="text">
 			</div>
 			<?php } ?>
-			<div class="es_lablebox">Email *</div>
+			<div class="es_lablebox"><?php _e('Email *', ES_TDOMAIN); ?></div>
 			<div class="es_textbox">
 				<input class="es_textbox_class" name="es_txt_email" id="es_txt_email" onkeypress="if(event.keyCode==13) es_submit_page('<?php echo $url; ?>')" value="" maxlength="225" type="text">
 			</div>
 			<div class="es_button">
-				<input class="es_textbox_button" name="es_txt_button" id="es_txt_button" onClick="return es_submit_page('<?php echo $url; ?>')" value="Subscribe" type="button">
+				<input class="es_textbox_button" name="es_txt_button" id="es_txt_button" onClick="return es_submit_page('<?php echo $url; ?>')" value="<?php _e('Subscribe', ES_TDOMAIN); ?>" type="button">
 			</div>
 			<?php if( $es_name != "YES" ) { ?>
 				<input name="es_txt_name" id="es_txt_name" value="" type="hidden">
@@ -199,7 +199,7 @@ class es_widget_register extends WP_Widget
 		<p>
 			<label for="<?php echo $this->get_field_id('es_desc'); ?>"><?php _e('Short Description', ES_TDOMAIN); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('es_desc'); ?>" name="<?php echo $this->get_field_name('es_desc'); ?>" type="text" value="<?php echo $es_desc; ?>" />
-			Short description about your subscription form.
+			<?php _e('Short description about your subscription form.', ES_TDOMAIN); ?>
         </p>
 		<p>
 			<label for="<?php echo $this->get_field_id('es_group'); ?>"><?php _e('Subscriber Group', ES_TDOMAIN); ?></label>

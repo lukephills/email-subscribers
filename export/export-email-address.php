@@ -4,13 +4,13 @@ if(isset($_GET['es']))
 {
 	if($_GET['es'] == "export")
 	{
-		if (!session_id())
-		{
-			session_start();
-		}
+		//if (!session_id())
+		//{
+		//	session_start();
+		//}
 		
-		if ($_SESSION['es_exportcsv'] == "YES")
-		{
+		//if ($_SESSION['es_exportcsv'] == "YES")
+		//{
 			if($_SERVER['REQUEST_METHOD'] == "POST") 
 			{
 				if (strpos($_SERVER['HTTP_REFERER'], get_option('siteurl')) !== false) 
@@ -49,11 +49,11 @@ if(isset($_GET['es']))
 			{
 				_e('Unexpected url submit has been detected', ELP_TDOMAIN);
 			}
-		}
-		else
-		{
-			_e('Unexpected url submit has been detected', ELP_TDOMAIN);
-		}
+		//}
+		//else
+		//{
+		//	_e('Unexpected url submit has been detected', ELP_TDOMAIN);
+		//}
 		
 		
 	}

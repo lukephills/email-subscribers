@@ -1,11 +1,13 @@
+<?php
+//if (!session_id())
+//{
+//    session_start();
+//}
+?>
 <?php if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); } ?>
 <script language="javaScript" src="<?php echo ES_URL; ?>subscribers/view-subscriber.js"></script>
 <?php
-if (!session_id())
-{
-    session_start();
-}
-$_SESSION['es_exportcsv'] = "YES"; 
+//$_SESSION['es_exportcsv'] = "YES"; 
 $home_url = home_url('/');
 $cnt_subscriber = 0;
 $cnt_users = 0;
