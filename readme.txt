@@ -46,6 +46,12 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 *   Sent mail status and when it was viewed.
 *   Support localization or internationalization.
 
+= Translators =
+
+* English (en_EN) - [Gopi Ramasamy](http://www.gopiplus.com/)
+* Turkish (tr_TR) - [Dr Abdullah Manaz](http://www.manaz.net/)
+* Tamil (ta) - [Gopi Ramasamy](http://www.gopiplus.com/)
+
 = Frequently asked questions: =
 
 *   Q1. What are all the steps to do after plugin activation?
