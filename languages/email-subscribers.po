@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Email subscribers\n"
-"POT-Creation-Date: 2014-05-25 14:12+0800\n"
-"PO-Revision-Date: 2014-05-25 14:12+0800\n"
+"POT-Creation-Date: 2014-06-15 11:52+0800\n"
+"PO-Revision-Date: 2014-06-15 11:52+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -12,6 +12,20 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+#: ../classes/es-loadwidget.php:28 ../classes/es-register.php:143
+#: ../subscribers/view-subscriber-show.php:185
+#: ../subscribers/view-subscriber-show.php:198
+msgid "Name"
+msgstr ""
+
+#: ../classes/es-loadwidget.php:33 ../classes/es-register.php:148
+msgid "Email *"
+msgstr ""
+
+#: ../classes/es-loadwidget.php:38 ../classes/es-register.php:153
+msgid "Subscribe"
+msgstr ""
 
 #: ../classes/es-register.php:43
 msgid "These tables could not be created on installation "
@@ -30,6 +44,7 @@ msgid "Compose"
 msgstr ""
 
 #: ../classes/es-register.php:79 ../classes/es-register.php:80
+#: ../notification/notification-show.php:44
 msgid "Notification"
 msgstr ""
 
@@ -51,19 +66,6 @@ msgstr ""
 
 #: ../classes/es-register.php:91 ../classes/es-register.php:92
 msgid "Help & Info"
-msgstr ""
-
-#: ../classes/es-register.php:143 ../subscribers/view-subscriber-show.php:185
-#: ../subscribers/view-subscriber-show.php:198
-msgid "Name"
-msgstr ""
-
-#: ../classes/es-register.php:148
-msgid "Email *"
-msgstr ""
-
-#: ../classes/es-register.php:153
-msgid "Subscribe"
 msgstr ""
 
 #: ../classes/es-register.php:189
@@ -272,11 +274,15 @@ msgstr ""
 msgid "Unexpected url submit has been detected"
 msgstr ""
 
-#: ../job/es-optin.php:61 ../job/es-optin.php:71 ../job/es-unsubscribe.php:60
+#: ../job/es-optin.php:64 ../job/es-optin.php:79 ../job/es-unsubscribe.php:60
 #: ../job/es-unsubscribe.php:70
 msgid ""
 "Oops.. We are getting some technical error. Please try again or contact "
 "admin."
+msgstr ""
+
+#: ../job/es-optin.php:69
+msgid "This email address has already been confirmed."
 msgstr ""
 
 #: ../notification/notification-add.php:26
@@ -361,10 +367,6 @@ msgstr ""
 msgid "Not allowed to update the subscribers group in edit page."
 msgstr ""
 
-#: ../notification/notification-show.php:44
-msgid "Notifications"
-msgstr ""
-
 #: ../notification/notification-show.php:56
 #: ../notification/notification-show.php:65
 msgid "Mail Subject"
@@ -429,7 +431,6 @@ msgid "Delivery Report"
 msgstr ""
 
 #: ../sentmail/deliverreport-show.php:35 ../sentmail/deliverreport-show.php:45
-#: ../subscribers/view-subscriber-show.php:184
 msgid "Email"
 msgstr ""
 
@@ -875,6 +876,7 @@ msgstr ""
 msgid "Export Email (CSV)"
 msgstr ""
 
+#: ../subscribers/view-subscriber-show.php:184
 #: ../subscribers/view-subscriber-show.php:197
 msgid "Email address"
 msgstr ""

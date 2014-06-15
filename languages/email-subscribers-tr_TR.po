@@ -2,25 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Email subscribers\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:58+0200\n"
-"PO-Revision-Date: Wed Jun 04 2014 13:56:17 GMT+0300\n"
-"Last-Translator: Abdullah Manaz <abdullahmanaz@gmail.com>\n"
+"POT-Creation-Date: 2014-06-15 11:52+0800\n"
+"PO-Revision-Date: 2014-06-15 11:52+0800\n"
+"Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "Language: Turkish\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Loco - https://localise.biz/\n"
-"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
-"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
-"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
-"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
-"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Poedit-Basepath: .\n"
 "X-Loco-Target-Locale: tr_TR\n"
-"X-Poedit-SearchPath-0: .."
+"X-Poedit-SearchPath-0: ..\n"
 
 #: ../classes/es-loadwidget.php:28 ../classes/es-register.php:143
 #: ../subscribers/view-subscriber-show.php:185
@@ -283,12 +283,18 @@ msgstr "Kayıt Yok!"
 msgid "Unexpected url submit has been detected"
 msgstr "Beklenmedik Adres gönderimi belirlendi."
 
-#: ../job/es-optin.php:61 ../job/es-optin.php:71 ../job/es-unsubscribe.php:60
+#: ../job/es-optin.php:64 ../job/es-optin.php:79 ../job/es-unsubscribe.php:60
 #: ../job/es-unsubscribe.php:70
-msgid "Oops.. We are getting some technical error. Please try again or contact admin."
+msgid ""
+"Oops.. We are getting some technical error. Please try again or contact "
+"admin."
 msgstr ""
 "Afedersiniz.. Teknik bir sorun yaşıyoruz. Lütfen tekrar deneyin veya Site "
 "Yönetimine EPosta Gönderin."
+
+#: ../job/es-optin.php:69
+msgid "This email address has already been confirmed."
+msgstr "EPosta adresi seçilmedi."
 
 #: ../notification/notification-add.php:26
 #: ../notification/notification-add.php:120
@@ -307,10 +313,11 @@ msgstr "Lütfen Bildirim Gönderme durumunu seçiniz."
 #: ../notification/notification-add.php:139
 #: ../notification/notification-edit.php:51
 #: ../notification/notification-edit.php:142
-msgid "Please select notification mail subject. Use compose menu to create new."
+msgid ""
+"Please select notification mail subject. Use compose menu to create new."
 msgstr ""
-"Lütfen Bildirim EPosta Şablonu seçiniz. Yenisini oluşturmak için EPosta Şablonu "
-"Menüsünü kullanın."
+"Lütfen Bildirim EPosta Şablonu seçiniz. Yenisini oluşturmak için EPosta "
+"Şablonu Menüsünü kullanın."
 
 #: ../notification/notification-add.php:44
 #: ../notification/notification-add.php:170
@@ -502,11 +509,11 @@ msgstr "Tabloyu OptimizeEt"
 
 #: ../sentmail/sentmail-show.php:173
 msgid ""
-"Note: Please click <strong>Optimize Table</strong> button to delete all reports "
-"except latest 10."
+"Note: Please click <strong>Optimize Table</strong> button to delete all "
+"reports except latest 10."
 msgstr ""
-"Not: EnSon 10 Rapor dışındakileri silmek için <strong>Raporları "
-"OptimizeEt</strong> tuşuna tıklayın."
+"Not: EnSon 10 Rapor dışındakileri silmek için <strong>Raporları OptimizeEt</"
+"strong> tuşuna tıklayın."
 
 #: ../settings/settings-edit.php:81
 msgid "Please enter sender of notifications from name."
@@ -538,8 +545,8 @@ msgstr ""
 
 #: ../settings/settings-edit.php:181
 msgid ""
-"Option 1 & 2 is to send mails with default Wordpress method wp_mail(). Option 3 "
-"& 4 is to send mails with PHP method mail()"
+"Option 1 & 2 is to send mails with default Wordpress method wp_mail(). "
+"Option 3 & 4 is to send mails with PHP method mail()"
 msgstr ""
 "Option 1 & 2 is to send mails with default Wordpress method \n"
 "wp_mail(). Option 3 & 4 is to send mails with PHP method mail()"
@@ -551,11 +558,11 @@ msgstr "Onaylama Yöntemi"
 #: ../settings/settings-edit.php:196
 msgid ""
 "Double Opt In, means subscribers need to confirm their email address by an "
-"activation link sent them on a activation email message. Single Opt In, means "
-"subscribers do not need to confirm their email address."
+"activation link sent them on a activation email message. Single Opt In, "
+"means subscribers do not need to confirm their email address."
 msgstr ""
-"Double Opt In seçeneğinde, EPosta Listesine kaydolacak adreslere bir Onaylama "
-"mesajı ve kayıttan sonra da Hoşgeldin Mesajı gönderilir.\n"
+"Double Opt In seçeneğinde, EPosta Listesine kaydolacak adreslere bir "
+"Onaylama mesajı ve kayıttan sonra da Hoşgeldin Mesajı gönderilir.\n"
 "Single Opt In seçeneğinde, sonradan ayrıca Bildirim gönderilmez."
 
 #: ../settings/settings-edit.php:207
@@ -566,7 +573,8 @@ msgstr "Onaylama EPostasının Konusu "
 msgid ""
 "Enter the subject for Double Opt In mail. This will send whenever subscriber "
 "added email into our database."
-msgstr "Double Opt In EPosta Konusu. EPosta Listesine kaydolanlara gönderilecektir."
+msgstr ""
+"Double Opt In EPosta Konusu. EPosta Listesine kaydolanlara gönderilecektir."
 
 #: ../settings/settings-edit.php:214
 msgid "Opt-in mail content (Confirmation mail)"
@@ -576,7 +584,8 @@ msgstr "Onaylama Metni"
 msgid ""
 "Enter the content for Double Opt In mail. This will send whenever subscriber "
 "added email into our database."
-msgstr "Double Opt In EPosta Metni. EPosta Listesine eklenenlere gönderilecektir."
+msgstr ""
+"Double Opt In EPosta Metni. EPosta Listesine eklenenlere gönderilecektir."
 
 #: ../settings/settings-edit.php:221
 msgid "Opt-in link (Confirmation link)"
@@ -594,7 +603,9 @@ msgstr "Başarıyla Haber Listesine eklendikten sonra gönderilecek Metin."
 msgid ""
 "This text will display once user clicked email confirmation link from opt-in "
 "(confirmation) email content."
-msgstr "Bu Metin, EPosta mesajındaki Onay linkine tıklandığında bir kez gösterilecektir."
+msgstr ""
+"Bu Metin, EPosta mesajındaki Onay linkine tıklandığında bir kez "
+"gösterilecektir."
 
 #: ../settings/settings-edit.php:236
 msgid "Subscriber welcome email"
@@ -635,7 +646,9 @@ msgid "Mail to admin"
 msgstr "Site Yönetimini Bilgilendir"
 
 #: ../settings/settings-edit.php:265
-msgid "To send admin notifications for new subscriber, This option must be set to YES."
+msgid ""
+"To send admin notifications for new subscriber, This option must be set to "
+"YES."
 msgstr ""
 "Site Yöneticisine Yeni Kaydolan Bildirimi gönderme. Bu seçenek EVET olarak "
 "kurgulanmalıdır."
@@ -646,8 +659,8 @@ msgstr "Site Yönetimi EPosta Adresi"
 
 #: ../settings/settings-edit.php:277
 msgid ""
-"Enter the admin email addresses that should receive notifications (separate by "
-"comma)."
+"Enter the admin email addresses that should receive notifications (separate "
+"by comma)."
 msgstr ""
 "Bildirim gönderilecek Site Yöneticisi EPosta Adreslerini (birden fazla ise "
 "virgülle ayırarak) giriniz."
@@ -658,8 +671,8 @@ msgstr "Site Yöneticisine EPosta Konusu"
 
 #: ../settings/settings-edit.php:284
 msgid ""
-"Enter the subject for admin mail. This will send whenever new email added and "
-"confirmed into our database."
+"Enter the subject for admin mail. This will send whenever new email added "
+"and confirmed into our database."
 msgstr ""
 "Site Yöneticisine EPosta konusu giriniz. Haber Listesine yeni biri "
 "kaydolduğunda gönderilecektir."
@@ -670,8 +683,8 @@ msgstr "Site Yöneticisine EPosta Metni"
 
 #: ../settings/settings-edit.php:291
 msgid ""
-"Enter the mail content for admin. This will send whenever new email added and "
-"confirmed into our database."
+"Enter the mail content for admin. This will send whenever new email added "
+"and confirmed into our database."
 msgstr ""
 "Site Yöneticisine EPosta Metnini giriniz. Haber Listesine yeni biri "
 "kaydolduğunda gönderilecektir."
@@ -690,8 +703,8 @@ msgstr "Kayıt Silme Metni"
 
 #: ../settings/settings-edit.php:306
 msgid ""
-"Enter the text for unsubscribe link. This text is to add unsubscribe link with "
-"newsletter."
+"Enter the text for unsubscribe link. This text is to add unsubscribe link "
+"with newsletter."
 msgstr ""
 "Kayıt Silme linkinin Metnini giriniz. Bu Metin, Haber Listesine gönderilen "
 "Haber Bültenlerinin altına yerleştirilecektir."
@@ -701,7 +714,9 @@ msgid "Text to display after email unsubscribed"
 msgstr "Bir EPosta silindikten sonra gösterilecek Metin"
 
 #: ../settings/settings-edit.php:313
-msgid "This text will display once user clicked unsubscribed link from our newsletter."
+msgid ""
+"This text will display once user clicked unsubscribed link from our "
+"newsletter."
 msgstr ""
 "Bu Metin, Haber Bültenlerindeki Kayıt Silme linkine tıklayanlara bir kez "
 "gösterilecektir."
@@ -712,7 +727,8 @@ msgstr "Metin 1"
 
 #: ../settings/settings-edit.php:321
 msgid "Default message to display if any issue on confirmation link."
-msgstr "Onaylama Linkinde herhangi bir sorun olduğunda gösterilecek Varsayılan Metin"
+msgstr ""
+"Onaylama Linkinde herhangi bir sorun olduğunda gösterilecek Varsayılan Metin"
 
 #: ../settings/settings-edit.php:327
 msgid "Message 2"
@@ -873,7 +889,9 @@ msgstr "CSV Dosyası Seç"
 msgid ""
 "Please select the input csv file. Please check official website for csv "
 "structure."
-msgstr "Lütfen CSV dosyasını seçiniz. CSV yapısı için Dahili Websiteyi kontrol ediniz."
+msgstr ""
+"Lütfen CSV dosyasını seçiniz. CSV yapısı için Dahili Websiteyi kontrol "
+"ediniz."
 
 #: ../subscribers/view-subscriber-import.php:120
 msgid "Upload CSV"
@@ -881,10 +899,11 @@ msgstr "CSV Yükle"
 
 #: ../subscribers/view-subscriber-show.php:48
 #: ../subscribers/view-subscriber-show.php:101
-msgid "To send confirmation mail, Please change the Opt-in option to Double Opt In."
+msgid ""
+"To send confirmation mail, Please change the Opt-in option to Double Opt In."
 msgstr ""
-"Onaylama EPostası Gönderme, Lütfen Opt-in seçeneğini Double Opt In seçeneğine "
-"değiştiriniz."
+"Onaylama EPostası Gönderme, Lütfen Opt-in seçeneğini Double Opt In "
+"seçeneğine değiştiriniz."
 
 #: ../subscribers/view-subscriber-show.php:57
 msgid "Confirmation email resent successfully."
@@ -919,8 +938,10 @@ msgid "Resend Confirmation"
 msgstr "Yeniden Onay Gönder"
 
 #: ../subscribers/view-subscriber-show.php:253
-msgid "No records available. Please use the above alphabet search button to search."
-msgstr "Kayıt Yok! Arama için yukarıdaki Alfabetik Arama butonlarını kullanınız."
+msgid ""
+"No records available. Please use the above alphabet search button to search."
+msgstr ""
+"Kayıt Yok! Arama için yukarıdaki Alfabetik Arama butonlarını kullanınız."
 
 #: ../subscribers/view-subscriber-show.php:268
 msgid "Bulk Actions"

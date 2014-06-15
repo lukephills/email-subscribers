@@ -1,4 +1,4 @@
-Plugin Name	: Email subscribers
+Plugin Name	: Email Subscribers
 Plugin URI	: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Author		: Gopi Ramasamy
 Author URI	: http://www.gopiplus.com

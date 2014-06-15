@@ -23,3 +23,8 @@ subscriptions list.
 
 * Widget translation issue has been fixed
 * PHP warning message from Subscribers Export page has been removed.
+
+********************************Version 1.3************************************************************
+
+* Fixed small error on mail compose page.
+* Added check for Already Confirmed emails. This is to prevent user clicking optin email link multiple time.

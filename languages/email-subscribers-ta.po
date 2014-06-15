@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Email subscribers\n"
-"POT-Creation-Date: 2014-05-25 20:30+0800\n"
-"PO-Revision-Date: 2014-05-25 20:32+0800\n"
+"POT-Creation-Date: 2014-06-15 11:52+0800\n"
+"PO-Revision-Date: 2014-06-15 11:52+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -274,11 +274,15 @@ msgstr "பதிவுகள் இல்லை"
 msgid "Unexpected url submit has been detected"
 msgstr ""
 
-#: ../job/es-optin.php:61 ../job/es-optin.php:71 ../job/es-unsubscribe.php:60
+#: ../job/es-optin.php:64 ../job/es-optin.php:79 ../job/es-unsubscribe.php:60
 #: ../job/es-unsubscribe.php:70
 msgid ""
 "Oops.. We are getting some technical error. Please try again or contact "
 "admin."
+msgstr ""
+
+#: ../job/es-optin.php:69
+msgid "This email address has already been confirmed."
 msgstr ""
 
 #: ../notification/notification-add.php:26

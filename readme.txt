@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 3.9.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,11 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * Widget translation issue has been fixed
 * PHP warning message from Subscribers Export page has been removed.
 
+= 1.3 =
+
+* Fixed small error on mail compose page.
+* Added check for Already Confirmed emails. This is to prevent user clicking optin email link multiple time.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -129,3 +134,8 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * Widget translation issue has been fixed
 * PHP warning message from Subscribers Export page has been removed.
+
+= 1.3 =
+
+* Fixed small error on mail compose page.
+* Added check for Already Confirmed emails. This is to prevent user clicking optin email link multiple time.

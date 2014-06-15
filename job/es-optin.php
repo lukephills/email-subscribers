@@ -45,21 +45,29 @@ if(isset($_GET['es']))
 		
 		if($noerror)
 		{
-			$result = es_cls_dbquery::es_view_subscriber_job("Confirmed", $form['db'], $form['guid'], $form['email']);
-			if($result)
+			$resultcheck = es_cls_dbquery::es_view_subscriber_jobstatus("Confirmed", $form['db'], $form['guid'], $form['email']);
+			if(!$resultcheck)
 			{
-				es_cls_sendmail::es_prepare_welcome($form['db']);
-				$message = esc_html(stripslashes($data['es_c_subhtml']));
-				$message = str_replace("\r\n", "<br />", $message);
+				$result = es_cls_dbquery::es_view_subscriber_job("Confirmed", $form['db'], $form['guid'], $form['email']);
+				if($result)
+				{
+					es_cls_sendmail::es_prepare_welcome($form['db']);
+					$message = esc_html(stripslashes($data['es_c_subhtml']));
+					$message = str_replace("\r\n", "<br />", $message);
+				}
+				else
+				{
+					$message = esc_html(stripslashes($data['es_c_message2']));
+				}
+				if($message == "")
+				{
+					$message = __('Oops.. We are getting some technical error. Please try again or contact admin.', ES_TDOMAIN);
+				}
 			}
 			else
 			{
-				$message = esc_html(stripslashes($data['es_c_message2']));
-			}
-			if($message == "")
-			{
-				$message = __('Oops.. We are getting some technical error. Please try again or contact admin.', ES_TDOMAIN);
-			}
+				$message = __('This email address has already been confirmed.', ES_TDOMAIN);
+			}			
 			echo $message;
 		}
 		else
