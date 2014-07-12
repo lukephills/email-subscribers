@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Email subscribers\n"
-"POT-Creation-Date: 2014-06-15 11:52+0800\n"
-"PO-Revision-Date: 2014-06-15 11:52+0800\n"
+"POT-Creation-Date: 2014-07-12 14:13+0800\n"
+"PO-Revision-Date: 2014-07-12 14:13+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../classes/es-loadwidget.php:28 ../classes/es-register.php:143
-#: ../subscribers/view-subscriber-show.php:185
-#: ../subscribers/view-subscriber-show.php:198
+#: ../subscribers/view-subscriber-show.php:229
+#: ../subscribers/view-subscriber-show.php:242
 msgid "Name"
 msgstr "பெயர்"
 
@@ -150,8 +150,8 @@ msgstr ""
 #: ../compose/compose-show.php:57 ../compose/compose-show.php:66
 #: ../subscribers/view-subscriber-add.php:108
 #: ../subscribers/view-subscriber-edit.php:90
-#: ../subscribers/view-subscriber-show.php:186
-#: ../subscribers/view-subscriber-show.php:199
+#: ../subscribers/view-subscriber-show.php:230
+#: ../subscribers/view-subscriber-show.php:243
 msgid "Status"
 msgstr "நிலை"
 
@@ -187,8 +187,8 @@ msgstr "ரத்து"
 #: ../subscribers/view-subscriber-edit.php:129
 #: ../subscribers/view-subscriber-export.php:75
 #: ../subscribers/view-subscriber-import.php:122
-#: ../subscribers/view-subscriber-show.php:174
-#: ../subscribers/view-subscriber-show.php:278
+#: ../subscribers/view-subscriber-show.php:218
+#: ../subscribers/view-subscriber-show.php:338
 msgid "Help"
 msgstr "உதவி"
 
@@ -218,7 +218,7 @@ msgstr "திரும்ப"
 
 #: ../compose/compose-preview.php:29 ../compose/compose-show.php:87
 #: ../notification/notification-show.php:93
-#: ../subscribers/view-subscriber-show.php:226
+#: ../subscribers/view-subscriber-show.php:270
 msgid "Edit"
 msgstr "திருத்து"
 
@@ -231,9 +231,9 @@ msgstr ""
 #: ../compose/compose-show.php:45 ../compose/compose-show.php:108
 #: ../notification/notification-show.php:45
 #: ../notification/notification-show.php:149
-#: ../subscribers/view-subscriber-show.php:152
-#: ../subscribers/view-subscriber-show.php:171
-#: ../subscribers/view-subscriber-show.php:275
+#: ../subscribers/view-subscriber-show.php:196
+#: ../subscribers/view-subscriber-show.php:215
+#: ../subscribers/view-subscriber-show.php:335
 msgid "Add New"
 msgstr "சேர்க்க"
 
@@ -249,14 +249,14 @@ msgstr "வகை"
 #: ../sentmail/sentmail-show.php:77 ../sentmail/sentmail-show.php:89
 #: ../subscribers/view-subscriber-export.php:33
 #: ../subscribers/view-subscriber-export.php:42
-#: ../subscribers/view-subscriber-show.php:189
-#: ../subscribers/view-subscriber-show.php:202
+#: ../subscribers/view-subscriber-show.php:233
+#: ../subscribers/view-subscriber-show.php:246
 msgid "Action"
 msgstr "செயல்"
 
 #: ../compose/compose-show.php:88 ../notification/notification-show.php:96
-#: ../subscribers/view-subscriber-show.php:229
-#: ../subscribers/view-subscriber-show.php:269
+#: ../subscribers/view-subscriber-show.php:273
+#: ../subscribers/view-subscriber-show.php:313
 msgid "Delete"
 msgstr "நீக்கு"
 
@@ -447,8 +447,8 @@ msgid "Viewed Date"
 msgstr ""
 
 #: ../sentmail/deliverreport-show.php:39 ../sentmail/deliverreport-show.php:49
-#: ../subscribers/view-subscriber-show.php:188
-#: ../subscribers/view-subscriber-show.php:201
+#: ../subscribers/view-subscriber-show.php:232
+#: ../subscribers/view-subscriber-show.php:245
 msgid "Database ID"
 msgstr ""
 
@@ -760,8 +760,8 @@ msgid "Edit email"
 msgstr ""
 
 #: ../subscribers/view-subscriber-edit.php:99
-#: ../subscribers/view-subscriber-show.php:187
-#: ../subscribers/view-subscriber-show.php:200
+#: ../subscribers/view-subscriber-show.php:231
+#: ../subscribers/view-subscriber-show.php:244
 msgid "Group"
 msgstr "குழு"
 
@@ -771,8 +771,8 @@ msgstr ""
 
 #: ../subscribers/view-subscriber-export.php:30
 #: ../subscribers/view-subscriber-export.php:39
-#: ../subscribers/view-subscriber-show.php:183
-#: ../subscribers/view-subscriber-show.php:196
+#: ../subscribers/view-subscriber-show.php:227
+#: ../subscribers/view-subscriber-show.php:240
 msgid "Sno"
 msgstr "எண்"
 
@@ -809,8 +809,8 @@ msgid "Add Email"
 msgstr "சந்தாதாரர் சேர்"
 
 #: ../subscribers/view-subscriber-export.php:73
-#: ../subscribers/view-subscriber-show.php:172
-#: ../subscribers/view-subscriber-show.php:276
+#: ../subscribers/view-subscriber-show.php:216
+#: ../subscribers/view-subscriber-show.php:336
 msgid "Import Email"
 msgstr "மெயில் இறக்கு"
 
@@ -860,6 +860,7 @@ msgstr ""
 
 #: ../subscribers/view-subscriber-show.php:86
 #: ../subscribers/view-subscriber-show.php:132
+#: ../subscribers/view-subscriber-show.php:177
 msgid "Oops, No record was selected."
 msgstr ""
 
@@ -867,34 +868,51 @@ msgstr ""
 msgid "Confirmation email(s) resent successfully."
 msgstr ""
 
-#: ../subscribers/view-subscriber-show.php:151
+#: ../subscribers/view-subscriber-show.php:162
+msgid "Selected subscribers group was successfully updated."
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:168
+msgid "Oops, New group name was not selected."
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:195
 msgid "View subscriber"
 msgstr "சந்தாதாரர்கள்"
 
-#: ../subscribers/view-subscriber-show.php:173
-#: ../subscribers/view-subscriber-show.php:277
+#: ../subscribers/view-subscriber-show.php:217
+#: ../subscribers/view-subscriber-show.php:337
 msgid "Export Email (CSV)"
 msgstr "மெயில் ஏற்றுமதி"
 
-#: ../subscribers/view-subscriber-show.php:184
-#: ../subscribers/view-subscriber-show.php:197
+#: ../subscribers/view-subscriber-show.php:228
+#: ../subscribers/view-subscriber-show.php:241
 msgid "Email address"
 msgstr "மின்னஞ்சல் முகவரி"
 
-#: ../subscribers/view-subscriber-show.php:237
-#: ../subscribers/view-subscriber-show.php:270
+#: ../subscribers/view-subscriber-show.php:281
+#: ../subscribers/view-subscriber-show.php:314
 msgid "Resend Confirmation"
 msgstr "மறுபடியனுப்பு"
 
-#: ../subscribers/view-subscriber-show.php:253
+#: ../subscribers/view-subscriber-show.php:297
 msgid ""
 "No records available. Please use the above alphabet search button to search."
 msgstr ""
 
-#: ../subscribers/view-subscriber-show.php:268
+#: ../subscribers/view-subscriber-show.php:312
 msgid "Bulk Actions"
 msgstr "செயல்கள்"
 
-#: ../subscribers/view-subscriber-show.php:272
+#: ../subscribers/view-subscriber-show.php:315
+#, fuzzy
+msgid "Update Subscribers Group"
+msgstr "சந்தாதாரர்கள்"
+
+#: ../subscribers/view-subscriber-show.php:318
+msgid "Select Group"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:332
 msgid "Apply"
 msgstr "பயன்படுத்து"

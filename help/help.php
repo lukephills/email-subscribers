@@ -38,6 +38,8 @@
 		<li>Where to check sent mails?</li>
 		<li>How to configure notification email to subscribers when new posts are published?</li>
 		<li>How to update default alert message from subscription box?</li>
+		<li>How to add new subscribers group?</li>
+		<li>Is plugin contain bulk update option for subscribers group?</li>
 	</ol>
 	<p>Check official website for FAQ answer <a target="_blank" href="http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/">click here</a></p>
 	</div>

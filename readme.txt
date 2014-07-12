@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 3.9.1
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,6 +64,8 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 *   Q8. Where to check sent mails?
 *   Q9. How to configure notification email to subscribers when new posts are published?
 *   Q10. How to update default alert message from subscription box?
+*   Q11. How to add new subscribers group?
+*   Q12. Is plugin contain bulk update option for subscribers group?
 
 == Installation ==
 
@@ -81,7 +83,9 @@ Installation Instruction and Configuration [Installation Instruction and Configu
 *   Q7. How to send static newsletter manually?
 *   Q8. Where to check sent mails?
 *   Q9. How to configure notification email to subscribers when new posts are published?
-*   Q9. How to update default alert message from subscription box?
+*   Q10. How to update default alert message from subscription box?
+*   Q11. How to add new subscribers group?
+*   Q12. Is plugin contain bulk update option for subscribers group?
 
 FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/]
 (http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
@@ -119,6 +123,11 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * Fixed small error on mail compose page.
 * Added check for Already Confirmed emails. This is to prevent user clicking optin email link multiple time.
 
+= 1.4 =
+
+* Scheduled published posts issue has been fixed (From this version onwards, Notification emails will be triggered for scheduled posts)
+* Bulk update option for subscribers group in admin view subscribers page.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -139,3 +148,8 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * Fixed small error on mail compose page.
 * Added check for Already Confirmed emails. This is to prevent user clicking optin email link multiple time.
+
+= 1.4 =
+
+* Scheduled published posts issue has been fixed (From this version onwards, Notification emails will be triggered for scheduled posts)
+* Bulk update option for subscribers group in admin view subscribers page.

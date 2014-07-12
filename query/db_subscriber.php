@@ -199,6 +199,16 @@ class es_cls_dbquery
 		return "sus";
 	}
 	
+	public static function es_view_subscriber_upd_group($group = "", $idlist = "")
+	{
+		global $wpdb;
+		$prefix = $wpdb->prefix;
+		$sSql = "UPDATE `".$prefix."es_emaillist` SET `es_email_group` = '".$group."'";
+		$sSql = $sSql . " WHERE es_email_id in (".$idlist.")";
+		$wpdb->query($sSql);
+		return "sus";
+	}
+	
 	public static function es_view_subscriber_job($status = "", $id = 0, $guid = "", $email = "")
 	{
 		global $wpdb;

@@ -8,7 +8,7 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
 	
 	$es_success = '';
 	$es_success_msg = FALSE;
-	if (isset($_POST['frm_es_bulkaction']) && $_POST['frm_es_bulkaction'] != 'delete' && $_POST['frm_es_bulkaction'] != 'resend')
+	if (isset($_POST['frm_es_bulkaction']) && $_POST['frm_es_bulkaction'] != 'delete' && $_POST['frm_es_bulkaction'] != 'resend'&& $_POST['frm_es_bulkaction'] != 'groupupdate')
 	{	
 		// First check if ID exist with requested ID
 		$result = es_cls_dbquery::es_view_subscriber_count($did);
@@ -133,6 +133,50 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
 					</div>
 					<?php
 				}
+			}
+		}
+		elseif (isset($_POST['frm_es_bulkaction']) && $_POST['frm_es_bulkaction'] == 'groupupdate')
+		{
+			$chk_delete = isset($_POST['chk_delete']) ? $_POST['chk_delete'] : '';
+			if(!empty($chk_delete))
+			{			
+				$es_email_group = isset($_POST['es_email_group']) ? $_POST['es_email_group'] : '';
+				if ($es_email_group <> "")
+				{
+					$count = count($chk_delete);
+					$idlist = "";
+					for($i = 0; $i < $count; $i++)
+					{
+						$del_id = $chk_delete[$i];
+						if($i < 1)
+						{
+							$idlist = $del_id;
+						}
+						else
+						{
+							$idlist = $idlist . ", " . $del_id;
+						}
+					}
+					es_cls_dbquery::es_view_subscriber_upd_group($es_email_group, $idlist);
+					$es_success_msg = TRUE;
+					$es_success = __('Selected subscribers group was successfully updated.', ES_TDOMAIN);
+				}
+				else
+				{
+					?>
+					<div class="error fade">
+					  <p><strong><?php _e('Oops, New group name was not selected.', ES_TDOMAIN); ?></strong></p>
+					</div>
+					<?php
+				}	
+			}
+			else
+			{
+				?>
+				<div class="error fade">
+				  <p><strong><?php _e('Oops, No record was selected.', ES_TDOMAIN); ?></strong></p>
+				</div>
+				<?php
 			}
 		}
 	}
@@ -264,12 +308,28 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
 	<div style="padding-top:10px;"></div>
     <div class="tablenav">
 		<div class="alignleft">
-			<select name="action" id="action">
+			<select name="action" id="action" onchange="return _es_action_visible(this.value)">
 				<option value=""><?php _e('Bulk Actions', ES_TDOMAIN); ?></option>
 				<option value="delete"><?php _e('Delete', ES_TDOMAIN); ?></option>
 				<option value="resend"><?php _e('Resend Confirmation', ES_TDOMAIN); ?></option>
+				<option value="groupupdate"><?php _e('Update Subscribers Group', ES_TDOMAIN); ?></option>
 			</select>
-			<input type="submit" value="<?php _e('Apply', ES_TDOMAIN); ?>" class="button action" id="doaction" name="">
+			<select name="es_email_group" id="es_email_group" disabled="disabled">
+			<option value=''><?php _e('Select Group', ES_TDOMAIN); ?></option>
+			<?php
+			$groups = array();
+			$groups = es_cls_dbquery::es_view_subscriber_group();
+			if(count($groups) > 0)
+			{
+				$i = 1;
+				foreach ($groups as $group)
+				{
+					?><option value='<?php echo $group["es_email_group"]; ?>'><?php echo $group["es_email_group"]; ?></option><?php
+				}
+			}
+			?>
+		  </select>
+		  <input type="submit" value="<?php _e('Apply', ES_TDOMAIN); ?>" class="button action" id="doaction" name="doaction">
 		</div>
 		<div class="alignright">
 			<a class="button add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-view-subscribers&amp;ac=add"><?php _e('Add New', ES_TDOMAIN); ?></a> 

@@ -89,6 +89,39 @@ function _es_bulkaction()
 			return false;
 		}
 	}
+	else if(document.frm_es_display.action.value == "groupupdate")
+	{
+		if(document.frm_es_display.es_email_group.value=="")
+		{
+			alert("Please select new subscriber group.");
+			document.frm_es_display.es_email_group.focus();
+			return false;
+		}
+	
+		if(confirm("Do you want to update subscribers group?"))
+		{
+			var searchquery = document.frm_es_display.searchquery.value;
+			document.frm_es_display.frm_es_bulkaction.value = 'groupupdate';
+			document.frm_es_display.action="admin.php?page=es-view-subscribers&bulkaction=groupupdate&search=" + searchquery;
+			document.frm_es_display.submit();
+		}
+		else
+		{
+			return false;
+		}
+	}
+}
+
+function _es_action_visible(val)
+{
+	if(val == "groupupdate")
+	{
+		document.getElementById('es_email_group').disabled = false;
+	}
+	else
+	{
+		document.getElementById('es_email_group').disabled = true;
+	}
 }
 
 function _es_exportcsv(url, option)

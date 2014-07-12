@@ -26,11 +26,8 @@ class es_cls_sendmail
 		es_cls_sendmail::es_sendmail("welcome", $template = 0, $subscribers, $action = "welcome", 0);
 	}
 	
-	public static function es_prepare_notification($post_id)
-	{
-		$post_status = isset($_POST['post_status']) ? $_POST['post_status'] : '';
-		$original_post_status = isset($_POST['original_post_status']) ? $_POST['original_post_status'] : '';
-		
+	public static function es_prepare_notification( $post_status, $original_post_status, $post_id )
+	{ 
 		if( ( $post_status == 'publish' ) && ( $original_post_status != 'publish' ) ) 
 		{
 			$notification = array();

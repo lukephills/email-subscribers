@@ -38,7 +38,9 @@ if(isset($_GET['es']))
 			}
 			else
 			{
-				if (strpos($_SERVER['HTTP_REFERER'], get_option('siteurl')) !== false) 
+				$homeurl = home_url();
+				$samedomain = strpos($_SERVER['HTTP_REFERER'], $homeurl);
+				if (($samedomain !== false) && $samedomain < 5) 
 				{
 					$action = "";
 					global $wpdb;
