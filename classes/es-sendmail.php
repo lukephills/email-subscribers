@@ -72,7 +72,7 @@ class es_cls_sendmail
 		$replaceto = array("<ul>", "</ul>", "<li>" ,"</li>", "<ol>", "</ol>", "</h2>", "</h1>");
 		
 		$settings = es_cls_settings::es_setting_select(1);
-		$es_c_adminemail = $settings['es_c_adminemail'];
+		$adminmail = $settings['es_c_adminemail'];
 		$es_c_adminmailoption = $settings['es_c_adminmailoption'];
 		
 		if( trim($settings['es_c_fromname']) == "" || trim($settings['es_c_fromemail']) == '' )

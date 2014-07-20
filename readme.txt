@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 3.9.1
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,10 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * Scheduled published posts issue has been fixed (From this version onwards, Notification emails will be triggered for scheduled posts)
 * Bulk update option for subscribers group in admin view subscribers page.
 
+= 1.5 =
+
+* Bug fix on admin notification email for new subscribers.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -153,3 +157,7 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * Scheduled published posts issue has been fixed (From this version onwards, Notification emails will be triggered for scheduled posts)
 * Bulk update option for subscribers group in admin view subscribers page.
+
+= 1.5 =
+
+* Bug fix on admin notification email for new subscribers.

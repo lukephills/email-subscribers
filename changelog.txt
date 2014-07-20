@@ -33,3 +33,7 @@ subscriptions list.
 
 * Scheduled published posts issue has been fixed (From this version onwards, Notification emails will be triggered for scheduled posts)
 * Bulk update option for subscribers group in admin view subscribers page.
+
+********************************Version 1.5************************************************************
+
+* Bug fix on admin notification email for new subscribers.
