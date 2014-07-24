@@ -37,3 +37,9 @@ subscriptions list.
 ********************************Version 1.5************************************************************
 
 * Bug fix on admin notification email for new subscribers.
+
+********************************Version 1.6************************************************************
+
+* Bug fix on Send Mail/Notification warning message (i.e Call to undefined method issue has been fixed)
+Call to undefined method es_cls_common::es_sent_report_plain() 	- Fixed
+Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed

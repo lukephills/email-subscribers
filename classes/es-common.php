@@ -108,7 +108,7 @@ class es_cls_common
 		return $report;
 	}
 	
-	public static function elp_sent_report_plain() 
+	public static function es_sent_report_plain() 
 	{
 		$report = "";
 		$report = $report. "Hi Admin,\n\n";
@@ -122,7 +122,7 @@ class es_cls_common
 		return $report;
 	}
 	
-	public static function elp_sent_report_html() 
+	public static function es_sent_report_html() 
 	{
 		$report = "";
 		$report = $report. "Hi Admin, <br/><br/>";

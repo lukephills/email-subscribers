@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 3.9.1
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -132,6 +132,12 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * Bug fix on admin notification email for new subscribers.
 
+= 1.6 =
+
+* Bug fix on Send Mail/Notification warning message (i.e Call to undefined method issue has been fixed)
+Call to undefined method es_cls_common::es_sent_report_plain() 	- Fixed
+Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -161,3 +167,9 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 = 1.5 =
 
 * Bug fix on admin notification email for new subscribers.
+
+= 1.6 =
+
+* Bug fix on Send Mail/Notification warning message (i.e Call to undefined method issue has been fixed)
+Call to undefined method es_cls_common::es_sent_report_plain() 	- Fixed
+Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
