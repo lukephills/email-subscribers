@@ -51,7 +51,10 @@ if(isset($_GET['es']))
 				$result = es_cls_dbquery::es_view_subscriber_job("Confirmed", $form['db'], $form['guid'], $form['email']);
 				if($result)
 				{
-					es_cls_sendmail::es_prepare_welcome($form['db']);
+					if( $data['es_c_usermailoption'] == "YES" )
+					{
+						es_cls_sendmail::es_prepare_welcome($form['db']);
+					}
 					$message = esc_html(stripslashes($data['es_c_subhtml']));
 					$message = str_replace("\r\n", "<br />", $message);
 				}

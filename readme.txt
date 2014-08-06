@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 3.9.1
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -135,8 +135,14 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 = 1.6 =
 
 * Bug fix on Send Mail/Notification warning message (i.e Call to undefined method issue has been fixed)
-Call to undefined method es_cls_common::es_sent_report_plain() 	- Fixed
-Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
+* Call to undefined method es_cls_common::es_sent_report_plain() 	- Fixed
+* Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
+
+= 1.7 =
+
+* Bug fixed on individual subscriber delete option.
+* Bug fixed on individual subscriber resend confirmation mail option.
+* Bug fixed on Double Opt-In welcome mail check (Previously it was not checking admin setting for welcome mail).
 
 == Upgrade Notice ==
 
@@ -171,5 +177,11 @@ Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
 = 1.6 =
 
 * Bug fix on Send Mail/Notification warning message (i.e Call to undefined method issue has been fixed)
-Call to undefined method es_cls_common::es_sent_report_plain() 	- Fixed
-Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
+* Call to undefined method es_cls_common::es_sent_report_plain() 	- Fixed
+* Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
+
+= 1.7 =
+
+* Bug fixed on individual subscriber delete option.
+* Bug fixed on individual subscriber resend confirmation mail option.
+* Bug fixed on Double Opt-In welcome mail check (Previously it was not checking admin setting for welcome mail).

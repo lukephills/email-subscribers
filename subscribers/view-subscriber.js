@@ -47,14 +47,14 @@ function _es_resend(id,query)
 
 function _es_bulkaction()
 {
-	if(document.frm_es_display.action.value=="")
+	if(document.frm_es_display.bulk_action.value=="")
 	{
 		alert("Please select the bulk action."); 
-		document.frm_es_display.action.focus();
+		document.frm_es_display.bulk_action.focus();
 		return false;
 	}
 	
-	if(document.frm_es_display.action.value == "delete")
+	if(document.frm_es_display.bulk_action.value == "delete")
 	{
 		if(confirm("Do you want to delete selected record(s)?"))
 		{
@@ -75,7 +75,7 @@ function _es_bulkaction()
 			return false;
 		}
 	}
-	else if(document.frm_es_display.action.value == "resend")
+	else if(document.frm_es_display.bulk_action.value == "resend")
 	{
 		if(confirm("Do you want to resend confirmation email? \nAlso please note, this will update subscriber current status to 'Unconfirmed'."))
 		{
@@ -89,7 +89,7 @@ function _es_bulkaction()
 			return false;
 		}
 	}
-	else if(document.frm_es_display.action.value == "groupupdate")
+	else if(document.frm_es_display.bulk_action.value == "groupupdate")
 	{
 		if(document.frm_es_display.es_email_group.value=="")
 		{

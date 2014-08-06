@@ -308,7 +308,7 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
 	<div style="padding-top:10px;"></div>
     <div class="tablenav">
 		<div class="alignleft">
-			<select name="action" id="action" onchange="return _es_action_visible(this.value)">
+			<select name="bulk_action" id="bulk_action" onchange="return _es_action_visible(this.value)">
 				<option value=""><?php _e('Bulk Actions', ES_TDOMAIN); ?></option>
 				<option value="delete"><?php _e('Delete', ES_TDOMAIN); ?></option>
 				<option value="resend"><?php _e('Resend Confirmation', ES_TDOMAIN); ?></option>
