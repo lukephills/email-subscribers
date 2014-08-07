@@ -74,6 +74,7 @@ class es_cls_sendmail
 		$settings = es_cls_settings::es_setting_select(1);
 		$adminmail = $settings['es_c_adminemail'];
 		$es_c_adminmailoption = $settings['es_c_adminmailoption'];
+		$es_c_usermailoption = $settings['es_c_usermailoption'];
 		
 		if( trim($settings['es_c_fromname']) == "" || trim($settings['es_c_fromemail']) == '' )
 		{
@@ -329,7 +330,20 @@ class es_cls_sendmail
 				
 				if($wpmail) 
 				{
-					wp_mail($to, $subject, $content_send . $unsubtext . $viewstslink, $headers);
+					// Users mails
+					if($type == "welcome")
+					{
+						if($es_c_usermailoption == "YES")
+						{
+							wp_mail($to, $subject, $content_send . $unsubtext . $viewstslink, $headers);
+						}
+					}
+					else
+					{
+						wp_mail($to, $subject, $content_send . $unsubtext . $viewstslink, $headers);
+					}
+					
+					// Admin mails
 					if($type == "welcome" && $adminmail <> "" && $es_c_adminmailoption == "YES")
 					{
 						wp_mail($adminmail, $adminmailsubject, $adminmailcontant, $headers);
@@ -337,7 +351,20 @@ class es_cls_sendmail
 				}
 				else
 				{
-					mail($to ,$subject, $content_send . $unsubtext . $viewstslink, $headers);
+					// Users mails
+					if($type == "welcome")
+					{
+						if($es_c_usermailoption == "YES")
+						{
+							mail($to ,$subject, $content_send . $unsubtext . $viewstslink, $headers);
+						}
+					}
+					else
+					{
+						mail($to ,$subject, $content_send . $unsubtext . $viewstslink, $headers);
+					}
+					
+					// Admin mails
 					if($type == "welcome" && $adminmail <> "" && $es_c_adminmailoption == "YES")
 					{
 						mail($adminmail, $adminmailsubject, $adminmailcontant, $headers);

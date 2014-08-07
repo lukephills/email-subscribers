@@ -48,6 +48,8 @@ Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
 
 * Bug fixed on individual subscriber delete option.
 * Bug fixed on individual subscriber resend confirmation mail option.
+
+********************************Version 1.8************************************************************
+
 * Bug fixed on Double Opt-In welcome mail check (Previously it was not checking admin setting for welcome mail).
-
-
+* Tested up to WordPress 3.9.2

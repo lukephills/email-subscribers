@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
-Tested up to: 3.9.1
-Stable tag: 1.7
+Tested up to: 3.9.2
+Stable tag: 1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,7 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 * English (en_EN) - [Gopi Ramasamy](http://www.gopiplus.com/)
 * Turkish (tr_TR) - [Dr Abdullah Manaz](http://www.manaz.net/)
 * Tamil (ta) - [Gopi Ramasamy](http://www.gopiplus.com/)
+* Dutch (nl_NL) - [John van Halderen](http://www.dorpspleinleusden.nl/)
 
 = Frequently asked questions: =
 
@@ -69,8 +70,7 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 
 == Installation ==
 
-Installation Instruction and Configuration [Installation Instruction and Configuration] 
-(http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
+Installation Instruction and Configuration [Installation Instruction and Configuration](http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -87,8 +87,7 @@ Installation Instruction and Configuration [Installation Instruction and Configu
 *   Q11. How to add new subscribers group?
 *   Q12. Is plugin contain bulk update option for subscribers group?
 
-FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/]
-(http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
+FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/](http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
 
 == Screenshots ==
 
@@ -142,7 +141,11 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * Bug fixed on individual subscriber delete option.
 * Bug fixed on individual subscriber resend confirmation mail option.
+
+= 1.8 =
+
 * Bug fixed on Double Opt-In welcome mail check (Previously it was not checking admin setting for welcome mail).
+* Tested up to WordPress 3.9.2
 
 == Upgrade Notice ==
 
@@ -184,4 +187,8 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * Bug fixed on individual subscriber delete option.
 * Bug fixed on individual subscriber resend confirmation mail option.
+
+= 1.8 =
+
 * Bug fixed on Double Opt-In welcome mail check (Previously it was not checking admin setting for welcome mail).
+* Tested up to WordPress 3.9.2
