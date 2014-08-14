@@ -52,6 +52,7 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 * Turkish (tr_TR) - [Dr Abdullah Manaz](http://www.manaz.net/)
 * Tamil (ta) - [Gopi Ramasamy](http://www.gopiplus.com/)
 * Dutch (nl_NL) - [John van Halderen](http://www.dorpspleinleusden.nl/)
+* Serbian (sr_RS) - [Ogi Djuraskovic](http://firstsiteguide.com/)
 
 = Frequently asked questions: =
 
