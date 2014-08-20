@@ -53,3 +53,8 @@ Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
 
 * Bug fixed on Double Opt-In welcome mail check (Previously it was not checking admin setting for welcome mail).
 * Tested up to WordPress 3.9.2
+
+********************************Version 1.9************************************************************
+
+* New option added in admin setting page to update Sent Mail Report  Subject/Content. For each newsletter mail and notification mail, 
+plugin will send one report mail to admin with default content. Now with this option, admin can update that default mail content.

@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 3.9.2
-Stable tag: 1.8
+Stable tag: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -148,6 +148,10 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * Bug fixed on Double Opt-In welcome mail check (Previously it was not checking admin setting for welcome mail).
 * Tested up to WordPress 3.9.2
 
+= 1.9 =
+
+* New option added in admin setting page to update Sent Mail Report  Subject/Content. For each newsletter mail and notification mail, plugin will send one report mail to admin with default content. Now with this option, admin can update that default mail content.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -193,3 +197,7 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * Bug fixed on Double Opt-In welcome mail check (Previously it was not checking admin setting for welcome mail).
 * Tested up to WordPress 3.9.2
+
+= 1.9 =
+
+* New option added in admin setting page to update Sent Mail Report  Subject/Content. For each newsletter mail and notification mail, plugin will send one report mail to admin with default content. Now with this option, admin can update that default mail content.

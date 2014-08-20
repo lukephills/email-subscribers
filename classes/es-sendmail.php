@@ -380,14 +380,30 @@ class es_cls_sendmail
 			es_cls_sentmail::es_sentmail_ups($sendguid);
 			if($adminmail <> "")
 			{
-				$subject = es_cls_common::es_sent_report_subject();
+				
+				$subject = get_option('es_c_sentreport_subject', 'nosubjectexists');
+				if ( $subject == "" || $subject == "nosubjectexists")
+				{
+					$subject = es_cls_common::es_sent_report_subject();
+				}
 				if($htmlmail)
 				{
-					$reportmail = es_cls_common::es_sent_report_html();
+					$reportmail = get_option('es_c_sentreport', 'nooptionexists');
+					if ( $reportmail == "" || $reportmail == "nooptionexists")
+					{
+						$reportmail = es_cls_common::es_sent_report_html();
+					}
+					$reportmail = nl2br($reportmail);
 				}
 				else
 				{
-					$reportmail = es_cls_common::es_sent_report_plain();
+					$reportmail = get_option('es_c_sentreport', 'nooptionexists');
+					if ( $reportmail == "" || $reportmail == "nooptionexists")
+					{
+						$reportmail = es_cls_common::es_sent_report_plain();
+					}
+					$reportmail = str_replace("<br />", "\r\n", $reportmail);
+					$reportmail = str_replace("<br>", "\r\n", $reportmail);
 				}
 				$enddate = date('Y-m-d G:i:s');
 				$reportmail = str_replace("###COUNT###", $count, $reportmail);	

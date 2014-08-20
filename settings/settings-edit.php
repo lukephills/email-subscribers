@@ -30,7 +30,8 @@ if ($result != '1')
 		'es_c_unsubhtml' => '',
 		'es_c_subhtml' => '',
 		'es_c_message1' => '',
-		'es_c_message2' => ''
+		'es_c_message2' => '',
+		'es_c_sentreport' => ''
 	);
 }
 else
@@ -41,6 +42,24 @@ else
 	
 	$data = array();
 	$data = es_cls_settings::es_setting_select(1);
+	
+	$es_c_sentreport_subject = '';
+	$es_c_sentreport = '';	
+	$es_c_sentreport_subject = get_option('es_c_sentreport_subject', 'nosubjectexists');
+	$es_c_sentreport = get_option('es_c_sentreport', 'nooptionexists');
+	if($es_c_sentreport_subject == "nosubjectexists")
+	{	
+		$es_sent_report_subject = es_cls_common::es_sent_report_subject();
+		add_option('es_c_sentreport_subject', $es_sent_report_subject);
+		$es_c_sentreport_subject = $es_sent_report_subject;
+	}
+	
+	if($es_c_sentreport == "nooptionexists")
+	{		
+		$es_sent_report_plain = es_cls_common::es_sent_report_plain();
+		add_option('es_c_sentreport', $es_sent_report_plain);
+		$es_c_sentreport = $es_sent_report_plain;
+	}
 	
 	// Preset the form fields
 	$form = array(
@@ -64,7 +83,9 @@ else
 		'es_c_unsubhtml' => $data['es_c_unsubhtml'],
 		'es_c_subhtml' => $data['es_c_subhtml'],
 		'es_c_message1' => $data['es_c_message1'],
-		'es_c_message2' => $data['es_c_message2']
+		'es_c_message2' => $data['es_c_message2'],
+		'es_c_sentreport' => $es_c_sentreport,
+		'es_c_sentreport_subject' => $es_c_sentreport_subject
 	);
 }
 
@@ -127,6 +148,11 @@ if (isset($_POST['es_form_submit']) && $_POST['es_form_submit'] == 'yes')
 			$es_errors[] = __('Oops, details not update.', ES_TDOMAIN);
 		}
 	}
+	
+	$form['es_c_sentreport'] = isset($_POST['es_c_sentreport']) ? $_POST['es_c_sentreport'] : '';
+	update_option('es_c_sentreport', $form['es_c_sentreport'] );
+	$form['es_c_sentreport_subject'] = isset($_POST['es_c_sentreport_subject']) ? $_POST['es_c_sentreport_subject'] : '';
+	update_option('es_c_sentreport_subject', $form['es_c_sentreport_subject'] );
 }
 
 if ($es_error_found == TRUE && isset($es_errors[0]) == TRUE)
@@ -212,7 +238,7 @@ if ($es_error_found == FALSE && strlen($es_success) > 0)
 		<tr>
 			<th scope="row"> 
 				<label for="elp"><?php _e('Opt-in mail content (Confirmation mail)', ES_TDOMAIN); ?>
-				<p class="description"><?php _e('Enter the content for Double Opt In mail. This will send whenever subscriber added email into our database.', ES_TDOMAIN); ?> (Keyword: ##NAME##)</p></label>
+				<p class="description"><?php _e('Enter the content for Double Opt In mail. This will send whenever subscriber added email into our database.', ES_TDOMAIN); ?> (Keyword: ###NAME###)</p></label>
 			</th>
 			<td><textarea size="100" id="es_c_optincontent" rows="10" cols="58" name="es_c_optincontent"><?php echo esc_html(stripslashes($form['es_c_optincontent'])); ?></textarea></td>
 		</tr>
@@ -288,7 +314,7 @@ if ($es_error_found == FALSE && strlen($es_success) > 0)
 		<tr>
 			<th scope="row"> 
 				<label for="elp"><?php _e('Admin mail content', ES_TDOMAIN); ?>
-				<p class="description"><?php _e('Enter the mail content for admin. This will send whenever new email added and confirmed into our database.', ES_TDOMAIN); ?> (Keyword: ##NAME##, ##EMAIL##)</p></label>
+				<p class="description"><?php _e('Enter the mail content for admin. This will send whenever new email added and confirmed into our database.', ES_TDOMAIN); ?> (Keyword: ###NAME###, ###EMAIL###)</p></label>
 			</th>
 			<td><textarea size="100" id="es_c_adminmailcontant" rows="10" cols="58" name="es_c_adminmailcontant"><?php echo esc_html(stripslashes($form['es_c_adminmailcontant'])); ?></textarea></td>
 		</tr>
@@ -328,6 +354,21 @@ if ($es_error_found == FALSE && strlen($es_success) > 0)
 				<p class="description"><?php _e('Default message to display if any issue on unsubscribe link.', ES_TDOMAIN); ?></p></label>
 			</th>
 			<td><textarea size="100" id="es_c_message2" rows="4" cols="58" name="es_c_message2"><?php echo esc_html(stripslashes($form['es_c_message2'])); ?></textarea></td>
+		</tr>
+		<!-------------------------------------------------------------------------------->
+		<tr>
+			<th scope="row"> 
+				<label for="elp"><?php _e('Sent report subject', ES_TDOMAIN); ?>
+				<p class="description"><?php _e('Mail subject for sent mail report.', ES_TDOMAIN); ?></p></label>
+			</th>
+			<td><input name="es_c_sentreport_subject" type="text" id="es_c_sentreport_subject" value="<?php echo esc_html(stripslashes($form['es_c_sentreport_subject'])); ?>" size="60" maxlength="225" /></td>
+		</tr>
+		<tr>
+			<th scope="row"> 
+				<label for="elp"><?php _e('Sent report content', ES_TDOMAIN); ?>
+				<p class="description"><?php _e('Mail content for sent mail report.', ES_TDOMAIN); ?> (Keyword: ###COUNT###, ###UNIQUE###, ###STARTTIME###, ###ENDTIME###)</p></label>
+			</th>
+			<td><textarea size="100" id="es_c_sentreport" rows="8" cols="58" name="es_c_sentreport"><?php echo esc_html(stripslashes($form['es_c_sentreport'])); ?></textarea></td>
 		</tr>
 		<!-------------------------------------------------------------------------------->
 	</tbody>
