@@ -194,8 +194,8 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 = 1.6 =
 
 * Bug fix on Send Mail/Notification warning message (i.e Call to undefined method issue has been fixed)
-* Call to undefined method es_cls_common::es_sent_report_plain() 	- Fixed
-* Call to undefined method es_cls_common::es_sent_report_html() 	- Fixed
+* Call to undefined method es_cls_common::es_sent_report_plain() - Fixed
+* Call to undefined method es_cls_common::es_sent_report_html() - Fixed
 
 = 1.7 =
 
