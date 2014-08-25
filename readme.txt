@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
-Tested up to: 3.9.2
-Stable tag: 1.9
+Tested up to: 4.0
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,7 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 *   Q10. How to update default alert message from subscription box?
 *   Q11. How to add new subscribers group?
 *   Q12. Is plugin contain bulk update option for subscribers group?
+*   Q13. Is Mail not working on Email Subscribers wordpress plugin?
 
 == Installation ==
 
@@ -87,6 +88,7 @@ Installation Instruction and Configuration [Installation Instruction and Configu
 *   Q10. How to update default alert message from subscription box?
 *   Q11. How to add new subscribers group?
 *   Q12. Is plugin contain bulk update option for subscribers group?
+*   Q13. Is Mail not working on Email Subscribers wordpress plugin?
 
 FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/](http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
 
@@ -152,6 +154,13 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * New option added in admin setting page to update Sent Mail Report  Subject/Content. For each newsletter mail and notification mail, plugin will send one report mail to admin with default content. Now with this option, admin can update that default mail content.
 
+= 2.0 =
+
+* Tested up to WordPress 4.0
+* In view subscribers admin page, new option added to filter the email address based on status.
+* Paging option added on view subscribers admin page. In default it will show only first 200 emails, you have drop down box to navigate another page (i.e. 201 to 400 emails etc..).
+* Warning message fix on email address import page (i.e Strict standards: Only variables should be passed by reference)	- Fixed
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -201,3 +210,10 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 = 1.9 =
 
 * New option added in admin setting page to update Sent Mail Report  Subject/Content. For each newsletter mail and notification mail, plugin will send one report mail to admin with default content. Now with this option, admin can update that default mail content.
+
+= 2.0 =
+
+* Tested up to WordPress 4.0
+* In view subscribers admin page, new option added to filter the email address based on status.
+* Paging option added on view subscribers admin page. In default it will show only first 200 emails, you have drop down box to navigate another page (i.e. 201 to 400 emails etc..).
+* Warning message fix on email address import page (i.e Strict standards: Only variables should be passed by reference)	- Fixed

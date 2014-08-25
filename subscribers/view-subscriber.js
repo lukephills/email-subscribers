@@ -45,6 +45,24 @@ function _es_resend(id,query)
 	document.frm_es_display.submit();
 }
 
+function _es_search_sts_action(sts)
+{
+	var searchquery = document.frm_es_display.searchquery.value;
+	var cnt = document.frm_es_display.searchquery_cnt.value;
+	document.frm_es_display.frm_es_bulkaction.value = 'search_sts';
+	document.frm_es_display.action="admin.php?page=es-view-subscribers&search=" + searchquery + "&sts=" + sts + "&cnt=" + cnt;
+	document.frm_es_display.submit();
+}
+
+function _es_search_count_action(cnt)
+{
+	var searchquery = document.frm_es_display.searchquery.value;
+	var sts = document.frm_es_display.searchquery_sts.value;
+	document.frm_es_display.frm_es_bulkaction.value = 'search_cnt';
+	document.frm_es_display.action="admin.php?page=es-view-subscribers&search=" + searchquery + "&sts=" + sts + "&cnt=" + cnt;
+	document.frm_es_display.submit();
+}
+
 function _es_bulkaction()
 {
 	if(document.frm_es_display.bulk_action.value=="")
@@ -61,8 +79,10 @@ function _es_bulkaction()
 			if(confirm("Are you sure you want to delete?"))
 			{
 				var searchquery = document.frm_es_display.searchquery.value;
+				var sts = document.frm_es_display.searchquery_sts.value;
+				var cnt = document.frm_es_display.searchquery_cnt.value;
 				document.frm_es_display.frm_es_bulkaction.value = 'delete';
-				document.frm_es_display.action="admin.php?page=es-view-subscribers&bulkaction=delete&search=" + searchquery;
+				document.frm_es_display.action="admin.php?page=es-view-subscribers&bulkaction=delete&search=" + searchquery + "&sts=" + sts + "&cnt=" + cnt;
 				document.frm_es_display.submit();
 			}
 			else
@@ -80,8 +100,10 @@ function _es_bulkaction()
 		if(confirm("Do you want to resend confirmation email? \nAlso please note, this will update subscriber current status to 'Unconfirmed'."))
 		{
 			var searchquery = document.frm_es_display.searchquery.value;
+			var sts = document.frm_es_display.searchquery_sts.value;
+			var cnt = document.frm_es_display.searchquery_cnt.value;
 			document.frm_es_display.frm_es_bulkaction.value = 'resend';
-			document.frm_es_display.action="admin.php?page=es-view-subscribers&bulkaction=resend&search=" + searchquery;
+			document.frm_es_display.action="admin.php?page=es-view-subscribers&bulkaction=resend&search=" + searchquery + "&sts=" + sts + "&cnt=" + cnt;
 			document.frm_es_display.submit();
 		}
 		else
@@ -101,8 +123,10 @@ function _es_bulkaction()
 		if(confirm("Do you want to update subscribers group?"))
 		{
 			var searchquery = document.frm_es_display.searchquery.value;
+			var sts = document.frm_es_display.searchquery_sts.value;
+			var cnt = document.frm_es_display.searchquery_cnt.value;
 			document.frm_es_display.frm_es_bulkaction.value = 'groupupdate';
-			document.frm_es_display.action="admin.php?page=es-view-subscribers&bulkaction=groupupdate&search=" + searchquery;
+			document.frm_es_display.action="admin.php?page=es-view-subscribers&bulkaction=groupupdate&search=" + searchquery + "&sts=" + sts + "&cnt=" + cnt;
 			document.frm_es_display.submit();
 		}
 		else

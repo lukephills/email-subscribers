@@ -20,7 +20,14 @@ if (isset($_POST['es_form_submit']) && $_POST['es_form_submit'] == 'yes')
 	//	Just security thingy that wordpress offers us
 	check_admin_referer('es_form_add');
 	
-	$extension = strtolower(end(explode('.', $_FILES['es_csv_name']['name'])));
+	$extension = pathinfo($_FILES['es_csv_name']['name'], PATHINFO_EXTENSION);
+	//$extension = strtolower(end(explode('.', $_FILES['es_csv_name']['name'])));
+	//$extension = end( $extension); 
+	//$extension = end($extension);
+	//echo $extension . "<br>"; 
+	//$path_parts = pathinfo($fullPath);
+	//$extension = strtolower($path_parts["extension"]);  
+
 	$tmpname = $_FILES['es_csv_name']['tmp_name'];
 	
 	if($extension === 'csv')

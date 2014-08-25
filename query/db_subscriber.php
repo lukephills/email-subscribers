@@ -36,6 +36,52 @@ class es_cls_dbquery
 		return $arrRes;
 	}
 	
+	public static function es_view_subscriber_search2($search = "", $id = 0, $search_sts = "", $offset = 0, $limit = 0)
+	{
+		global $wpdb;
+		$prefix = $wpdb->prefix;
+		$arrRes = array();
+		$sSql = "SELECT * FROM `".$prefix."es_emaillist` where es_email_mail <> '' ";
+		if($search_sts <> "")
+		{
+			$sSql = $sSql . " and es_email_status='".$search_sts."'";
+		}
+		
+		if($search <> "" && $search <> "ALL")
+		{
+			$letter = explode(',', $search);
+			$length = count($letter);
+			for ($i = 0; $i < $length; $i++) 
+			{
+				if($i == 0)
+				{
+					$sSql = $sSql . " and (";
+				}
+				else
+				{
+					$sSql = $sSql . " or";
+				}
+				$sSql = $sSql . " es_email_mail LIKE '" . $letter[$i]. "%'";
+				if($i == $length-1)
+				{
+					$sSql = $sSql . ")";
+				}
+			}
+		}
+		
+		if($id > 0)
+		{
+			$sSql = $sSql . " and es_email_id=".$id;
+			
+		}
+		$sSql = $sSql . " order by es_email_id asc";
+		$sSql = $sSql . " LIMIT $offset, $limit";
+
+		//echo $sSql;
+		$arrRes = $wpdb->get_results($sSql, ARRAY_A);
+		return $arrRes;
+	}
+	
 	public static function es_view_subscriber_sendmail($search = "", $group = "")
 	{
 		global $wpdb;

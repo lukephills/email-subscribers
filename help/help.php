@@ -40,6 +40,7 @@
 		<li>How to update default alert message from subscription box?</li>
 		<li>How to add new subscribers group?</li>
 		<li>Is plugin contain bulk update option for subscribers group?</li>
+		<li>Is Mail not working on Email Subscribers wordpress plugin?</li>
 	</ol>
 	<p>Check official website for FAQ answer <a target="_blank" href="http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/">click here</a></p>
 	</div>

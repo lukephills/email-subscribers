@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Email subscribers\n"
-"POT-Creation-Date: 2014-08-07 21:43+0800\n"
-"PO-Revision-Date: 2014-08-07 21:43+0800\n"
+"POT-Creation-Date: 2014-08-23 09:51+0800\n"
+"PO-Revision-Date: 2014-08-23 09:51+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "Language: nl\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../classes/es-loadwidget.php:28 ../classes/es-register.php:143
-#: ../subscribers/view-subscriber-show.php:229
-#: ../subscribers/view-subscriber-show.php:242
+#: ../subscribers/view-subscriber-show.php:254
+#: ../subscribers/view-subscriber-show.php:267
 msgid "Name"
 msgstr "Naam"
 
@@ -57,7 +57,7 @@ msgid "Send Email"
 msgstr "Stuur email"
 
 #: ../classes/es-register.php:85 ../classes/es-register.php:86
-#: ../settings/settings-edit.php:164
+#: ../settings/settings-edit.php:190
 msgid "Settings"
 msgstr "Instellingen"
 
@@ -100,9 +100,9 @@ msgstr "Template succesvol gecreëerd"
 
 #: ../compose/compose-add.php:60 ../compose/compose-edit.php:70
 #: ../notification/notification-add.php:91
-#: ../notification/notification-edit.php:99 ../settings/settings-edit.php:147
+#: ../notification/notification-edit.php:99 ../settings/settings-edit.php:173
 #: ../subscribers/view-subscriber-add.php:87
-#: ../subscribers/view-subscriber-edit.php:70
+#: ../subscribers/view-subscriber-edit.php:72
 #: ../subscribers/view-subscriber-import.php:70
 #: ../subscribers/view-subscriber-import.php:100
 msgid "Click here"
@@ -110,9 +110,9 @@ msgstr "Klik hier"
 
 #: ../compose/compose-add.php:61 ../compose/compose-edit.php:71
 #: ../notification/notification-add.php:92
-#: ../notification/notification-edit.php:100 ../settings/settings-edit.php:148
+#: ../notification/notification-edit.php:100 ../settings/settings-edit.php:174
 #: ../subscribers/view-subscriber-add.php:87
-#: ../subscribers/view-subscriber-edit.php:70
+#: ../subscribers/view-subscriber-edit.php:72
 #: ../subscribers/view-subscriber-import.php:70
 #: ../subscribers/view-subscriber-import.php:100
 msgid " to view the details"
@@ -124,7 +124,7 @@ msgid "Compose Mail"
 msgstr "Schrijf mail"
 
 #: ../compose/compose-add.php:73 ../compose/compose-edit.php:85
-#: ../settings/settings-edit.php:180
+#: ../settings/settings-edit.php:206
 msgid "Mail type"
 msgstr "Mail type"
 
@@ -151,9 +151,9 @@ msgstr "Voer bericht in a.u.b."
 #: ../compose/compose-add.php:91 ../compose/compose-edit.php:102
 #: ../compose/compose-show.php:57 ../compose/compose-show.php:66
 #: ../subscribers/view-subscriber-add.php:108
-#: ../subscribers/view-subscriber-edit.php:90
-#: ../subscribers/view-subscriber-show.php:230
-#: ../subscribers/view-subscriber-show.php:243
+#: ../subscribers/view-subscriber-edit.php:92
+#: ../subscribers/view-subscriber-show.php:255
+#: ../subscribers/view-subscriber-show.php:268
 msgid "Status"
 msgstr "Status"
 
@@ -165,16 +165,16 @@ msgstr "Selecteer uw mail status a.u.b."
 #: ../notification/notification-add.php:181
 #: ../notification/notification-edit.php:194
 #: ../subscribers/view-subscriber-add.php:140
-#: ../subscribers/view-subscriber-edit.php:127
+#: ../subscribers/view-subscriber-edit.php:129
 msgid "Submit"
 msgstr "Verzenden"
 
 #: ../compose/compose-add.php:100 ../compose/compose-edit.php:112
 #: ../notification/notification-add.php:182
 #: ../notification/notification-edit.php:195 ../sendmail/sendmail.php:218
-#: ../settings/settings-edit.php:340
+#: ../settings/settings-edit.php:381
 #: ../subscribers/view-subscriber-add.php:141
-#: ../subscribers/view-subscriber-edit.php:128
+#: ../subscribers/view-subscriber-edit.php:130
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -184,13 +184,13 @@ msgstr "Annuleren"
 #: ../notification/notification-edit.php:196
 #: ../notification/notification-show.php:150 ../sendmail/sendmail.php:219
 #: ../sentmail/deliverreport-show.php:111 ../sentmail/sentmail-preview.php:31
-#: ../settings/settings-edit.php:341
+#: ../settings/settings-edit.php:382
 #: ../subscribers/view-subscriber-add.php:142
-#: ../subscribers/view-subscriber-edit.php:129
+#: ../subscribers/view-subscriber-edit.php:131
 #: ../subscribers/view-subscriber-export.php:75
 #: ../subscribers/view-subscriber-import.php:122
-#: ../subscribers/view-subscriber-show.php:218
-#: ../subscribers/view-subscriber-show.php:338
+#: ../subscribers/view-subscriber-show.php:243
+#: ../subscribers/view-subscriber-show.php:387
 msgid "Help"
 msgstr "Hulp"
 
@@ -198,8 +198,8 @@ msgstr "Hulp"
 #: ../compose/compose-show.php:15 ../notification/notification-edit.php:10
 #: ../notification/notification-show.php:15
 #: ../sentmail/sentmail-preview.php:10 ../sentmail/sentmail-show.php:17
-#: ../settings/settings-edit.php:11 ../subscribers/view-subscriber-edit.php:11
-#: ../subscribers/view-subscriber-show.php:19
+#: ../settings/settings-edit.php:11 ../subscribers/view-subscriber-edit.php:13
+#: ../subscribers/view-subscriber-show.php:23
 msgid "Oops, selected details doesnt exist."
 msgstr "Ojee, de geselecteerde details bestaan  niet"
 
@@ -220,22 +220,22 @@ msgstr "Terug"
 
 #: ../compose/compose-preview.php:29 ../compose/compose-show.php:87
 #: ../notification/notification-show.php:93
-#: ../subscribers/view-subscriber-show.php:270
+#: ../subscribers/view-subscriber-show.php:302
 msgid "Edit"
 msgstr "Bewerken"
 
 #: ../compose/compose-show.php:30 ../notification/notification-show.php:30
-#: ../sentmail/sentmail-show.php:32 ../subscribers/view-subscriber-show.php:36
-#: ../subscribers/view-subscriber-show.php:80
+#: ../sentmail/sentmail-show.php:32 ../subscribers/view-subscriber-show.php:40
+#: ../subscribers/view-subscriber-show.php:84
 msgid "Selected record was successfully deleted."
 msgstr "De geselecteerde gegevens zijn succesvol verwijderd"
 
 #: ../compose/compose-show.php:45 ../compose/compose-show.php:108
 #: ../notification/notification-show.php:45
 #: ../notification/notification-show.php:149
-#: ../subscribers/view-subscriber-show.php:196
-#: ../subscribers/view-subscriber-show.php:215
-#: ../subscribers/view-subscriber-show.php:335
+#: ../subscribers/view-subscriber-show.php:208
+#: ../subscribers/view-subscriber-show.php:240
+#: ../subscribers/view-subscriber-show.php:384
 msgid "Add New"
 msgstr "Voeg nieuw toe"
 
@@ -251,14 +251,14 @@ msgstr "Type"
 #: ../sentmail/sentmail-show.php:77 ../sentmail/sentmail-show.php:89
 #: ../subscribers/view-subscriber-export.php:33
 #: ../subscribers/view-subscriber-export.php:42
-#: ../subscribers/view-subscriber-show.php:233
-#: ../subscribers/view-subscriber-show.php:246
+#: ../subscribers/view-subscriber-show.php:258
+#: ../subscribers/view-subscriber-show.php:271
 msgid "Action"
 msgstr "Actie"
 
 #: ../compose/compose-show.php:88 ../notification/notification-show.php:96
-#: ../subscribers/view-subscriber-show.php:273
-#: ../subscribers/view-subscriber-show.php:313
+#: ../subscribers/view-subscriber-show.php:305
+#: ../subscribers/view-subscriber-show.php:347
 msgid "Delete"
 msgstr "Verwijderen"
 
@@ -276,7 +276,7 @@ msgstr "Geen gegevens beschikbaar."
 msgid "Unexpected url submit has been detected"
 msgstr "Onverwachte url verzending ontdekt."
 
-#: ../job/es-optin.php:67 ../job/es-optin.php:82 ../job/es-unsubscribe.php:60
+#: ../job/es-optin.php:64 ../job/es-optin.php:79 ../job/es-unsubscribe.php:60
 #: ../job/es-unsubscribe.php:70
 msgid ""
 "Oops.. We are getting some technical error. Please try again or contact "
@@ -285,7 +285,7 @@ msgstr ""
 "Ojee, we hebben een technische fout. Probeer opnieuw of contacteer de "
 "beheerder."
 
-#: ../job/es-optin.php:72
+#: ../job/es-optin.php:69
 msgid "This email address has already been confirmed."
 msgstr "Dit email adres is al bevestigd."
 
@@ -338,7 +338,7 @@ msgstr "Abonnee groep"
 #: ../notification/notification-add.php:124
 #: ../notification/notification-edit.php:122 ../sendmail/sendmail.php:84
 #: ../sendmail/sendmail.php:115 ../subscribers/view-subscriber-add.php:119
-#: ../subscribers/view-subscriber-edit.php:101
+#: ../subscribers/view-subscriber-edit.php:103
 msgid "Select"
 msgstr "Selecteer"
 
@@ -455,8 +455,8 @@ msgid "Viewed Date"
 msgstr "Datum bekeken"
 
 #: ../sentmail/deliverreport-show.php:39 ../sentmail/deliverreport-show.php:49
-#: ../subscribers/view-subscriber-show.php:232
-#: ../subscribers/view-subscriber-show.php:245
+#: ../subscribers/view-subscriber-show.php:257
+#: ../subscribers/view-subscriber-show.php:270
 msgid "Database ID"
 msgstr "Database ID"
 
@@ -508,27 +508,27 @@ msgstr ""
 "Noot: klik op de knop <strong>Optimaliseer de tabel</strong> om alle "
 "rapporten te verwijderen behalve de laatste 10"
 
-#: ../settings/settings-edit.php:81
+#: ../settings/settings-edit.php:102
 msgid "Please enter sender of notifications from name."
 msgstr "Geef a.u.b. afzender van de kennisgeving in van Naam"
 
-#: ../settings/settings-edit.php:87
+#: ../settings/settings-edit.php:108
 msgid "Please enter sender of notifications from email."
 msgstr "Geef a.u.b. afzender  van de kennisgeving van Email"
 
-#: ../settings/settings-edit.php:122
+#: ../settings/settings-edit.php:143
 msgid "Details was successfully updated."
 msgstr "Detail succesvol aangepast"
 
-#: ../settings/settings-edit.php:127
+#: ../settings/settings-edit.php:148
 msgid "Oops, details not update."
 msgstr "Ojee, details niet geupdate"
 
-#: ../settings/settings-edit.php:170
+#: ../settings/settings-edit.php:196
 msgid "Sender of notifications"
 msgstr "Afzender van de kennisgeving"
 
-#: ../settings/settings-edit.php:171
+#: ../settings/settings-edit.php:197
 msgid ""
 "Choose a FROM name and FROM email address for all notifications emails from "
 "this plugin."
@@ -536,7 +536,7 @@ msgstr ""
 "Kies een VAN naam en VAN emailadres voor alle kennisgevings emails van deze "
 "plug in."
 
-#: ../settings/settings-edit.php:181
+#: ../settings/settings-edit.php:207
 msgid ""
 "Option 1 & 2 is to send mails with default Wordpress method wp_mail(). "
 "Option 3 & 4 is to send mails with PHP method mail()"
@@ -544,11 +544,11 @@ msgstr ""
 "Optie 1 & 2 is om emails te verzenden met de default Wordpress methode "
 "wp_mail(). Optie 3 & 4 is om mails te versturen met de PHP methode mail()"
 
-#: ../settings/settings-edit.php:195
+#: ../settings/settings-edit.php:221
 msgid "Opt-in option"
 msgstr "Opt-in optie"
 
-#: ../settings/settings-edit.php:196
+#: ../settings/settings-edit.php:222
 msgid ""
 "Double Opt In, means subscribers need to confirm their email address by an "
 "activation link sent them on a activation email message. Single Opt In, "
@@ -558,11 +558,11 @@ msgstr ""
 "via een activeringslink die als email boodschap toegestuurd wordt. Enkele "
 "Opt In betekent dat abonnees hun email adres niet hoeven te bevestigen."
 
-#: ../settings/settings-edit.php:207
+#: ../settings/settings-edit.php:233
 msgid "Opt-in mail subject (Confirmation mail)"
 msgstr "Opt In mail onderwerp (Bevestigingsmail)"
 
-#: ../settings/settings-edit.php:208
+#: ../settings/settings-edit.php:234
 msgid ""
 "Enter the subject for Double Opt In mail. This will send whenever subscriber "
 "added email into our database."
@@ -570,11 +570,11 @@ msgstr ""
 "Geef het onderwerp voor de mail  Double Op In. Deze mail wordt verstuurd "
 "wanneer de abonnee een email aan uw database toevoegt."
 
-#: ../settings/settings-edit.php:214
+#: ../settings/settings-edit.php:240
 msgid "Opt-in mail content (Confirmation mail)"
 msgstr "Inhoud Opt-In mail (Bevestigingsmail)"
 
-#: ../settings/settings-edit.php:215
+#: ../settings/settings-edit.php:241
 msgid ""
 "Enter the content for Double Opt In mail. This will send whenever subscriber "
 "added email into our database."
@@ -582,20 +582,20 @@ msgstr ""
 "Geef de inhoud voor de mail  Double Op In. Deze mail wordt verstuurd wanneer "
 "de abonnee een email aan uw database toevoegt."
 
-#: ../settings/settings-edit.php:221
+#: ../settings/settings-edit.php:247
 msgid "Opt-in link (Confirmation link)"
 msgstr "Opt-In link (Bevestigingslink)"
 
-#: ../settings/settings-edit.php:222
+#: ../settings/settings-edit.php:248
 msgid "Double Opt In confirmation link. You no need to change this value."
 msgstr ""
 "Double Opt-In bevestigingslink. U hoeft deze waarde niet te veranderen."
 
-#: ../settings/settings-edit.php:228
+#: ../settings/settings-edit.php:254
 msgid "Text to display after email subscribed successfully"
 msgstr "De tekst die vertoond wordt nadat het abonneren succesvol was"
 
-#: ../settings/settings-edit.php:229
+#: ../settings/settings-edit.php:255
 msgid ""
 "This text will display once user clicked email confirmation link from opt-in "
 "(confirmation) email content."
@@ -603,21 +603,21 @@ msgstr ""
 "Deze tekst wordt vertoond zodra de gebruiker op de email bevestigingslink "
 "geklikt heeft."
 
-#: ../settings/settings-edit.php:236
+#: ../settings/settings-edit.php:262
 msgid "Subscriber welcome email"
 msgstr "Welkomstmail abonnee "
 
-#: ../settings/settings-edit.php:237
+#: ../settings/settings-edit.php:263
 msgid "To send welcome mail to subscriber, This option must be set to YES."
 msgstr ""
 "Stuur een welkomst mail aan de nieuwe abonnee, deze optie moet op Ja (Yes) "
 "staan."
 
-#: ../settings/settings-edit.php:248
+#: ../settings/settings-edit.php:274
 msgid "Welcome mail subject"
 msgstr "Onderwerp welkomstmail"
 
-#: ../settings/settings-edit.php:249
+#: ../settings/settings-edit.php:275
 msgid ""
 "Enter the subject for subscriber welcome mail. This will send whenever email "
 "subscribed (confirmed) successfully."
@@ -625,11 +625,11 @@ msgstr ""
 "Geef het onderwerp in voor de welkomst mail aan de abonnee. Deze wordt "
 "verstuurd wanneer de abonneringsmail (bevestiging) succesvol was."
 
-#: ../settings/settings-edit.php:255
+#: ../settings/settings-edit.php:281
 msgid "Subscriber welcome mail content"
 msgstr "Inhoud welkomstmail aan abonnee."
 
-#: ../settings/settings-edit.php:256
+#: ../settings/settings-edit.php:282
 msgid ""
 "Enter the content for subscriber welcome mail. This will send whenever email "
 "subscribed (confirmed) successfully."
@@ -637,22 +637,22 @@ msgstr ""
 "Geef de tekst in voor de abonnee welkomstmail. Deze wordt verzonden wanneer "
 "de bevestigingsemail succesvol was."
 
-#: ../settings/settings-edit.php:264
+#: ../settings/settings-edit.php:290
 msgid "Mail to admin"
 msgstr "Mail aan admin"
 
-#: ../settings/settings-edit.php:265
+#: ../settings/settings-edit.php:291
 msgid ""
 "To send admin notifications for new subscriber, This option must be set to "
 "YES."
 msgstr ""
 "Om de admin de nieuwe abonnee te melden moet deze optie op Ja (Yes) staan."
 
-#: ../settings/settings-edit.php:276
+#: ../settings/settings-edit.php:302
 msgid "Admin email addresses"
 msgstr "Admin email adres"
 
-#: ../settings/settings-edit.php:277
+#: ../settings/settings-edit.php:303
 msgid ""
 "Enter the admin email addresses that should receive notifications (separate "
 "by comma)."
@@ -660,11 +660,11 @@ msgstr ""
 "Geef de admin e-mail adressen in die de kennisgevingen moeten ontvangen "
 "(komma gescheiden)"
 
-#: ../settings/settings-edit.php:283
+#: ../settings/settings-edit.php:309
 msgid "Admin mail subject"
 msgstr "Admin mail onderwerp"
 
-#: ../settings/settings-edit.php:284
+#: ../settings/settings-edit.php:310
 msgid ""
 "Enter the subject for admin mail. This will send whenever new email added "
 "and confirmed into our database."
@@ -672,11 +672,11 @@ msgstr ""
 "Geef het onderwerp voor de admin mail in. Deze wordt verzonden wanneer "
 "nieuwe mail wordt toegevoegd aan de database en bevestigd is."
 
-#: ../settings/settings-edit.php:290
+#: ../settings/settings-edit.php:316
 msgid "Admin mail content"
 msgstr "Inhoud admin mail"
 
-#: ../settings/settings-edit.php:291
+#: ../settings/settings-edit.php:317
 msgid ""
 "Enter the mail content for admin. This will send whenever new email added "
 "and confirmed into our database."
@@ -684,19 +684,19 @@ msgstr ""
 "Geef het admin bericht in. Dit wordt verzonden wanneer nieuwe mail wordt "
 "toegevoegd aan de database en bevestigd is."
 
-#: ../settings/settings-edit.php:298
+#: ../settings/settings-edit.php:324
 msgid "Unsubscribe link"
 msgstr "Opzeg link"
 
-#: ../settings/settings-edit.php:299
+#: ../settings/settings-edit.php:325
 msgid "Unsubscribe link. You no need to change this value."
 msgstr "Opzeg link. U moet de waarde wijzigen"
 
-#: ../settings/settings-edit.php:305
+#: ../settings/settings-edit.php:331
 msgid "Unsubscribe text in mail"
 msgstr "Opzeg tekst in de mail"
 
-#: ../settings/settings-edit.php:306
+#: ../settings/settings-edit.php:332
 msgid ""
 "Enter the text for unsubscribe link. This text is to add unsubscribe link "
 "with newsletter."
@@ -704,43 +704,59 @@ msgstr ""
 "Geef de opzeg tekst in. Deze tekst wordt met de opzeg link aan de "
 "nieuwsbrief toegevoegd."
 
-#: ../settings/settings-edit.php:312
+#: ../settings/settings-edit.php:338
 msgid "Text to display after email unsubscribed"
 msgstr "Te tonen tekst nadat de opzeg link is gebruikt"
 
-#: ../settings/settings-edit.php:313
+#: ../settings/settings-edit.php:339
 msgid ""
 "This text will display once user clicked unsubscribed link from our "
 "newsletter."
 msgstr ""
 "Deze tekst wordt getoond nadat de gebruiker op de opzeg link heeft geklikt."
 
-#: ../settings/settings-edit.php:320
+#: ../settings/settings-edit.php:346
 msgid "Message 1"
 msgstr "Bericht 1"
 
-#: ../settings/settings-edit.php:321
+#: ../settings/settings-edit.php:347
 msgid "Default message to display if any issue on confirmation link."
 msgstr ""
 "Default bericht te tonen indien een probleem met de bevestigingslink bestaat."
 
-#: ../settings/settings-edit.php:327
+#: ../settings/settings-edit.php:353
 msgid "Message 2"
 msgstr "Bericht 2"
 
-#: ../settings/settings-edit.php:328
+#: ../settings/settings-edit.php:354
 msgid "Default message to display if any issue on unsubscribe link."
 msgstr ""
 "Default bericht te tonen indien een probleem met de opzeg link bestaat."
 
-#: ../settings/settings-edit.php:339
+#: ../settings/settings-edit.php:361
+msgid "Sent report subject"
+msgstr ""
+
+#: ../settings/settings-edit.php:362
+msgid "Mail subject for sent mail report."
+msgstr ""
+
+#: ../settings/settings-edit.php:368
+msgid "Sent report content"
+msgstr ""
+
+#: ../settings/settings-edit.php:369
+msgid "Mail content for sent mail report."
+msgstr ""
+
+#: ../settings/settings-edit.php:380
 msgid "Save Settings"
 msgstr "Instellingen opslaan"
 
 #: ../subscribers/view-subscriber-add.php:27
 #: ../subscribers/view-subscriber-add.php:106
-#: ../subscribers/view-subscriber-edit.php:42
-#: ../subscribers/view-subscriber-edit.php:88
+#: ../subscribers/view-subscriber-edit.php:44
+#: ../subscribers/view-subscriber-edit.php:90
 msgid "Please enter subscriber email address."
 msgstr "Geef aub de naam van de abonnee in."
 
@@ -765,22 +781,22 @@ msgid "Add email"
 msgstr "Voeg e-mail toe"
 
 #: ../subscribers/view-subscriber-add.php:100
-#: ../subscribers/view-subscriber-edit.php:82
+#: ../subscribers/view-subscriber-edit.php:84
 msgid "Enter full name"
 msgstr "Geef de volledige naam in"
 
 #: ../subscribers/view-subscriber-add.php:102
-#: ../subscribers/view-subscriber-edit.php:84
+#: ../subscribers/view-subscriber-edit.php:86
 msgid "Please enter subscriber full name."
 msgstr "Geef a.u.b. de volledige naam van de abonnee in."
 
 #: ../subscribers/view-subscriber-add.php:104
-#: ../subscribers/view-subscriber-edit.php:86
+#: ../subscribers/view-subscriber-edit.php:88
 msgid "Enter email address."
 msgstr "Geef email adres in."
 
 #: ../subscribers/view-subscriber-add.php:115
-#: ../subscribers/view-subscriber-edit.php:97
+#: ../subscribers/view-subscriber-edit.php:99
 msgid "Please select subscriber email status."
 msgstr "Selecteer a.u.b. de e-mail status van de abonnee"
 
@@ -789,21 +805,21 @@ msgid "Select (or) Create Group"
 msgstr "Selecteer (of) maak een groep"
 
 #: ../subscribers/view-subscriber-add.php:135
-#: ../subscribers/view-subscriber-edit.php:121
+#: ../subscribers/view-subscriber-edit.php:123
 msgid "Please select or create group for this subscriber."
 msgstr "Selecteer of maak a.u.b. een groep voor deze abonnee"
 
-#: ../subscribers/view-subscriber-edit.php:55
+#: ../subscribers/view-subscriber-edit.php:57
 msgid "Email was successfully updated."
 msgstr "E-mail is succesvol ge-update."
 
-#: ../subscribers/view-subscriber-edit.php:80
+#: ../subscribers/view-subscriber-edit.php:82
 msgid "Edit email"
 msgstr "Bewerk e-mail"
 
-#: ../subscribers/view-subscriber-edit.php:99
-#: ../subscribers/view-subscriber-show.php:231
-#: ../subscribers/view-subscriber-show.php:244
+#: ../subscribers/view-subscriber-edit.php:101
+#: ../subscribers/view-subscriber-show.php:256
+#: ../subscribers/view-subscriber-show.php:269
 msgid "Group"
 msgstr "Groep"
 
@@ -813,8 +829,8 @@ msgstr "Exporteer e-mail adres in csv formaat"
 
 #: ../subscribers/view-subscriber-export.php:30
 #: ../subscribers/view-subscriber-export.php:39
-#: ../subscribers/view-subscriber-show.php:227
-#: ../subscribers/view-subscriber-show.php:240
+#: ../subscribers/view-subscriber-show.php:252
+#: ../subscribers/view-subscriber-show.php:265
 msgid "Sno"
 msgstr "Sno"
 
@@ -851,8 +867,8 @@ msgid "Add Email"
 msgstr "Voeg e-mail toe"
 
 #: ../subscribers/view-subscriber-export.php:73
-#: ../subscribers/view-subscriber-show.php:216
-#: ../subscribers/view-subscriber-show.php:336
+#: ../subscribers/view-subscriber-show.php:241
+#: ../subscribers/view-subscriber-show.php:385
 msgid "Import Email"
 msgstr "Importeer e-mail"
 
@@ -892,72 +908,92 @@ msgstr ""
 msgid "Upload CSV"
 msgstr "Upload CSV"
 
-#: ../subscribers/view-subscriber-show.php:48
-#: ../subscribers/view-subscriber-show.php:101
+#: ../subscribers/view-subscriber-show.php:52
+#: ../subscribers/view-subscriber-show.php:105
 msgid ""
 "To send confirmation mail, Please change the Opt-in option to Double Opt In."
 msgstr ""
 "Wijzig a.u.b. de Opt-In optie naar Double Opt-In om de bevestigingsmail te "
 "versturen."
 
-#: ../subscribers/view-subscriber-show.php:57
+#: ../subscribers/view-subscriber-show.php:61
 msgid "Confirmation email resent successfully."
 msgstr "De bevestigings e-mail is succesvol verzonden."
 
-#: ../subscribers/view-subscriber-show.php:86
-#: ../subscribers/view-subscriber-show.php:132
-#: ../subscribers/view-subscriber-show.php:177
+#: ../subscribers/view-subscriber-show.php:90
+#: ../subscribers/view-subscriber-show.php:136
+#: ../subscribers/view-subscriber-show.php:181
 msgid "Oops, No record was selected."
 msgstr "Oei, geen gegevens geselecteerd."
 
-#: ../subscribers/view-subscriber-show.php:126
+#: ../subscribers/view-subscriber-show.php:130
 msgid "Confirmation email(s) resent successfully."
 msgstr "Bevestigings a-mail(s) succesvol opnieuw verzonden."
 
-#: ../subscribers/view-subscriber-show.php:162
+#: ../subscribers/view-subscriber-show.php:166
 msgid "Selected subscribers group was successfully updated."
 msgstr "Geselecteerde abonnee groep succesvol geupdate."
 
-#: ../subscribers/view-subscriber-show.php:168
+#: ../subscribers/view-subscriber-show.php:172
 msgid "Oops, New group name was not selected."
 msgstr "Oei, nieuwe groepsnaam is niet geselecteerd."
 
-#: ../subscribers/view-subscriber-show.php:195
+#: ../subscribers/view-subscriber-show.php:207
 msgid "View subscriber"
 msgstr "Bekijk abonnee"
 
-#: ../subscribers/view-subscriber-show.php:217
-#: ../subscribers/view-subscriber-show.php:337
+#: ../subscribers/view-subscriber-show.php:242
+#: ../subscribers/view-subscriber-show.php:386
 msgid "Export Email (CSV)"
 msgstr "Export Email (CSV)"
 
-#: ../subscribers/view-subscriber-show.php:228
-#: ../subscribers/view-subscriber-show.php:241
+#: ../subscribers/view-subscriber-show.php:253
+#: ../subscribers/view-subscriber-show.php:266
 msgid "Email address"
 msgstr "Email adres"
 
-#: ../subscribers/view-subscriber-show.php:281
-#: ../subscribers/view-subscriber-show.php:314
+#: ../subscribers/view-subscriber-show.php:313
+#: ../subscribers/view-subscriber-show.php:348
 msgid "Resend Confirmation"
 msgstr "Bevestiging opnieuw verzenden"
 
-#: ../subscribers/view-subscriber-show.php:297
+#: ../subscribers/view-subscriber-show.php:329
 msgid ""
 "No records available. Please use the above alphabet search button to search."
 msgstr "Geen data beschikibaar. Gebruik aub de alfabetische zoekknoppen."
 
-#: ../subscribers/view-subscriber-show.php:312
+#: ../subscribers/view-subscriber-show.php:346
 msgid "Bulk Actions"
 msgstr "Bulk actie"
 
-#: ../subscribers/view-subscriber-show.php:315
+#: ../subscribers/view-subscriber-show.php:349
 msgid "Update Subscribers Group"
 msgstr "Update abonnee groep"
 
-#: ../subscribers/view-subscriber-show.php:318
+#: ../subscribers/view-subscriber-show.php:352
 msgid "Select Group"
 msgstr "Selecteer groep"
 
-#: ../subscribers/view-subscriber-show.php:332
+#: ../subscribers/view-subscriber-show.php:366
 msgid "Apply"
 msgstr "Toepassen"
+
+#: ../subscribers/view-subscriber-show.php:368
+msgid "View all status"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:369
+msgid "Confirmed"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:370
+msgid "Unconfirmed"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:371
+msgid "Unsubscribed"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:372
+msgid "Single Opt In"
+msgstr ""

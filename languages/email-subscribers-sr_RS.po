@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Email subscribers\n"
-"POT-Creation-Date: 2014-08-07 21:43+0800\n"
-"PO-Revision-Date: 2014-08-14 10:31+0100\n"
-"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"POT-Creation-Date: 2014-08-23 09:52+0800\n"
+"PO-Revision-Date: 2014-08-23 09:52+0800\n"
+"Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../classes/es-loadwidget.php:28 ../classes/es-register.php:143
-#: ../subscribers/view-subscriber-show.php:229
-#: ../subscribers/view-subscriber-show.php:242
+#: ../subscribers/view-subscriber-show.php:254
+#: ../subscribers/view-subscriber-show.php:267
 msgid "Name"
 msgstr "Ime"
 
@@ -57,7 +57,7 @@ msgid "Send Email"
 msgstr "Pošalji email"
 
 #: ../classes/es-register.php:85 ../classes/es-register.php:86
-#: ../settings/settings-edit.php:164
+#: ../settings/settings-edit.php:190
 msgid "Settings"
 msgstr "Postavke"
 
@@ -100,9 +100,9 @@ msgstr "Obrazac je uspešno kreiran"
 
 #: ../compose/compose-add.php:60 ../compose/compose-edit.php:70
 #: ../notification/notification-add.php:91
-#: ../notification/notification-edit.php:99 ../settings/settings-edit.php:147
+#: ../notification/notification-edit.php:99 ../settings/settings-edit.php:173
 #: ../subscribers/view-subscriber-add.php:87
-#: ../subscribers/view-subscriber-edit.php:70
+#: ../subscribers/view-subscriber-edit.php:72
 #: ../subscribers/view-subscriber-import.php:70
 #: ../subscribers/view-subscriber-import.php:100
 msgid "Click here"
@@ -110,9 +110,9 @@ msgstr "Kliknite ovde"
 
 #: ../compose/compose-add.php:61 ../compose/compose-edit.php:71
 #: ../notification/notification-add.php:92
-#: ../notification/notification-edit.php:100 ../settings/settings-edit.php:148
+#: ../notification/notification-edit.php:100 ../settings/settings-edit.php:174
 #: ../subscribers/view-subscriber-add.php:87
-#: ../subscribers/view-subscriber-edit.php:70
+#: ../subscribers/view-subscriber-edit.php:72
 #: ../subscribers/view-subscriber-import.php:70
 #: ../subscribers/view-subscriber-import.php:100
 msgid " to view the details"
@@ -124,7 +124,7 @@ msgid "Compose Mail"
 msgstr "Sastavi email"
 
 #: ../compose/compose-add.php:73 ../compose/compose-edit.php:85
-#: ../settings/settings-edit.php:180
+#: ../settings/settings-edit.php:206
 msgid "Mail type"
 msgstr "Vrsta email-a"
 
@@ -151,9 +151,9 @@ msgstr "Molimo vas da unesete sadržaj email-a"
 #: ../compose/compose-add.php:91 ../compose/compose-edit.php:102
 #: ../compose/compose-show.php:57 ../compose/compose-show.php:66
 #: ../subscribers/view-subscriber-add.php:108
-#: ../subscribers/view-subscriber-edit.php:90
-#: ../subscribers/view-subscriber-show.php:230
-#: ../subscribers/view-subscriber-show.php:243
+#: ../subscribers/view-subscriber-edit.php:92
+#: ../subscribers/view-subscriber-show.php:255
+#: ../subscribers/view-subscriber-show.php:268
 msgid "Status"
 msgstr "Status"
 
@@ -165,16 +165,16 @@ msgstr "Odaberite status email-a"
 #: ../notification/notification-add.php:181
 #: ../notification/notification-edit.php:194
 #: ../subscribers/view-subscriber-add.php:140
-#: ../subscribers/view-subscriber-edit.php:127
+#: ../subscribers/view-subscriber-edit.php:129
 msgid "Submit"
 msgstr "Podnesi"
 
 #: ../compose/compose-add.php:100 ../compose/compose-edit.php:112
 #: ../notification/notification-add.php:182
 #: ../notification/notification-edit.php:195 ../sendmail/sendmail.php:218
-#: ../settings/settings-edit.php:340
+#: ../settings/settings-edit.php:381
 #: ../subscribers/view-subscriber-add.php:141
-#: ../subscribers/view-subscriber-edit.php:128
+#: ../subscribers/view-subscriber-edit.php:130
 msgid "Cancel"
 msgstr "Otkaži"
 
@@ -184,13 +184,13 @@ msgstr "Otkaži"
 #: ../notification/notification-edit.php:196
 #: ../notification/notification-show.php:150 ../sendmail/sendmail.php:219
 #: ../sentmail/deliverreport-show.php:111 ../sentmail/sentmail-preview.php:31
-#: ../settings/settings-edit.php:341
+#: ../settings/settings-edit.php:382
 #: ../subscribers/view-subscriber-add.php:142
-#: ../subscribers/view-subscriber-edit.php:129
+#: ../subscribers/view-subscriber-edit.php:131
 #: ../subscribers/view-subscriber-export.php:75
 #: ../subscribers/view-subscriber-import.php:122
-#: ../subscribers/view-subscriber-show.php:218
-#: ../subscribers/view-subscriber-show.php:338
+#: ../subscribers/view-subscriber-show.php:243
+#: ../subscribers/view-subscriber-show.php:387
 msgid "Help"
 msgstr "Pomoć"
 
@@ -198,8 +198,8 @@ msgstr "Pomoć"
 #: ../compose/compose-show.php:15 ../notification/notification-edit.php:10
 #: ../notification/notification-show.php:15
 #: ../sentmail/sentmail-preview.php:10 ../sentmail/sentmail-show.php:17
-#: ../settings/settings-edit.php:11 ../subscribers/view-subscriber-edit.php:11
-#: ../subscribers/view-subscriber-show.php:19
+#: ../settings/settings-edit.php:11 ../subscribers/view-subscriber-edit.php:13
+#: ../subscribers/view-subscriber-show.php:23
 msgid "Oops, selected details doesnt exist."
 msgstr "Ups, odabrani detalji ne postoje"
 
@@ -220,22 +220,22 @@ msgstr "Nazad"
 
 #: ../compose/compose-preview.php:29 ../compose/compose-show.php:87
 #: ../notification/notification-show.php:93
-#: ../subscribers/view-subscriber-show.php:270
+#: ../subscribers/view-subscriber-show.php:302
 msgid "Edit"
 msgstr "Uredi"
 
 #: ../compose/compose-show.php:30 ../notification/notification-show.php:30
-#: ../sentmail/sentmail-show.php:32 ../subscribers/view-subscriber-show.php:36
-#: ../subscribers/view-subscriber-show.php:80
+#: ../sentmail/sentmail-show.php:32 ../subscribers/view-subscriber-show.php:40
+#: ../subscribers/view-subscriber-show.php:84
 msgid "Selected record was successfully deleted."
 msgstr "Odabrani zapis uspešno je obrisan."
 
 #: ../compose/compose-show.php:45 ../compose/compose-show.php:108
 #: ../notification/notification-show.php:45
 #: ../notification/notification-show.php:149
-#: ../subscribers/view-subscriber-show.php:196
-#: ../subscribers/view-subscriber-show.php:215
-#: ../subscribers/view-subscriber-show.php:335
+#: ../subscribers/view-subscriber-show.php:208
+#: ../subscribers/view-subscriber-show.php:240
+#: ../subscribers/view-subscriber-show.php:384
 msgid "Add New"
 msgstr "Dodaj novi"
 
@@ -251,14 +251,14 @@ msgstr "Vrsta"
 #: ../sentmail/sentmail-show.php:77 ../sentmail/sentmail-show.php:89
 #: ../subscribers/view-subscriber-export.php:33
 #: ../subscribers/view-subscriber-export.php:42
-#: ../subscribers/view-subscriber-show.php:233
-#: ../subscribers/view-subscriber-show.php:246
+#: ../subscribers/view-subscriber-show.php:258
+#: ../subscribers/view-subscriber-show.php:271
 msgid "Action"
 msgstr "Aktivnost"
 
 #: ../compose/compose-show.php:88 ../notification/notification-show.php:96
-#: ../subscribers/view-subscriber-show.php:273
-#: ../subscribers/view-subscriber-show.php:313
+#: ../subscribers/view-subscriber-show.php:305
+#: ../subscribers/view-subscriber-show.php:347
 msgid "Delete"
 msgstr "Obriši"
 
@@ -276,7 +276,7 @@ msgstr "Nema raspoloživih zapisa"
 msgid "Unexpected url submit has been detected"
 msgstr "Otkriveno je neočekivano podnošenje url-a  "
 
-#: ../job/es-optin.php:67 ../job/es-optin.php:82 ../job/es-unsubscribe.php:60
+#: ../job/es-optin.php:64 ../job/es-optin.php:79 ../job/es-unsubscribe.php:60
 #: ../job/es-unsubscribe.php:70
 msgid ""
 "Oops.. We are getting some technical error. Please try again or contact "
@@ -285,7 +285,7 @@ msgstr ""
 "Ups, imamo tehničkih poteškoća. Molimo vas da pokušate ponovo ili da se "
 "obratite administratoru."
 
-#: ../job/es-optin.php:72
+#: ../job/es-optin.php:69
 msgid "This email address has already been confirmed."
 msgstr "Ova email adresa je već potvrđena."
 
@@ -338,7 +338,7 @@ msgstr "Grupe pretplatnika"
 #: ../notification/notification-add.php:124
 #: ../notification/notification-edit.php:122 ../sendmail/sendmail.php:84
 #: ../sendmail/sendmail.php:115 ../subscribers/view-subscriber-add.php:119
-#: ../subscribers/view-subscriber-edit.php:101
+#: ../subscribers/view-subscriber-edit.php:103
 msgid "Select"
 msgstr "Odaberi"
 
@@ -456,8 +456,8 @@ msgid "Viewed Date"
 msgstr "Datum pregleda"
 
 #: ../sentmail/deliverreport-show.php:39 ../sentmail/deliverreport-show.php:49
-#: ../subscribers/view-subscriber-show.php:232
-#: ../subscribers/view-subscriber-show.php:245
+#: ../subscribers/view-subscriber-show.php:257
+#: ../subscribers/view-subscriber-show.php:270
 msgid "Database ID"
 msgstr "ID baze podataka"
 
@@ -509,34 +509,34 @@ msgstr ""
 "Napomena: Kliknite na taster <strong>Poboljšaj tabelu</strong> da biste "
 "izbrisali sve izveštaje, osim poslednjih 10. "
 
-#: ../settings/settings-edit.php:81
+#: ../settings/settings-edit.php:102
 msgid "Please enter sender of notifications from name."
 msgstr "Unesite ime pošiljaoca obaveštenja."
 
-#: ../settings/settings-edit.php:87
+#: ../settings/settings-edit.php:108
 msgid "Please enter sender of notifications from email."
 msgstr "Unesite email pošiljaoca obaveštenja."
 
-#: ../settings/settings-edit.php:122
+#: ../settings/settings-edit.php:143
 msgid "Details was successfully updated."
 msgstr "Detalji su uspešno ažurirani."
 
-#: ../settings/settings-edit.php:127
+#: ../settings/settings-edit.php:148
 msgid "Oops, details not update."
 msgstr "Ups, detalji nisu ažurirani."
 
-#: ../settings/settings-edit.php:170
+#: ../settings/settings-edit.php:196
 msgid "Sender of notifications"
 msgstr "Pošiljalac obaveštenja."
 
-#: ../settings/settings-edit.php:171
+#: ../settings/settings-edit.php:197
 msgid ""
 "Choose a FROM name and FROM email address for all notifications emails from "
 "this plugin."
 msgstr ""
 "Izaberite FROM ime i FROM email adresu za sva obaveštenja za ovaj plugin."
 
-#: ../settings/settings-edit.php:181
+#: ../settings/settings-edit.php:207
 msgid ""
 "Option 1 & 2 is to send mails with default Wordpress method wp_mail(). "
 "Option 3 & 4 is to send mails with PHP method mail()"
@@ -544,11 +544,11 @@ msgstr ""
 "Opcije 1 i 2 omogućavaju vam da šaljete email-ove podrazumevanom Wordpress "
 "metodom wp_mail(). Opcije 3 i 4 su za slanje PHP mail() metodom. "
 
-#: ../settings/settings-edit.php:195
+#: ../settings/settings-edit.php:221
 msgid "Opt-in option"
 msgstr "Opt-in opcija"
 
-#: ../settings/settings-edit.php:196
+#: ../settings/settings-edit.php:222
 msgid ""
 "Double Opt In, means subscribers need to confirm their email address by an "
 "activation link sent them on a activation email message. Single Opt In, "
@@ -559,11 +559,11 @@ msgstr ""
 "aktivacionom email-u. Single Opt In opcija znači da pretplatnici ne moraju "
 "da potvrđuju svoje email adrese. "
 
-#: ../settings/settings-edit.php:207
+#: ../settings/settings-edit.php:233
 msgid "Opt-in mail subject (Confirmation mail)"
 msgstr "Naslov Opt-in mail-a (Email za potvrdu)"
 
-#: ../settings/settings-edit.php:208
+#: ../settings/settings-edit.php:234
 msgid ""
 "Enter the subject for Double Opt In mail. This will send whenever subscriber "
 "added email into our database."
@@ -571,11 +571,11 @@ msgstr ""
 "Unesite naslov za Double Opt In email. Biće poslat kad god pretplatnik unese "
 "email u našu bazu podataka."
 
-#: ../settings/settings-edit.php:214
+#: ../settings/settings-edit.php:240
 msgid "Opt-in mail content (Confirmation mail)"
 msgstr "Sadržaj Opt-in email-a (Email za potvrdu)"
 
-#: ../settings/settings-edit.php:215
+#: ../settings/settings-edit.php:241
 msgid ""
 "Enter the content for Double Opt In mail. This will send whenever subscriber "
 "added email into our database."
@@ -583,19 +583,19 @@ msgstr ""
 "Unesite sadržaj za Double Opt In email. Biće poslat kad god pretplatnik "
 "unese amail u našu bazu podataka."
 
-#: ../settings/settings-edit.php:221
+#: ../settings/settings-edit.php:247
 msgid "Opt-in link (Confirmation link)"
 msgstr "Opt-in link (Link za potvrdu)"
 
-#: ../settings/settings-edit.php:222
+#: ../settings/settings-edit.php:248
 msgid "Double Opt In confirmation link. You no need to change this value."
 msgstr "Double Opt In link za potvrdu. Nema potrebe da menjate ovu vrednost."
 
-#: ../settings/settings-edit.php:228
+#: ../settings/settings-edit.php:254
 msgid "Text to display after email subscribed successfully"
 msgstr "Tekst koji će se prikazivati nakon uspešne pretplate na email."
 
-#: ../settings/settings-edit.php:229
+#: ../settings/settings-edit.php:255
 msgid ""
 "This text will display once user clicked email confirmation link from opt-in "
 "(confirmation) email content."
@@ -603,21 +603,21 @@ msgstr ""
 "Ovaj tekst će se prikazivati kad korisnik klikne na link za potvrdu iz "
 "sadržaja opt-in email-a za potvrdu. "
 
-#: ../settings/settings-edit.php:236
+#: ../settings/settings-edit.php:262
 msgid "Subscriber welcome email"
 msgstr "Email dobrodošlice pretplatniku."
 
-#: ../settings/settings-edit.php:237
+#: ../settings/settings-edit.php:263
 msgid "To send welcome mail to subscriber, This option must be set to YES."
 msgstr ""
 "Da biste pretplatniku poslali email dobrodošlice, ova opcija mora biti "
 "podešena na DA."
 
-#: ../settings/settings-edit.php:248
+#: ../settings/settings-edit.php:274
 msgid "Welcome mail subject"
 msgstr "Naslov email-a dobrodošlice"
 
-#: ../settings/settings-edit.php:249
+#: ../settings/settings-edit.php:275
 msgid ""
 "Enter the subject for subscriber welcome mail. This will send whenever email "
 "subscribed (confirmed) successfully."
@@ -625,11 +625,11 @@ msgstr ""
 "Unesite naslov za email dobrodošlice pretplatniku. Biće poslat kad god se "
 "neko uspešno pretplati (i kad potvrdi pretplatu) na email."
 
-#: ../settings/settings-edit.php:255
+#: ../settings/settings-edit.php:281
 msgid "Subscriber welcome mail content"
 msgstr "Sadržaj email-a dobrodošlice za pretplatnika"
 
-#: ../settings/settings-edit.php:256
+#: ../settings/settings-edit.php:282
 msgid ""
 "Enter the content for subscriber welcome mail. This will send whenever email "
 "subscribed (confirmed) successfully."
@@ -637,11 +637,11 @@ msgstr ""
 "Unesite sadržaj email-a dobrodošlice za pretplatnika. Biće poslat kad god se "
 "neko uspešno pretplati (potvrdi pretplatu)."
 
-#: ../settings/settings-edit.php:264
+#: ../settings/settings-edit.php:290
 msgid "Mail to admin"
 msgstr "Email za administratora"
 
-#: ../settings/settings-edit.php:265
+#: ../settings/settings-edit.php:291
 msgid ""
 "To send admin notifications for new subscriber, This option must be set to "
 "YES."
@@ -649,11 +649,11 @@ msgstr ""
 "Da biste administratoru poslali obaveštenja o novom pretplatniku, podesite "
 "ovu opciju na DA."
 
-#: ../settings/settings-edit.php:276
+#: ../settings/settings-edit.php:302
 msgid "Admin email addresses"
 msgstr "Email adrese administratora"
 
-#: ../settings/settings-edit.php:277
+#: ../settings/settings-edit.php:303
 msgid ""
 "Enter the admin email addresses that should receive notifications (separate "
 "by comma)."
@@ -661,11 +661,11 @@ msgstr ""
 "Unesite email adrese administratora (odvojene zarezima) koji treba da dobiju "
 "obaveštenja. "
 
-#: ../settings/settings-edit.php:283
+#: ../settings/settings-edit.php:309
 msgid "Admin mail subject"
 msgstr "Naslov email-a administratora."
 
-#: ../settings/settings-edit.php:284
+#: ../settings/settings-edit.php:310
 msgid ""
 "Enter the subject for admin mail. This will send whenever new email added "
 "and confirmed into our database."
@@ -673,11 +673,11 @@ msgstr ""
 "Unesite naslov za email administratora. Biće poslat kad god novi email bude "
 "dodat i potvrđen u našoj bazi podataka."
 
-#: ../settings/settings-edit.php:290
+#: ../settings/settings-edit.php:316
 msgid "Admin mail content"
 msgstr "Sadržaj email-a administratora."
 
-#: ../settings/settings-edit.php:291
+#: ../settings/settings-edit.php:317
 msgid ""
 "Enter the mail content for admin. This will send whenever new email added "
 "and confirmed into our database."
@@ -685,19 +685,19 @@ msgstr ""
 "Unesite sadržaj email-a administratora. Biće poslat kad god novi email bude "
 "dodat i potvrđen u našoj bazi podataka."
 
-#: ../settings/settings-edit.php:298
+#: ../settings/settings-edit.php:324
 msgid "Unsubscribe link"
 msgstr "Link za otkazivanje pretplate"
 
-#: ../settings/settings-edit.php:299
+#: ../settings/settings-edit.php:325
 msgid "Unsubscribe link. You no need to change this value."
 msgstr "Link za otkazivanje pretplate. Nema potrebe da menjate ovu vrednost."
 
-#: ../settings/settings-edit.php:305
+#: ../settings/settings-edit.php:331
 msgid "Unsubscribe text in mail"
 msgstr "Tekst za otkazivanje pretplate u email-u."
 
-#: ../settings/settings-edit.php:306
+#: ../settings/settings-edit.php:332
 msgid ""
 "Enter the text for unsubscribe link. This text is to add unsubscribe link "
 "with newsletter."
@@ -705,11 +705,11 @@ msgstr ""
 "Unesite tekst linka za otkazivanje pretplate. Ovaj tekst je za dodavanje "
 "linka za otkazivanje pretplate na novosti."
 
-#: ../settings/settings-edit.php:312
+#: ../settings/settings-edit.php:338
 msgid "Text to display after email unsubscribed"
 msgstr "Tekst koji će se prikazivati nakon otkazivanja email pretplate."
 
-#: ../settings/settings-edit.php:313
+#: ../settings/settings-edit.php:339
 msgid ""
 "This text will display once user clicked unsubscribed link from our "
 "newsletter."
@@ -717,34 +717,50 @@ msgstr ""
 "Ovaj tekst biće prikazan kad korisnik klikne na link za otkazivanje "
 "pretplate na naše novosti. "
 
-#: ../settings/settings-edit.php:320
+#: ../settings/settings-edit.php:346
 msgid "Message 1"
 msgstr "Poruka 1"
 
-#: ../settings/settings-edit.php:321
+#: ../settings/settings-edit.php:347
 msgid "Default message to display if any issue on confirmation link."
 msgstr ""
 "Podrazumevana poruka za prikazivanje u slučaju da dođe do problema sa linkom "
 "za potvrdu."
 
-#: ../settings/settings-edit.php:327
+#: ../settings/settings-edit.php:353
 msgid "Message 2"
 msgstr "Poruka 2"
 
-#: ../settings/settings-edit.php:328
+#: ../settings/settings-edit.php:354
 msgid "Default message to display if any issue on unsubscribe link."
 msgstr ""
 "Podrazumevana poruka koja će biti prikazana ako se pojavi problem sa linkom "
 "za otkazivanje pretplate."
 
-#: ../settings/settings-edit.php:339
+#: ../settings/settings-edit.php:361
+msgid "Sent report subject"
+msgstr ""
+
+#: ../settings/settings-edit.php:362
+msgid "Mail subject for sent mail report."
+msgstr ""
+
+#: ../settings/settings-edit.php:368
+msgid "Sent report content"
+msgstr ""
+
+#: ../settings/settings-edit.php:369
+msgid "Mail content for sent mail report."
+msgstr ""
+
+#: ../settings/settings-edit.php:380
 msgid "Save Settings"
 msgstr "Sačuvaj izmene."
 
 #: ../subscribers/view-subscriber-add.php:27
 #: ../subscribers/view-subscriber-add.php:106
-#: ../subscribers/view-subscriber-edit.php:42
-#: ../subscribers/view-subscriber-edit.php:88
+#: ../subscribers/view-subscriber-edit.php:44
+#: ../subscribers/view-subscriber-edit.php:90
 msgid "Please enter subscriber email address."
 msgstr "Unesite email adresu pretplatnika."
 
@@ -769,22 +785,22 @@ msgid "Add email"
 msgstr "Dodaj email."
 
 #: ../subscribers/view-subscriber-add.php:100
-#: ../subscribers/view-subscriber-edit.php:82
+#: ../subscribers/view-subscriber-edit.php:84
 msgid "Enter full name"
 msgstr "Unesi puno ime"
 
 #: ../subscribers/view-subscriber-add.php:102
-#: ../subscribers/view-subscriber-edit.php:84
+#: ../subscribers/view-subscriber-edit.php:86
 msgid "Please enter subscriber full name."
 msgstr "Unesite puno ime pretplatnika"
 
 #: ../subscribers/view-subscriber-add.php:104
-#: ../subscribers/view-subscriber-edit.php:86
+#: ../subscribers/view-subscriber-edit.php:88
 msgid "Enter email address."
 msgstr "Unesite mail adresu."
 
 #: ../subscribers/view-subscriber-add.php:115
-#: ../subscribers/view-subscriber-edit.php:97
+#: ../subscribers/view-subscriber-edit.php:99
 msgid "Please select subscriber email status."
 msgstr "Odaberite email status pretplatnika"
 
@@ -793,21 +809,21 @@ msgid "Select (or) Create Group"
 msgstr "Odaberi (ili) kreiraj grupu"
 
 #: ../subscribers/view-subscriber-add.php:135
-#: ../subscribers/view-subscriber-edit.php:121
+#: ../subscribers/view-subscriber-edit.php:123
 msgid "Please select or create group for this subscriber."
 msgstr "Odaberite ili kreirajte grupu za datog pretplatnika."
 
-#: ../subscribers/view-subscriber-edit.php:55
+#: ../subscribers/view-subscriber-edit.php:57
 msgid "Email was successfully updated."
 msgstr "Email je uspešno ažuriran."
 
-#: ../subscribers/view-subscriber-edit.php:80
+#: ../subscribers/view-subscriber-edit.php:82
 msgid "Edit email"
 msgstr "Uredi email."
 
-#: ../subscribers/view-subscriber-edit.php:99
-#: ../subscribers/view-subscriber-show.php:231
-#: ../subscribers/view-subscriber-show.php:244
+#: ../subscribers/view-subscriber-edit.php:101
+#: ../subscribers/view-subscriber-show.php:256
+#: ../subscribers/view-subscriber-show.php:269
 msgid "Group"
 msgstr "Grupa"
 
@@ -817,8 +833,8 @@ msgstr "Izvezi mail adrese u csv formatu"
 
 #: ../subscribers/view-subscriber-export.php:30
 #: ../subscribers/view-subscriber-export.php:39
-#: ../subscribers/view-subscriber-show.php:227
-#: ../subscribers/view-subscriber-show.php:240
+#: ../subscribers/view-subscriber-show.php:252
+#: ../subscribers/view-subscriber-show.php:265
 msgid "Sno"
 msgstr "Sno"
 
@@ -855,8 +871,8 @@ msgid "Add Email"
 msgstr "Dodaj email"
 
 #: ../subscribers/view-subscriber-export.php:73
-#: ../subscribers/view-subscriber-show.php:216
-#: ../subscribers/view-subscriber-show.php:336
+#: ../subscribers/view-subscriber-show.php:241
+#: ../subscribers/view-subscriber-show.php:385
 msgid "Import Email"
 msgstr "Uvezi email"
 
@@ -896,73 +912,93 @@ msgstr ""
 msgid "Upload CSV"
 msgstr "Otpremi CSV"
 
-#: ../subscribers/view-subscriber-show.php:48
-#: ../subscribers/view-subscriber-show.php:101
+#: ../subscribers/view-subscriber-show.php:52
+#: ../subscribers/view-subscriber-show.php:105
 msgid ""
 "To send confirmation mail, Please change the Opt-in option to Double Opt In."
 msgstr ""
 "Da biste poslali email za potvrdu, promenite opciju Opt-in u Double Opt In."
 
-#: ../subscribers/view-subscriber-show.php:57
+#: ../subscribers/view-subscriber-show.php:61
 msgid "Confirmation email resent successfully."
 msgstr "Email za potvrdu uspešno je ponovo poslat."
 
-#: ../subscribers/view-subscriber-show.php:86
-#: ../subscribers/view-subscriber-show.php:132
-#: ../subscribers/view-subscriber-show.php:177
+#: ../subscribers/view-subscriber-show.php:90
+#: ../subscribers/view-subscriber-show.php:136
+#: ../subscribers/view-subscriber-show.php:181
 msgid "Oops, No record was selected."
 msgstr "Ups, nije odabran nijedan zapis."
 
-#: ../subscribers/view-subscriber-show.php:126
+#: ../subscribers/view-subscriber-show.php:130
 msgid "Confirmation email(s) resent successfully."
 msgstr "Email-ovi za potvrdu uspešno su ponovo poslati."
 
-#: ../subscribers/view-subscriber-show.php:162
+#: ../subscribers/view-subscriber-show.php:166
 msgid "Selected subscribers group was successfully updated."
 msgstr "Odabrana grupa pretplatnika uspešno je ažurirana."
 
-#: ../subscribers/view-subscriber-show.php:168
+#: ../subscribers/view-subscriber-show.php:172
 msgid "Oops, New group name was not selected."
 msgstr "Ups, nije odabran naziv grupe."
 
-#: ../subscribers/view-subscriber-show.php:195
+#: ../subscribers/view-subscriber-show.php:207
 msgid "View subscriber"
 msgstr "Pogledaj pretplatnika."
 
-#: ../subscribers/view-subscriber-show.php:217
-#: ../subscribers/view-subscriber-show.php:337
+#: ../subscribers/view-subscriber-show.php:242
+#: ../subscribers/view-subscriber-show.php:386
 msgid "Export Email (CSV)"
 msgstr "Izvezi email (CSV)"
 
-#: ../subscribers/view-subscriber-show.php:228
-#: ../subscribers/view-subscriber-show.php:241
+#: ../subscribers/view-subscriber-show.php:253
+#: ../subscribers/view-subscriber-show.php:266
 msgid "Email address"
 msgstr "Email adresa"
 
-#: ../subscribers/view-subscriber-show.php:281
-#: ../subscribers/view-subscriber-show.php:314
+#: ../subscribers/view-subscriber-show.php:313
+#: ../subscribers/view-subscriber-show.php:348
 msgid "Resend Confirmation"
 msgstr "Ponovo pošalji potvrdu"
 
-#: ../subscribers/view-subscriber-show.php:297
+#: ../subscribers/view-subscriber-show.php:329
 msgid ""
 "No records available. Please use the above alphabet search button to search."
 msgstr ""
 "Nema raspoloživih zapisa. Potražite ih uz pomoć tastera za pretragu po "
 "abecednom redu."
 
-#: ../subscribers/view-subscriber-show.php:312
+#: ../subscribers/view-subscriber-show.php:346
 msgid "Bulk Actions"
 msgstr "Grupne akcije"
 
-#: ../subscribers/view-subscriber-show.php:315
+#: ../subscribers/view-subscriber-show.php:349
 msgid "Update Subscribers Group"
 msgstr "Ažuriraj grupu pretplatnika"
 
-#: ../subscribers/view-subscriber-show.php:318
+#: ../subscribers/view-subscriber-show.php:352
 msgid "Select Group"
 msgstr "Odaberi grupu"
 
-#: ../subscribers/view-subscriber-show.php:332
+#: ../subscribers/view-subscriber-show.php:366
 msgid "Apply"
 msgstr "Primeni"
+
+#: ../subscribers/view-subscriber-show.php:368
+msgid "View all status"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:369
+msgid "Confirmed"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:370
+msgid "Unconfirmed"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:371
+msgid "Unsubscribed"
+msgstr ""
+
+#: ../subscribers/view-subscriber-show.php:372
+msgid "Single Opt In"
+msgstr ""
