@@ -65,3 +65,9 @@ plugin will send one report mail to admin with default content. Now with this op
 * In view subscribers admin page, new option added to filter the email address based on status.
 * Paging option added on view subscribers admin page. In default it will show only first 200 emails, you have drop down box to navigate another page (i.e. 201 to 400 emails etc..).
 * Warning message fix on email address import page (i.e Strict standards: Only variables should be passed by reference)	- Fixed
+
+********************************Version 2.1************************************************************
+
+* In view subscribers admin page, Filter option and paging moved to the top right corner (Previous version it was in bottom).
+* Plugin tested for multisite installation blogs.
+http://www.gopiplus.com/work/2014/08/31/email-subscribers-wordpress-plugin-network-activation-for-multisite-installation/

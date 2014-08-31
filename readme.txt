@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 4.0
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,7 @@ Installation Instruction and Configuration [Installation Instruction and Configu
 *   Q11. How to add new subscribers group?
 *   Q12. Is plugin contain bulk update option for subscribers group?
 *   Q13. Is Mail not working on Email Subscribers wordpress plugin?
+*   Q14. How to install and activate Email Subscribers on multisite installation blogs?
 
 FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/](http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
 
@@ -161,6 +162,11 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * Paging option added on view subscribers admin page. In default it will show only first 200 emails, you have drop down box to navigate another page (i.e. 201 to 400 emails etc..).
 * Warning message fix on email address import page (i.e Strict standards: Only variables should be passed by reference)	- Fixed
 
+= 2.1 =
+
+* In view subscribers admin page, Filter option and paging moved to the top right corner (Previous version it was in bottom).
+* Plugin tested for multisite installation blogs. http://www.gopiplus.com/work/2014/08/31/email-subscribers-wordpress-plugin-network-activation-for-multisite-installation/
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -217,3 +223,8 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * In view subscribers admin page, new option added to filter the email address based on status.
 * Paging option added on view subscribers admin page. In default it will show only first 200 emails, you have drop down box to navigate another page (i.e. 201 to 400 emails etc..).
 * Warning message fix on email address import page (i.e Strict standards: Only variables should be passed by reference)	- Fixed
+
+= 2.1 =
+
+* In view subscribers admin page, Filter option and paging moved to the top right corner (Previous version it was in bottom).
+* Plugin tested for multisite installation blogs. http://www.gopiplus.com/work/2014/08/31/email-subscribers-wordpress-plugin-network-activation-for-multisite-installation/

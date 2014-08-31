@@ -1,7 +1,7 @@
 <?php if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); } ?>
 <?php
 // Form submitted, check the data
-$search = isset($_GET['search']) ? $_GET['search'] : 'A,B,C';
+$search = isset($_GET['search']) ? $_GET['search'] : 'ALL';
 $search_sts = isset($_GET['sts']) ? $_GET['sts'] : '';
 $search_count = isset($_GET['cnt']) ? $_GET['cnt'] : '1';
 if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
@@ -237,10 +237,21 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
 			<a class="button add-new-h2" href="admin.php?page=es-view-subscribers&search=ALL">ALL</a> 
 		<span>
 		<span style="float:right;">
-			<a class="button add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-view-subscribers&amp;ac=add"><?php _e('Add New', ES_TDOMAIN); ?></a> 
-			<a class="button add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-view-subscribers&amp;ac=import"><?php _e('Import Email', ES_TDOMAIN); ?></a> 
-			<a class="button add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-view-subscribers&amp;ac=export"><?php _e('Export Email (CSV)', ES_TDOMAIN); ?></a> 
-			<a class="button add-new-h2" target="_blank" href="<?php echo ES_FAV; ?>"><?php _e('Help', ES_TDOMAIN); ?></a> 
+		<select name="search_sts_action" id="search_sts_action" onchange="return _es_search_sts_action(this.value)">
+			<option value=""><?php _e('View all status', ES_TDOMAIN); ?></option>
+			<option value="Confirmed" <?php if($search_sts=='Confirmed') { echo 'selected="selected"' ; } ?>><?php _e('Confirmed', ES_TDOMAIN); ?></option>
+			<option value="Unconfirmed" <?php if($search_sts=='Unconfirmed') { echo 'selected="selected"' ; } ?>><?php _e('Unconfirmed', ES_TDOMAIN); ?></option>
+			<option value="Unsubscribed" <?php if($search_sts=='Unsubscribed') { echo 'selected="selected"' ; } ?>><?php _e('Unsubscribed', ES_TDOMAIN); ?></option>
+			<option value="Single Opt In" <?php if($search_sts=='Single Opt In') { echo 'selected="selected"' ; } ?>><?php _e('Single Opt In', ES_TDOMAIN); ?></option>
+		</select>
+		<select name="search_count_action" id="search_count_action" onchange="return _es_search_count_action(this.value)">
+			<option value="1" <?php if($search_count=='1') { echo 'selected="selected"' ; } ?>>1 to 200 emails</option>
+			<option value="201" <?php if($search_count=='201') { echo 'selected="selected"' ; } ?>>201 to 400 emails</option>
+			<option value="401" <?php if($search_count=='401') { echo 'selected="selected"' ; } ?>>401 to 600 emails</option>
+			<option value="601" <?php if($search_count=='601') { echo 'selected="selected"' ; } ?>>601 to 800 emails</option>
+			<option value="801" <?php if($search_count=='801') { echo 'selected="selected"' ; } ?>>801 to 1000 emails</option>
+			<option value="0" <?php if($search_count=='0') { echo 'selected="selected"' ; } ?>>display all</option>
+		</select>
 		</span>
     </div>
     <form name="frm_es_display" method="post" onsubmit="return _es_bulkaction()">
@@ -364,21 +375,6 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
 			?>
 		  </select>
 		  <input type="submit" value="<?php _e('Apply', ES_TDOMAIN); ?>" class="button action" id="doaction" name="doaction">
-		<select name="search_sts_action" id="search_sts_action" onchange="return _es_search_sts_action(this.value)">
-			<option value=""><?php _e('View all status', ES_TDOMAIN); ?></option>
-			<option value="Confirmed" <?php if($search_sts=='Confirmed') { echo 'selected="selected"' ; } ?>><?php _e('Confirmed', ES_TDOMAIN); ?></option>
-			<option value="Unconfirmed" <?php if($search_sts=='Unconfirmed') { echo 'selected="selected"' ; } ?>><?php _e('Unconfirmed', ES_TDOMAIN); ?></option>
-			<option value="Unsubscribed" <?php if($search_sts=='Unsubscribed') { echo 'selected="selected"' ; } ?>><?php _e('Unsubscribed', ES_TDOMAIN); ?></option>
-			<option value="Single Opt In" <?php if($search_sts=='Single Opt In') { echo 'selected="selected"' ; } ?>><?php _e('Single Opt In', ES_TDOMAIN); ?></option>
-		</select>
-		<select name="search_count_action" id="search_count_action" onchange="return _es_search_count_action(this.value)">
-			<option value="1" <?php if($search_count=='1') { echo 'selected="selected"' ; } ?>>1 to 200 emails</option>
-			<option value="201" <?php if($search_count=='201') { echo 'selected="selected"' ; } ?>>201 to 400 emails</option>
-			<option value="401" <?php if($search_count=='401') { echo 'selected="selected"' ; } ?>>401 to 600 emails</option>
-			<option value="601" <?php if($search_count=='601') { echo 'selected="selected"' ; } ?>>601 to 800 emails</option>
-			<option value="801" <?php if($search_count=='801') { echo 'selected="selected"' ; } ?>>801 to 1000 emails</option>
-			<option value="0" <?php if($search_count=='0') { echo 'selected="selected"' ; } ?>>display all</option>
-		</select>
 		</div>
 		<div class="alignright">
 			<a class="button add-new-h2" href="<?php echo ES_ADMINURL; ?>?page=es-view-subscribers&amp;ac=add"><?php _e('Add New', ES_TDOMAIN); ?></a> 
