@@ -167,6 +167,7 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * In view subscribers admin page, Filter option and paging moved to the top right corner (Previous version it was in bottom).
 * Plugin tested for multisite installation blogs. http://www.gopiplus.com/work/2014/08/31/email-subscribers-wordpress-plugin-network-activation-for-multisite-installation/
 
+
 == Upgrade Notice ==
 
 = 1.0 =
