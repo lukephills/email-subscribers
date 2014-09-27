@@ -31,6 +31,25 @@ class es_cls_sendmail
 		if( ( $post_status == 'publish' ) && ( $original_post_status != 'publish' ) ) 
 		{
 			$notification = array();
+			
+			// $post_id is Object type containing the post information 
+			// Thus we need to get post_id from $post_id object
+			if(is_numeric($post_id))
+			{
+				$post_id = $post_id;
+			}
+			else
+			{
+				if(is_object($post_id))
+				{
+					$post_id = $post_id->ID;
+				}
+				else
+				{
+					$post_id = $post_id;
+				}
+			}
+			
 			$notification = es_cls_notification::es_notification_prepare($post_id);
 			if ( count($notification) > 0 )
 			{
@@ -155,6 +174,7 @@ class es_cls_sendmail
 				$post_title = $post->post_title;
 				$subject = str_replace('###POSTTITLE###', $post_title, $subject);
 				$post_link = get_permalink($post_id);
+				$subject = str_replace('###POSTLINK###', $post_link, $subject);
 				$post_date = $post->post_modified;			
 				
 				// Get full post
@@ -182,8 +202,13 @@ class es_cls_sendmail
 					$post_thumbnail_link = "<a href='".$post_link."' target='_blank'>".$post_thumbnail."</a>";
 				}
 				
+				$content = str_replace('###POSTLINK-ONLY###', $post_link, $content);
+				
 				if($post_link <> "")
 				{
+					$post_link_with_title = "<a href='".$post_link."' target='_blank'>".$post_title."</a>";
+					$content = str_replace('###POSTLINK-WITHTITLE###', $post_link_with_title, $content);
+					
 					$post_link = "<a href='".$post_link."' target='_blank'>".$post_link."</a>";
 				}
 				

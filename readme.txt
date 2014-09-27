@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 4.0
-Stable tag: 2.1
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -167,6 +167,13 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * In view subscribers admin page, Filter option and paging moved to the top right corner (Previous version it was in bottom).
 * Plugin tested for multisite installation blogs. http://www.gopiplus.com/work/2014/08/31/email-subscribers-wordpress-plugin-network-activation-for-multisite-installation/
 
+= 2.2 =
+
+* Warning message issue has been fix on notification mails. previously $post object was submitted to notification mail method without filtering post_id.
+* Added new keywords ###POSTLINK-ONLY###, ###POSTLINK-WITHTITLE### for notification mail content.
+	###POSTLINK-ONLY### 		- Use this key word to add post link in the mail content (Post link cannot be clickable)
+	###POSTLINK-WITHTITLE### 	- Use this key word to display post link with title (Clickable post title)
+	###POSTLINK### 				- Use this key word to display clickable post link.
 
 == Upgrade Notice ==
 
@@ -229,3 +236,11 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 * In view subscribers admin page, Filter option and paging moved to the top right corner (Previous version it was in bottom).
 * Plugin tested for multisite installation blogs. http://www.gopiplus.com/work/2014/08/31/email-subscribers-wordpress-plugin-network-activation-for-multisite-installation/
+
+= 2.2 =
+
+* Warning message issue has been fix on notification mails. previously $post object was submitted to notification mail method without filtering post_id.
+* Added new keywords ###POSTLINK-ONLY###, ###POSTLINK-WITHTITLE### for notification mail content.
+	###POSTLINK-ONLY### 		- Use this key word to add post link in the mail content (Post link cannot be clickable)
+	###POSTLINK-WITHTITLE### 	- Use this key word to display post link with title (Clickable post title)
+	###POSTLINK### 				- Use this key word to display clickable post link.

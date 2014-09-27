@@ -71,6 +71,7 @@ class es_cls_notification
 		global $wpdb;
 		$prefix = $wpdb->prefix;
 		$arrNotification = array();
+		
 		if($post_id > 0)
 		{
 			$category = get_the_category( $post_id );

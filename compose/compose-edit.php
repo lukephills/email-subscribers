@@ -90,14 +90,14 @@ if ($es_error_found == FALSE && strlen($es_success) > 0)
       <p><?php _e('Please select your mail type.', ES_TDOMAIN); ?></p>
 	  
 	  <label for="tag-link"><?php _e('Enter mail subject.', ES_TDOMAIN); ?></label>
-      <input name="es_templ_heading" type="text" id="es_templ_heading" value="<?php echo stripslashes($form['es_templ_heading']); ?>" size="50" maxlength="225" />
+      <input name="es_templ_heading" type="text" id="es_templ_heading" value="<?php echo esc_html(stripslashes($form['es_templ_heading'])); ?>" size="80" maxlength="225" />
       <p><?php _e('Please enter your mail subject.', ES_TDOMAIN); ?> Keyword: ###POSTTITLE###</p>
 	  
 	  <label for="tag-link"><?php _e('Mail content', ES_TDOMAIN); ?></label>
 	  <?php $settings_body = array( 'textarea_rows' => 25 ); ?>
       <?php wp_editor(stripslashes($form['es_templ_body']), "es_templ_body", $settings_body);?>
       <p><?php _e('Please enter content for your mail.', ES_TDOMAIN); ?>
-	  Keywords: ###POSTTITLE###, ###POSTLINK###, ###POSTIMAGE###, ###POSTDESC###, ###POSTFULL###, ###DATE###</p>
+	  <br />Keywords: ###POSTTITLE###, ###POSTLINK###, ###POSTIMAGE###, ###POSTDESC###, ###POSTFULL###, ###DATE###, ###POSTLINK-ONLY###, ###POSTLINK-WITHTITLE###</p>
 	  
 	  <label for="tag-link"><?php _e('Status', ES_TDOMAIN); ?></label>
       <select name="es_templ_status" id="es_templ_status">
