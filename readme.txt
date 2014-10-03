@@ -53,6 +53,7 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 * Tamil (ta) - [Gopi Ramasamy](http://www.gopiplus.com/)
 * Dutch (nl_NL) - [John van Halderen](http://www.dorpspleinleusden.nl/)
 * Serbian (sr_RS) - [Ogi Djuraskovic](http://firstsiteguide.com/)
+* German (de_DE) - [Stefanie Drucker](#)
 
 = Frequently asked questions: =
 
