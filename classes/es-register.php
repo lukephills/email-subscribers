@@ -65,6 +65,11 @@ class es_cls_registerhook
 		// do not generate any output here
 	}
 	
+	public static function es_admin_option()
+	{
+		// do not generate any output here
+	}
+	
 	public static function es_adminmenu()
 	{
 		add_menu_page( __( 'Email Subscriber', ES_TDOMAIN ), 

@@ -79,3 +79,7 @@ http://www.gopiplus.com/work/2014/08/31/email-subscribers-wordpress-plugin-netwo
 	###POSTLINK-ONLY### 		- Use this key word to add post link in the mail content (Post link cannot be clickable)
 	###POSTLINK-WITHTITLE### 	- Use this key word to display post link with title (Clickable post title)
 	###POSTLINK### 				- Use this key word to display clickable post link.
+	
+********************************Version 2.2************************************************************
+
+This warning issue has been fixed (Warning: call_user_func_array() expects parameter 1 to be a valid callback, function 'es_admin_option' not found or invalid function name)

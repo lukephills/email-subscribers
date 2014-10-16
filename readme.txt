@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 4.0
-Stable tag: 2.2
+Stable tag: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,7 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 * Turkish (tr_TR) - [Dr Abdullah Manaz](http://www.manaz.net/)
 * Tamil (ta) - [Gopi Ramasamy](http://www.gopiplus.com/)
 * Dutch (nl_NL) - [John van Halderen](http://www.dorpspleinleusden.nl/)
+* Dutch (nl_NL_2) - [Paul't Hoen](#)
 * Serbian (sr_RS) - [Ogi Djuraskovic](http://firstsiteguide.com/)
 * German (de_DE) - [Stefanie Drucker](http://www.kreativhuhn.at)
 
@@ -176,6 +177,10 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 	###POSTLINK-WITHTITLE### 	- Use this key word to display post link with title (Clickable post title)
 	###POSTLINK### 				- Use this key word to display clickable post link.
 
+= 2.3 =
+
+This warning issue has been fixed (Warning: call_user_func_array() expects parameter 1 to be a valid callback, function 'es_admin_option' not found or invalid function name)
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -245,3 +250,7 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 	###POSTLINK-ONLY### 		- Use this key word to add post link in the mail content (Post link cannot be clickable)
 	###POSTLINK-WITHTITLE### 	- Use this key word to display post link with title (Clickable post title)
 	###POSTLINK### 				- Use this key word to display clickable post link.
+	
+= 2.3 =
+
+This warning issue has been fixed (Warning: call_user_func_array() expects parameter 1 to be a valid callback, function 'es_admin_option' not found or invalid function name)
