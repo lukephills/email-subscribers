@@ -197,8 +197,8 @@ if ($es_error_found == FALSE && strlen($es_success) > 0)
 				<p class="description"><?php _e('Choose a FROM name and FROM email address for all notifications emails from this plugin.', ES_TDOMAIN); ?></p></label>
 			</th>
 			<td>
-				<input name="es_c_fromname" type="text" id="es_c_fromname" value="<?php echo $form['es_c_fromname']; ?>" maxlength="225" />
-				<input name="es_c_fromemail" type="text" id="es_c_fromemail" value="<?php echo $form['es_c_fromemail']; ?>" size="35" maxlength="225" />
+				<input name="es_c_fromname" type="text" id="es_c_fromname" value="<?php echo esc_html(stripslashes($form['es_c_fromname'])); ?>" maxlength="225" />
+				<input name="es_c_fromemail" type="text" id="es_c_fromemail" value="<?php echo esc_html(stripslashes($form['es_c_fromemail'])); ?>" size="35" maxlength="225" />
 			</td>
 		</tr>
 		<tr>

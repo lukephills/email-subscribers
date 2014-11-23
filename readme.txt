@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
-Tested up to: 4.0
-Stable tag: 2.3
+Tested up to: 4.1
+Stable tag: 2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -181,6 +181,11 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 This warning issue has been fixed (Warning: call_user_func_array() expects parameter 1 to be a valid callback, function 'es_admin_option' not found or invalid function name)
 
+= 2.4 =
+
+* Tested upto 4.1
+* Fixed special character bug on Sender of Notification FROM email name.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -254,3 +259,8 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 = 2.3 =
 
 This warning issue has been fixed (Warning: call_user_func_array() expects parameter 1 to be a valid callback, function 'es_admin_option' not found or invalid function name)
+
+= 2.4 =
+
+* Tested upto 4.1
+* Fixed special character bug on Sender of Notification FROM email name.
