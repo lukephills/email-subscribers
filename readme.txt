@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 4.1
-Stable tag: 2.4
+Stable tag: 2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -186,6 +186,10 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 * Tested upto 4.1
 * Fixed special character bug on Sender of Notification FROM email name.
 
+= 2.5 =
+
+* Now plugin supports custom post type. i.e. With this plugin, you can able to send automatic newsletter/notification emails when you publish custom posts.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -264,3 +268,7 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 
 * Tested upto 4.1
 * Fixed special character bug on Sender of Notification FROM email name.
+
+= 2.5 =
+
+* Now plugin supports custom post type. i.e. With this plugin, you can able to send automatic newsletter/notification emails when you publish custom posts.

@@ -74,30 +74,42 @@ class es_cls_notification
 		
 		if($post_id > 0)
 		{
-			$category = get_the_category( $post_id );
-			$totcategory = count($category);
-			if ( $totcategory > 0)
+			$post_type = get_post_type( $post_id );
+			$sSql = "SELECT * FROM `".$prefix."es_notification` where es_note_status = 'Enable' ";
+			if($post_type == "post")
 			{
-				$sSql = "SELECT * FROM `".$prefix."es_notification` where es_note_status = 'Enable' ";
-				for($i=0; $i<$totcategory; $i++)
-				{				
-					if($i == 0)
-					{
-						$sSql = $sSql . " and (";
+				$category = get_the_category( $post_id );
+				$totcategory = count($category);
+				if ( $totcategory > 0)
+				{
+					for($i=0; $i<$totcategory; $i++)
+					{				
+						if($i == 0)
+						{
+							$sSql = $sSql . " and (";
+						}
+						else
+						{
+							$sSql = $sSql . " or";
+						}
+						$sSql = $sSql . " es_note_cat LIKE '%##" . $category[$i]->cat_name. "##%'";
+						if($i == ($totcategory-1))
+						{
+							$sSql = $sSql . ")";
+						}
 					}
-					else
-					{
-						$sSql = $sSql . " or";
-					}
-					$sSql = $sSql . " es_note_cat LIKE '%##" . $category[$i]->cat_name. "##%'";
-					if($i == ($totcategory-1))
-					{
-						$sSql = $sSql . ")";
-					}
+					$arrNotification = $wpdb->get_results($sSql, ARRAY_A);
+					//print_r($arrNotification);
 				}
+			}
+			else
+			{
+				$sSql = $sSql . " and es_note_cat LIKE '%##{T}" . $post_type . "{T}##%'";
 				$arrNotification = $wpdb->get_results($sSql, ARRAY_A);
+				//print_r($arrNotification);
 			}
 		}
+		//die();
 		return $arrNotification;
 	}
 	

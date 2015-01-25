@@ -181,6 +181,47 @@ if ($es_error_found == FALSE && strlen($es_success) > 0)
 	  ?>
       <p><?php _e('Please select post categories.', ES_TDOMAIN); ?></p>
 	  
+	  <label for="tag-link"><?php _e('Custom post type', ES_TDOMAIN); ?></label>
+	  <?php
+		$args=array('public'=> true, 'exclude_from_search'=> false, '_builtin' => false); 
+		$output = 'names';
+		$operator = 'and';
+		$post_types=get_post_types($args,$output,$operator);
+		//print_r($post_types);
+		$col=3;
+		echo "<table border='0' cellspacing='0'><tr>"; 
+		foreach($post_types as $post_type) 
+		{     
+			echo "<td style='padding-top:4px;padding-bottom:4px;padding-right:10px;'>";
+			if (strpos($form['es_note_cat'],'##{T}'.$post_type.'{T}##') !== false) 
+			{
+				$checked = 'checked="checked"';
+			}
+			else
+			{
+				$checked = "";
+			}
+			?>
+			<input type="checkbox" <?php echo $checked; ?>  value='{T}<?php echo $post_type; ?>{T}' id="es_note_cat[]" name="es_note_cat[]">
+			<?php echo $post_type; ?>
+			<?php
+			if($col > 1) 
+			{
+				$col=$col-1;
+				echo "</td><td>"; 
+			}
+			elseif($col = 1)
+			{
+				$col=$col-1;
+				echo "</td></tr><tr>";;
+				$col=3;
+			}
+			$count = $count + 1;
+		}
+		echo "</tr></table>";
+	  ?>
+	  <p><?php _e('Please select your custom post type (Optional).', ES_TDOMAIN); ?></p>
+	  
 	  <label for="tag-link"><?php _e('Notification Status', ES_TDOMAIN); ?></label>
       <select name="es_note_status" id="es_note_status">
         <option value='Enable' <?php if($form['es_note_status']=='Enable') { echo 'selected="selected"' ; } ?>>Send mail when new posts are published</option>

@@ -55,7 +55,7 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
             <th width="3%" class="check-column" scope="col"><input type="checkbox" name="es_group_item[]" /></th>
 			<th scope="col"><?php _e('Mail Subject', ES_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Subscribers Group', ES_TDOMAIN); ?></th>
-			<th scope="col"><?php _e('Post Categories', ES_TDOMAIN); ?></th>
+			<th scope="col"><?php _e('Categories / Custom Post', ES_TDOMAIN); ?></th>
             <th scope="col"><?php _e('Notification Status', ES_TDOMAIN); ?></th>
           </tr>
         </thead>
@@ -64,7 +64,7 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
             <th class="check-column" scope="col"><input type="checkbox" name="es_group_item[]" /></th>
 			<th scope="col"><?php _e('Mail Subject', ES_TDOMAIN); ?></th>
 			<th scope="col"><?php _e('Subscribers Group', ES_TDOMAIN); ?></th>
-			<th scope="col"><?php _e('Post Categories', ES_TDOMAIN); ?></th>
+			<th scope="col"><?php _e('Categories / Custom Post', ES_TDOMAIN); ?></th>
             <th scope="col"><?php _e('Notification Status', ES_TDOMAIN); ?></th>
           </tr>
         </tfoot>
@@ -102,6 +102,7 @@ if (isset($_POST['frm_es_display']) && $_POST['frm_es_display'] == 'yes')
 						<?php 
 						$es_note_cat = str_replace("## -- ##", ", ", $data['es_note_cat']);
 						$es_note_cat = str_replace("##", "", $es_note_cat);
+						$es_note_cat = str_replace("{T}", "", $es_note_cat);
 						$j=0;
 						$caegorydisplay = explode(",", $es_note_cat);
 						if(count($caegorydisplay) > 0)

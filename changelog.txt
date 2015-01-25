@@ -88,3 +88,8 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 
 * Tested upto 4.1
 * Fixed special character bug on Sender of Notification FROM email name.
+
+********************************Version 2.5************************************************************
+
+Now plugin supports custom post type. I.e. With this plugin, you can able to send automatic newsletter/notification emails when you publish custom posts.
+
