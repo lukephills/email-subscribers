@@ -30,6 +30,23 @@ if (isset($_POST['es_form_submit']) && $_POST['es_form_submit'] == 'yes')
 
 	$tmpname = $_FILES['es_csv_name']['tmp_name'];
 	
+	$es_email_status = isset($_POST['es_email_status']) ? $_POST['es_email_status'] : '';
+	$es_email_group = isset($_POST['es_email_group']) ? $_POST['es_email_group'] : '';
+	if ($es_email_group == '')
+	{
+		$es_email_group = isset($_POST['es_email_group_txt']) ? $_POST['es_email_group_txt'] : '';
+	}
+	
+	if ($es_email_status == '')
+	{
+		$es_email_status = "Confirmed";
+	}
+	
+	if ($es_email_group == '')
+	{
+		$es_email_group = "Public";
+	}
+	
 	if($extension === 'csv')
 	{
 		$csv = es_cls_common::es_readcsv($tmpname);
@@ -44,8 +61,8 @@ if (isset($_POST['es_form_submit']) && $_POST['es_form_submit'] == 'yes')
 		{
 			$form["es_email_mail"] = trim($csv[$i][0]);
 			$form["es_email_name"] = trim($csv[$i][1]);
-			$form["es_email_group"] = "Public";
-			$form["es_email_status"] = "Confirmed";
+			$form["es_email_group"] = $es_email_group;
+			$form["es_email_status"] = $es_email_status;
 			$action = es_cls_dbquery::es_view_subscriber_ins($form, "insert");
 			if( $action == "sus" )
 			{
@@ -119,8 +136,38 @@ if ($es_error_found == FALSE && isset($es_success[0]) == TRUE)
       <h3><?php _e('Upload email', ES_TDOMAIN); ?></h3>
 	  <label for="tag-image"><?php _e('Select csv file', ES_TDOMAIN); ?></label>
 	  <input type="file" name="es_csv_name" id="es_csv_name" />
-      <p><?php _e('Please select the input csv file. Please check official website for csv structure.', ES_TDOMAIN); ?></p>
-	    
+      <p><?php _e('Please select the input csv file. Please check official website for csv structure.', ES_TDOMAIN); ?>
+	  <a target="_blank" href="http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-subscriber-management-and-import-and-export-email-address/">click here</a></p>
+	   
+	  <label for="tag-email-status"><?php _e('Status', ES_TDOMAIN); ?></label>
+      <select name="es_email_status" id="es_email_status">
+        <option value='Confirmed' selected="selected">Confirmed</option>
+		<option value='Unconfirmed'>Unconfirmed</option>
+		<option value='Unsubscribed'>Unsubscribed</option>
+		<option value='Single Opt In'>Single Opt In</option>
+      </select>
+      <p><?php _e('Please select subscriber email status.', ES_TDOMAIN); ?></p>
+	  
+	  <label for="tag-email-group"><?php _e('Select (or) Create Group', ES_TDOMAIN); ?></label>
+	  <select name="es_email_group" id="es_email_group">
+		<option value=''><?php _e('Select', ES_TDOMAIN); ?></option>
+		<?php
+		$groups = array();
+		$groups = es_cls_dbquery::es_view_subscriber_group();
+		if(count($groups) > 0)
+		{
+			$i = 1;
+			foreach ($groups as $group)
+			{
+				?><option value='<?php echo $group["es_email_group"]; ?>'><?php echo $group["es_email_group"]; ?></option><?php
+			}
+		}
+		?>
+	  </select>
+	  (or) 
+	  <input name="es_email_group_txt" type="text" id="es_email_group_txt" value="" maxlength="225" />
+      <p><?php _e('Please select or create group for this subscriber.', ES_TDOMAIN); ?></p>
+		
       <input type="hidden" name="es_form_submit" value="yes"/>
 	  <div style="padding-top:5px;"></div>
       <p>

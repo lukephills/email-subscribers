@@ -163,12 +163,27 @@ function _es_importemail()
 	var extension = filename.substr(filename.lastIndexOf('.')+1).toLowerCase();
 	if(extension == 'csv') 
 	{
-        return true;
+        if(document.form_addemail.es_email_status.value=="" || document.form_addemail.es_email_status.value=="Select")
+		{
+			alert("Please select subscriber email status.")
+			document.form_addemail.es_email_status.focus();
+			return false;
+		}
+		else if( (document.form_addemail.es_email_group.value == "") && (document.form_addemail.es_email_group_txt.value == "") )
+		{
+			alert("Please select or create group for this subscriber.")
+			document.form_addemail.es_email_group.focus();
+			return false;
+		}
+		else
+		{
+			return true;
+		}
     } 
 	else 
 	{
-        alert('Please select only csv file. \nPlease check official website for csv structure.');
-        return false;
+		alert('Please select only csv file. \nPlease check official website for csv structure.');  
+		return false;
     }
 }
 

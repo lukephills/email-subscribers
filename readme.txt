@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
-Tested up to: 4.1
-Stable tag: 2.5
+Tested up to: 4.1.1
+Stable tag: 2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -190,6 +190,10 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 
 * Now plugin supports custom post type. i.e. With this plugin, you can able to send automatic newsletter/notification emails when you publish custom posts.
 
+= 2.6 =
+
+* Added new option in the Email Import page to select Email Status and Email Group. with this option you can select (or create) group name and emails status when you import the email address.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -272,3 +276,7 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 = 2.5 =
 
 * Now plugin supports custom post type. i.e. With this plugin, you can able to send automatic newsletter/notification emails when you publish custom posts.
+
+= 2.6 =
+
+* Added new option in the Email Import page to select Email Status and Email Group. with this option you can select (or create) group name and emails status when you import the email address.

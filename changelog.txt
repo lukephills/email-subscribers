@@ -93,3 +93,6 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 
 Now plugin supports custom post type. I.e. With this plugin, you can able to send automatic newsletter/notification emails when you publish custom posts.
 
+********************************Version 2.6************************************************************
+
+Added new option in the Email Import page to select Email Status and Email Group. with this option you can select (or create) group name and emails status when you import the email address.
