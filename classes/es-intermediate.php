@@ -102,6 +102,24 @@ class es_cls_intermediate
 		}
 	}
 	
+	public static function es_roles()
+	{
+		global $wpdb;
+		$current_page = isset($_GET['ac']) ? $_GET['ac'] : '';
+		switch($current_page)
+		{
+			case 'add':
+				require_once(ES_DIR.'roles'.DIRECTORY_SEPARATOR.'roles-add.php');
+				break;
+			case 'edit':
+				require_once(ES_DIR.'roles'.DIRECTORY_SEPARATOR.'roles-edit.php');
+				break;
+			default:
+				require_once(ES_DIR.'roles'.DIRECTORY_SEPARATOR.'roles-add.php');
+				break;
+		}
+	}
+	
 	public static function es_information()
 	{
 		require_once(ES_DIR.'help'.DIRECTORY_SEPARATOR.'help.php');

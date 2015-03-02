@@ -72,29 +72,54 @@ class es_cls_registerhook
 	
 	public static function es_adminmenu()
 	{
+		$es_c_rolesandcapabilities = get_option('es_c_rolesandcapabilities', 'norecord');
+		if($es_c_rolesandcapabilities == 'norecord' || $es_c_rolesandcapabilities == "")
+		{
+			$es_roles_subscriber = "manage_options";
+			$es_roles_mail = "manage_options";
+			$es_roles_notification = "manage_options";
+			$es_roles_sendmail = "manage_options";
+			$es_roles_setting = "manage_options";
+			$es_roles_sentmail = "manage_options";
+			$es_roles_help = "manage_options";
+		}
+		else
+		{
+			$es_roles_subscriber = $es_c_rolesandcapabilities['es_roles_subscriber'];
+			$es_roles_mail = $es_c_rolesandcapabilities['es_roles_mail'];
+			$es_roles_notification = $es_c_rolesandcapabilities['es_roles_notification'];
+			$es_roles_sendmail = $es_c_rolesandcapabilities['es_roles_sendmail'];
+			$es_roles_setting = $es_c_rolesandcapabilities['es_roles_setting'];
+			$es_roles_sentmail = $es_c_rolesandcapabilities['es_roles_sentmail'];
+			$es_roles_help = $es_c_rolesandcapabilities['es_roles_help'];
+		}
+		
 		add_menu_page( __( 'Email Subscriber', ES_TDOMAIN ), 
 			__( 'Email Subscriber', ES_TDOMAIN ), 'admin_dashboard', 'email-subscribers', 'es_admin_option', ES_URL.'images/mail.png', 51 );
 			
 		add_submenu_page('email-subscribers', __( 'Subscribers', ES_TDOMAIN ), 
-			__( 'Subscribers', ES_TDOMAIN ), 'administrator', 'es-view-subscribers', array( 'es_cls_intermediate', 'es_subscribers' ));
+			__( 'Subscribers', ES_TDOMAIN ), $es_roles_subscriber, 'es-view-subscribers', array( 'es_cls_intermediate', 'es_subscribers' ));
 			
 		add_submenu_page('email-subscribers', __( 'Compose', ES_TDOMAIN ), 
-			__( 'Compose', ES_TDOMAIN ), 'administrator', 'es-compose', array( 'es_cls_intermediate', 'es_compose' ));
+			__( 'Compose', ES_TDOMAIN ), $es_roles_mail, 'es-compose', array( 'es_cls_intermediate', 'es_compose' ));
 			
 		add_submenu_page('email-subscribers', __( 'Notification', ES_TDOMAIN ), 
-			__( 'Notification', ES_TDOMAIN ), 'administrator', 'es-notification', array( 'es_cls_intermediate', 'es_notification' ));
+			__( 'Notification', ES_TDOMAIN ), $es_roles_notification, 'es-notification', array( 'es_cls_intermediate', 'es_notification' ));
 			
 		add_submenu_page('email-subscribers', __( 'Send Email', ES_TDOMAIN ), 
-			__( 'Send Email', ES_TDOMAIN ), 'administrator', 'es-sendemail', array( 'es_cls_intermediate', 'es_sendemail' ));
+			__( 'Send Email', ES_TDOMAIN ), $es_roles_sendmail, 'es-sendemail', array( 'es_cls_intermediate', 'es_sendemail' ));
 				
 		add_submenu_page('email-subscribers', __( 'Settings', ES_TDOMAIN ), 
-			__( 'Settings', ES_TDOMAIN ), 'administrator', 'es-settings', array( 'es_cls_intermediate', 'es_settings' ));	
+			__( 'Settings', ES_TDOMAIN ), $es_roles_setting, 'es-settings', array( 'es_cls_intermediate', 'es_settings' ));	
+			
+		add_submenu_page('email-subscribers', __( 'Roles', ES_TDOMAIN ), 
+			__( 'Roles', ES_TDOMAIN ), 'administrator', 'es-roles', array( 'es_cls_intermediate', 'es_roles' ));	
 			
 		add_submenu_page('email-subscribers', __( 'Sent Mails', ES_TDOMAIN ), 
-			__( 'Sent Mails', ES_TDOMAIN ), 'administrator', 'es-sentmail', array( 'es_cls_intermediate', 'es_sentmail' ));	
+			__( 'Sent Mails', ES_TDOMAIN ), $es_roles_sentmail, 'es-sentmail', array( 'es_cls_intermediate', 'es_sentmail' ));	
 					
 		add_submenu_page('email-subscribers', __( 'Help & Info', ES_TDOMAIN ), 
-			__( 'Help & Info', ES_TDOMAIN ), 'administrator', 'es-general-information', array( 'es_cls_intermediate', 'es_information' ));
+			__( 'Help & Info', ES_TDOMAIN ), $es_roles_help, 'es-general-information', array( 'es_cls_intermediate', 'es_information' ));
 			
 	}
 	

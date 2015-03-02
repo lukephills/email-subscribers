@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Email subscribers\n"
-"POT-Creation-Date: 2015-01-25 15:24+0800\n"
-"PO-Revision-Date: 2015-01-25 15:24+0800\n"
+"POT-Creation-Date: 2015-03-02 21:54+0800\n"
+"PO-Revision-Date: 2015-03-02 21:55+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,17 +13,17 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../classes/es-loadwidget.php:28 ../classes/es-register.php:148
+#: ../classes/es-loadwidget.php:28 ../classes/es-register.php:173
 #: ../subscribers/view-subscriber-show.php:265
 #: ../subscribers/view-subscriber-show.php:278
 msgid "Name"
 msgstr ""
 
-#: ../classes/es-loadwidget.php:33 ../classes/es-register.php:153
+#: ../classes/es-loadwidget.php:33 ../classes/es-register.php:178
 msgid "Email *"
 msgstr ""
 
-#: ../classes/es-loadwidget.php:38 ../classes/es-register.php:158
+#: ../classes/es-loadwidget.php:38 ../classes/es-register.php:183
 msgid "Subscribe"
 msgstr ""
 
@@ -31,60 +31,64 @@ msgstr ""
 msgid "These tables could not be created on installation "
 msgstr ""
 
-#: ../classes/es-register.php:75 ../classes/es-register.php:76
+#: ../classes/es-register.php:97 ../classes/es-register.php:98
 msgid "Email Subscriber"
 msgstr ""
 
-#: ../classes/es-register.php:78 ../classes/es-register.php:79
+#: ../classes/es-register.php:100 ../classes/es-register.php:101
 msgid "Subscribers"
 msgstr ""
 
-#: ../classes/es-register.php:81 ../classes/es-register.php:82
+#: ../classes/es-register.php:103 ../classes/es-register.php:104
 msgid "Compose"
 msgstr ""
 
-#: ../classes/es-register.php:84 ../classes/es-register.php:85
+#: ../classes/es-register.php:106 ../classes/es-register.php:107
 #: ../notification/notification-show.php:44
 msgid "Notification"
 msgstr ""
 
-#: ../classes/es-register.php:87 ../classes/es-register.php:88
+#: ../classes/es-register.php:109 ../classes/es-register.php:110
 #: ../sendmail/sendmail.php:71 ../sendmail/sendmail.php:214
 #: ../sendmail/sendmail.php:216
 msgid "Send Email"
 msgstr ""
 
-#: ../classes/es-register.php:90 ../classes/es-register.php:91
+#: ../classes/es-register.php:112 ../classes/es-register.php:113
 #: ../settings/settings-edit.php:190
 msgid "Settings"
 msgstr ""
 
-#: ../classes/es-register.php:93 ../classes/es-register.php:94
+#: ../classes/es-register.php:115 ../classes/es-register.php:116
+msgid "Roles"
+msgstr ""
+
+#: ../classes/es-register.php:118 ../classes/es-register.php:119
 #: ../sentmail/sentmail-show.php:53
 msgid "Sent Mails"
 msgstr ""
 
-#: ../classes/es-register.php:96 ../classes/es-register.php:97
+#: ../classes/es-register.php:121 ../classes/es-register.php:122
 msgid "Help & Info"
 msgstr ""
 
-#: ../classes/es-register.php:194
+#: ../classes/es-register.php:219
 msgid "Widget Title"
 msgstr ""
 
-#: ../classes/es-register.php:198
+#: ../classes/es-register.php:223
 msgid "Display Name Field"
 msgstr ""
 
-#: ../classes/es-register.php:205
+#: ../classes/es-register.php:230
 msgid "Short Description"
 msgstr ""
 
-#: ../classes/es-register.php:207
+#: ../classes/es-register.php:232
 msgid "Short description about your subscription form."
 msgstr ""
 
-#: ../classes/es-register.php:210
+#: ../classes/es-register.php:235
 msgid "Subscriber Group"
 msgstr ""
 
@@ -98,21 +102,21 @@ msgstr ""
 
 #: ../compose/compose-add.php:60 ../compose/compose-edit.php:70
 #: ../notification/notification-add.php:91
-#: ../notification/notification-edit.php:99 ../settings/settings-edit.php:173
-#: ../subscribers/view-subscriber-add.php:87
+#: ../notification/notification-edit.php:99 ../roles/roles-add.php:73
+#: ../settings/settings-edit.php:173 ../subscribers/view-subscriber-add.php:87
 #: ../subscribers/view-subscriber-edit.php:72
-#: ../subscribers/view-subscriber-import.php:77
-#: ../subscribers/view-subscriber-import.php:107
+#: ../subscribers/view-subscriber-import.php:94
+#: ../subscribers/view-subscriber-import.php:124
 msgid "Click here"
 msgstr ""
 
 #: ../compose/compose-add.php:61 ../compose/compose-edit.php:71
 #: ../notification/notification-add.php:92
-#: ../notification/notification-edit.php:100 ../settings/settings-edit.php:174
-#: ../subscribers/view-subscriber-add.php:87
+#: ../notification/notification-edit.php:100 ../roles/roles-add.php:73
+#: ../settings/settings-edit.php:174 ../subscribers/view-subscriber-add.php:87
 #: ../subscribers/view-subscriber-edit.php:72
-#: ../subscribers/view-subscriber-import.php:77
-#: ../subscribers/view-subscriber-import.php:107
+#: ../subscribers/view-subscriber-import.php:94
+#: ../subscribers/view-subscriber-import.php:124
 msgid " to view the details"
 msgstr ""
 
@@ -150,6 +154,7 @@ msgstr ""
 #: ../compose/compose-show.php:57 ../compose/compose-show.php:66
 #: ../subscribers/view-subscriber-add.php:108
 #: ../subscribers/view-subscriber-edit.php:92
+#: ../subscribers/view-subscriber-import.php:142
 #: ../subscribers/view-subscriber-show.php:266
 #: ../subscribers/view-subscriber-show.php:279
 msgid "Status"
@@ -161,7 +166,7 @@ msgstr ""
 
 #: ../compose/compose-add.php:99 ../compose/compose-edit.php:111
 #: ../notification/notification-add.php:215
-#: ../notification/notification-edit.php:235
+#: ../notification/notification-edit.php:235 ../roles/roles-add.php:146
 #: ../subscribers/view-subscriber-add.php:140
 #: ../subscribers/view-subscriber-edit.php:129
 msgid "Submit"
@@ -169,8 +174,8 @@ msgstr ""
 
 #: ../compose/compose-add.php:100 ../compose/compose-edit.php:112
 #: ../notification/notification-add.php:216
-#: ../notification/notification-edit.php:236 ../sendmail/sendmail.php:218
-#: ../settings/settings-edit.php:381
+#: ../notification/notification-edit.php:236 ../roles/roles-add.php:147
+#: ../sendmail/sendmail.php:218 ../settings/settings-edit.php:381
 #: ../subscribers/view-subscriber-add.php:141
 #: ../subscribers/view-subscriber-edit.php:130
 msgid "Cancel"
@@ -180,13 +185,13 @@ msgstr ""
 #: ../compose/compose-preview.php:30 ../compose/compose-show.php:109
 #: ../notification/notification-add.php:217
 #: ../notification/notification-edit.php:237
-#: ../notification/notification-show.php:151 ../sendmail/sendmail.php:219
-#: ../sentmail/deliverreport-show.php:111 ../sentmail/sentmail-preview.php:31
-#: ../settings/settings-edit.php:382
+#: ../notification/notification-show.php:151 ../roles/roles-add.php:148
+#: ../sendmail/sendmail.php:219 ../sentmail/deliverreport-show.php:111
+#: ../sentmail/sentmail-preview.php:31 ../settings/settings-edit.php:382
 #: ../subscribers/view-subscriber-add.php:142
 #: ../subscribers/view-subscriber-edit.php:131
 #: ../subscribers/view-subscriber-export.php:75
-#: ../subscribers/view-subscriber-import.php:129
+#: ../subscribers/view-subscriber-import.php:176
 #: ../subscribers/view-subscriber-show.php:383
 msgid "Help"
 msgstr ""
@@ -211,7 +216,7 @@ msgstr ""
 #: ../compose/compose-preview.php:28 ../sentmail/deliverreport-show.php:110
 #: ../sentmail/sentmail-preview.php:30
 #: ../subscribers/view-subscriber-export.php:74
-#: ../subscribers/view-subscriber-import.php:128
+#: ../subscribers/view-subscriber-import.php:175
 msgid "Back"
 msgstr ""
 
@@ -331,6 +336,7 @@ msgstr ""
 #: ../notification/notification-edit.php:122 ../sendmail/sendmail.php:84
 #: ../sendmail/sendmail.php:115 ../subscribers/view-subscriber-add.php:119
 #: ../subscribers/view-subscriber-edit.php:103
+#: ../subscribers/view-subscriber-import.php:153
 msgid "Select"
 msgstr ""
 
@@ -381,6 +387,80 @@ msgstr ""
 #: ../notification/notification-show.php:58
 #: ../notification/notification-show.php:67
 msgid "Categories / Custom Post"
+msgstr ""
+
+#: ../roles/roles-add.php:84
+msgid "Roles and Capabilities"
+msgstr ""
+
+#: ../roles/roles-add.php:86
+msgid "Subscribers Menu"
+msgstr ""
+
+#: ../roles/roles-add.php:92
+msgid ""
+"Select user role to access plugin Subscribers Menu. Only Admin user can "
+"change this value."
+msgstr ""
+
+#: ../roles/roles-add.php:95
+msgid "Compose Menu"
+msgstr ""
+
+#: ../roles/roles-add.php:101
+msgid ""
+"Select user role to access plugin Compose Menu. Only Admin user can change "
+"this value."
+msgstr ""
+
+#: ../roles/roles-add.php:103
+msgid "Notification Menu"
+msgstr ""
+
+#: ../roles/roles-add.php:109
+msgid ""
+"Select user role to access plugin Notification Menu. Only Admin user can "
+"change this value."
+msgstr ""
+
+#: ../roles/roles-add.php:111
+msgid "Send Email Menu"
+msgstr ""
+
+#: ../roles/roles-add.php:117
+msgid ""
+"Select user role to access plugin Send Email Menu. Only Admin user can "
+"change this value."
+msgstr ""
+
+#: ../roles/roles-add.php:119
+msgid "Settings Menu"
+msgstr ""
+
+#: ../roles/roles-add.php:125
+msgid ""
+"Select user role to access plugin Settings Menu. Only Admin user can change "
+"this value."
+msgstr ""
+
+#: ../roles/roles-add.php:127
+msgid "Sent Mails Menu"
+msgstr ""
+
+#: ../roles/roles-add.php:133
+msgid ""
+"Select user role to access plugin Sent Mails Menu. Only Admin user can "
+"change this value."
+msgstr ""
+
+#: ../roles/roles-add.php:135
+msgid "Help & Info Menu"
+msgstr ""
+
+#: ../roles/roles-add.php:141
+msgid ""
+"Select user role to access plugin Help & Info Menu. Only Admin user can "
+"change this value."
 msgstr ""
 
 #: ../sendmail/sendmail.php:19
@@ -766,15 +846,18 @@ msgstr ""
 
 #: ../subscribers/view-subscriber-add.php:115
 #: ../subscribers/view-subscriber-edit.php:99
+#: ../subscribers/view-subscriber-import.php:149
 msgid "Please select subscriber email status."
 msgstr ""
 
 #: ../subscribers/view-subscriber-add.php:117
+#: ../subscribers/view-subscriber-import.php:151
 msgid "Select (or) Create Group"
 msgstr ""
 
 #: ../subscribers/view-subscriber-add.php:135
 #: ../subscribers/view-subscriber-edit.php:123
+#: ../subscribers/view-subscriber-import.php:169
 msgid "Please select or create group for this subscriber."
 msgstr ""
 
@@ -840,37 +923,37 @@ msgstr ""
 msgid "Import Email"
 msgstr ""
 
-#: ../subscribers/view-subscriber-import.php:73
+#: ../subscribers/view-subscriber-import.php:90
 msgid "Email(s) was successfully imported."
 msgstr ""
 
-#: ../subscribers/view-subscriber-import.php:74
+#: ../subscribers/view-subscriber-import.php:91
 msgid "Email(s) are already in our database."
 msgstr ""
 
-#: ../subscribers/view-subscriber-import.php:75
+#: ../subscribers/view-subscriber-import.php:92
 msgid "Email(s) are invalid."
 msgstr ""
 
-#: ../subscribers/view-subscriber-import.php:85
+#: ../subscribers/view-subscriber-import.php:102
 msgid "File upload failed or no data available in the csv file."
 msgstr ""
 
-#: ../subscribers/view-subscriber-import.php:119
+#: ../subscribers/view-subscriber-import.php:136
 msgid "Upload email"
 msgstr ""
 
-#: ../subscribers/view-subscriber-import.php:120
+#: ../subscribers/view-subscriber-import.php:137
 msgid "Select csv file"
 msgstr ""
 
-#: ../subscribers/view-subscriber-import.php:122
+#: ../subscribers/view-subscriber-import.php:139
 msgid ""
 "Please select the input csv file. Please check official website for csv "
 "structure."
 msgstr ""
 
-#: ../subscribers/view-subscriber-import.php:127
+#: ../subscribers/view-subscriber-import.php:174
 msgid "Upload CSV"
 msgstr ""
 

@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 Tags: email newsletter, subscription, sendmail, newsletter, subscribers
 Requires at least: 3.4
 Tested up to: 4.1.1
-Stable tag: 2.6
+Stable tag: 2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,7 @@ This plugin have subscription box and it allows users to publicly subscribe by s
 *   Q11. How to add new subscribers group?
 *   Q12. Is plugin contain bulk update option for subscribers group?
 *   Q13. Is Mail not working on Email Subscribers wordpress plugin?
+*   Q14. How to assign user roles to plugin menu?
 
 == Installation ==
 
@@ -92,6 +93,7 @@ Installation Instruction and Configuration [Installation Instruction and Configu
 *   Q12. Is plugin contain bulk update option for subscribers group?
 *   Q13. Is Mail not working on Email Subscribers wordpress plugin?
 *   Q14. How to install and activate Email Subscribers on multisite installation blogs?
+*   Q14. How to assign user roles to plugin menu?
 
 FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/](http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
 
@@ -106,6 +108,8 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 4. Admin Page. Setting Page. http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 
 5. Admin Page. Notification Management Page. http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
+
+6. Roles Page. Roles and Capabilities Management Page. http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 
 == Changelog ==
 
@@ -194,6 +198,10 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 
 * Added new option in the Email Import page to select Email Status and Email Group. with this option you can select (or create) group name and emails status when you import the email address.
 
+= 2.7 =
+
+Up to plugin version 2.6 only administrator level users can manage this plugin in dashboard. From this version I have introduced new feature  called Roles. The user role can be selected using this Roles Menu. For example, If you want to give Send Email feature to Editor. Go to plugin Roles menu using administrator login and select Editor role to Send Email Menu, So that your Editor level user can access plugin Send Email menu to publish newsletter emails.
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -280,3 +288,7 @@ This warning issue has been fixed (Warning: call_user_func_array() expects param
 = 2.6 =
 
 * Added new option in the Email Import page to select Email Status and Email Group. with this option you can select (or create) group name and emails status when you import the email address.
+
+= 2.7 =
+
+Up to plugin version 2.6 only administrator level users can manage this plugin in dashboard. From this version I have introduced new feature  called Roles. The user role can be selected using this Roles Menu. For example, If you want to give Send Email feature to Editor. Go to plugin Roles menu using administrator login and select Editor role to Send Email Menu, So that your Editor level user can access plugin Send Email menu to publish newsletter emails.
