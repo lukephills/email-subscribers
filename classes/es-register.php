@@ -168,7 +168,7 @@ class es_widget_register extends WP_Widget
 			<?php if( $es_desc <> "" ) { ?>
 			<div class="es_caption"><?php echo $es_desc; ?></div>
 			<?php } ?>
-			<div class="es_msg"><span id="es_msg"></span></div>
+			<div class="es_msg"><span id="es_msg_error"></span><span id="es_msg_success"></span></div>
 			<?php if( $es_name == "YES" ) { ?>
 			<div class="es_lablebox"><?php _e('Name', ES_TDOMAIN); ?></div>
 			<div class="es_textbox">

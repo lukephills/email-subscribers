@@ -22,7 +22,7 @@ class es_cls_widget
 		{ 
 			$es = $es . '<div class="es_caption">'.$es_desc.'</div>';
 		} 
-		$es = $es . '<div class="es_msg"><span id="es_msg_pg"></span></div>';
+		$es = $es . '<div class="es_msg"><span id="es_msg_pg_error"></span><span id="es_msg_pg_success"></span></div>';
 		if( $es_name == "YES" ) 
 		{
 			$es = $es . '<div class="es_lablebox">'.__('Name', ES_TDOMAIN).'</div>';
