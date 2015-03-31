@@ -90,7 +90,7 @@ function eemail_submitresult()
 				}
 				else if((http_req.responseText).trim() == "already-exist")
 				{
-					document.getElementById("es_msg").innerHTML = "Email already exist.";
+					document.getElementById("es_msg").innerHTML = "Email already exists.";
 				}
 				else if((http_req.responseText).trim() == "unexpected-error")
 				{
