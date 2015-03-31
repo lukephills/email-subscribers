@@ -13,16 +13,18 @@ class es_cls_widget
 		if (!isset($es_includes) || $es_includes !== true) 
 		{ 
 			$es_includes = true;
-			$es = $es . '<link rel="stylesheet" media="screen" type="text/css" href="'.ES_URL.'widget/es-widget.css" />';
+			// TODO: make this $es_includes an option in the settings section
+//			$es = $es . '<link rel="stylesheet" media="screen" type="text/css" href="'.ES_URL.'widget/es-widget.css" />';
 		} 
 		$es = $es . '<script language="javascript" type="text/javascript" src="'.ES_URL.'widget/es-widget-page.js"></script>';
+		$es = $es . '<div id="es_modal_container" class="es_modal_container"><div class="es_modal"><span id="es_modal_msg" class="es_modal_msg"></span><span id="es_modal_close" class="es_modal_close">Close</span></div></div>';
 		$es = $es . "<div>";
 		
 		if( $es_desc <> "" ) 
 		{ 
 			$es = $es . '<div class="es_caption">'.$es_desc.'</div>';
 		} 
-		$es = $es . '<div class="es_msg"><span id="es_msg_pg_error"></span><span id="es_msg_pg_success"></span></div>';
+		$es = $es . '<div class="es_msg"><span id="es_msg_pg"></span></div>';
 		if( $es_name == "YES" ) 
 		{
 			$es = $es . '<div class="es_lablebox">'.__('Name', ES_TDOMAIN).'</div>';

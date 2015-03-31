@@ -8,7 +8,14 @@
 {
 	padding-top:5px;
 	padding-bottom:5px;
-	color:#F00;
+}
+#es_msg_pg_error, #es_msg_error
+{
+	color: #F00;
+}
+#es_msg_pg_success, #es_msg_success
+{
+	color: #0A0;
 }
 .es_textbox 
 {
@@ -30,4 +37,15 @@
 .es_lablebox
 {
 	padding-bottom:3px;
+}
+.es_modal_container {
+	display: none;
+	width: 400px;
+}
+.es_modal_container.show {
+	display: block;
+}
+.es_modal_close {
+	top: 1em;
+	right: 1em;
 }

@@ -158,17 +158,19 @@ class es_widget_register extends WP_Widget
 		if (!isset($es_includes) || $es_includes !== true) 
 		{ 
 			$es_includes = true;
+//			TODO: make this a choice
 			?>
-			<link rel="stylesheet" media="screen" type="text/css" href="<?php echo ES_URL; ?>widget/es-widget.css" />
+<!--			<link rel="stylesheet" media="screen" type="text/css" href="--><?php //echo ES_URL; ?><!--widget/es-widget.css" />-->
 			<?php 
 		} 
 		?>
 		<script language="javascript" type="text/javascript" src="<?php echo ES_URL; ?>widget/es-widget.js"></script>
+		<div id="es_modal_container" class="es_modal_container"><div class="es_modal"><span id="es_modal_msg" class="es_modal_msg"></span><span id="es_modal_close" class="es_modal_close">Close</span></div></div>
 		<div>
 			<?php if( $es_desc <> "" ) { ?>
 			<div class="es_caption"><?php echo $es_desc; ?></div>
 			<?php } ?>
-			<div class="es_msg"><span id="es_msg_error"></span><span id="es_msg_success"></span></div>
+			<div class="es_msg"><span id="es_msg"></span></div>
 			<?php if( $es_name == "YES" ) { ?>
 			<div class="es_lablebox"><?php _e('Name', ES_TDOMAIN); ?></div>
 			<div class="es_textbox">

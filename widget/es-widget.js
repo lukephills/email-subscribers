@@ -5,19 +5,21 @@
 	es_group = document.getElementById("es_txt_group");
     if( es_email.value == "" )
     {
-        alert("Please enter email address.");
+		document.getElementById("es_msg").className = "error";
+		document.getElementById("es_msg").innerHTML = "Please enter email address.";
         es_email.focus();
         return false;    
     }
 	if( es_email.value!="" && ( es_email.value.indexOf("@",0) == -1 || es_email.value.indexOf(".",0) == -1 ))
     {
-        //alert("Please provide a valid email address.")
-		document.getElementById("es_msg_error").innerHTML = "Invalid email address";
+		document.getElementById("es_msg").className = "error";
+		document.getElementById("es_msg").innerHTML = "Invalid email address";
         es_email.focus();
         es_email.select();
         return false;
     }
-	document.getElementById("es_msg_error").innerHTML = "loading...";
+	document.getElementById("es_msg").className = "";
+	document.getElementById("es_msg").innerHTML = "loading...";
 	var date_now = "";
     var mynumber = Math.random();
 	var str= "es_email="+ encodeURI(es_email.value) + "&es_name=" + encodeURI(es_name.value) + "&es_group=" + encodeURI(es_group.value) + "&timestamp=" + encodeURI(date_now) + "&action=" + encodeURI(mynumber);
@@ -69,8 +71,6 @@ function es_submit_request(url, parameters)
 
 function eemail_submitresult() 
 {
-	//alert(http_req.readyState);
-	//alert(http_req.responseText); 
 	if (http_req.readyState == 4) 
 	{
 		if (http_req.status == 200) 
@@ -79,31 +79,39 @@ function eemail_submitresult()
 			{ 
 				if((http_req.responseText).trim() == "subscribed-successfully")
 				{
-					document.getElementById("es_msg_success").innerHTML = "Subscribed successfully.";
+					document.getElementById("es_msg").className = "success";
+					document.getElementById("es_msg").innerHTML = "Subscribed successfully.";
 					document.getElementById("es_txt_email").value="";
 				}
 				else if((http_req.responseText).trim() == "subscribed-pending-doubleoptin")
-				{ //TODO: Make this a modal
-					console.log('You have successfully subscribed to the newsletter. You will receive a confirmation email in few minutes. Please follow the link in it to confirm your subscription. If the email takes more than 15 minutes to appear in your mailbox, please check your spam folder.');
-					document.getElementById("es_msg_success").innerHTML = "Subscribed successfully.";
+				{ //TODO: Allow users to edit this text
+					// TODO: make close button
+					document.getElementById("es_modal_container").className = 'es_modal_container show';
+					document.getElementById("es_modal_msg").innerHTML = "You have successfully subscribed to the newsletter. You will receive a confirmation email in few minutes. Please follow the link in it to confirm your subscription. If the email takes more than 15 minutes to appear in your mailbox, please check your spam folder.";
+					document.getElementById("es_msg").className = "success";
+					document.getElementById("es_msg").innerHTML = "Subscribed successfully.";
 					document.getElementById("es_txt_email").value="";
 					document.getElementById("es_txt_name").value="";
 				}
 				else if((http_req.responseText).trim() == "already-exist")
 				{
-					document.getElementById("es_msg_error").innerHTML = "Email already exists.";
+					document.getElementById("es_msg").className = "error";
+					document.getElementById("es_msg").innerHTML = "Email already exists.";
 				}
 				else if((http_req.responseText).trim() == "unexpected-error")
 				{
-					document.getElementById("es_msg_error").innerHTML = "Oops.. Unexpected error occurred.";
+					document.getElementById("es_msg").className = "error";
+					document.getElementById("es_msg").innerHTML = "Oops.. Unexpected error occurred.";
 				}
 				else if((http_req.responseText).trim() == "invalid-email")
 				{
-					document.getElementById("es_msg_error").innerHTML = "Invalid email address.";
+					document.getElementById("es_msg").className = "error";
+					document.getElementById("es_msg").innerHTML = "Invalid email address.";
 				}
 				else
 				{
-					document.getElementById("es_msg_error").innerHTML = "Please try after some time.";
+					document.getElementById("es_msg").className = "error";
+					document.getElementById("es_msg").innerHTML = "Please try after some time.";
 					document.getElementById("es_txt_email").value="";
 					document.getElementById("es_txt_name").value="";
 				}
