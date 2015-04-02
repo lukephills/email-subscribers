@@ -25,6 +25,8 @@ if ($result != '1')
 		'es_c_optinsubject' => '',
 		'es_c_optincontent' => '',
 		'es_c_optinlink' => '',
+		'es_c_optinawaittitle' => '',
+		'es_c_optinawaittext' => '',
 		'es_c_unsublink' => '',
 		'es_c_unsubtext' => '',
 		'es_c_unsubhtml' => '',
@@ -78,6 +80,8 @@ else
 		'es_c_optinsubject' => $data['es_c_optinsubject'],
 		'es_c_optincontent' => $data['es_c_optincontent'],
 		'es_c_optinlink' => $data['es_c_optinlink'],
+		'es_c_optinawaittitle' => $data['es_c_optinawaittitle'],
+		'es_c_optinawaittext' => $data['es_c_optinawaittext'],
 		'es_c_unsublink' => $data['es_c_unsublink'],
 		'es_c_unsubtext' => $data['es_c_unsubtext'],
 		'es_c_unsubhtml' => $data['es_c_unsubhtml'],
@@ -125,6 +129,8 @@ if (isset($_POST['es_form_submit']) && $_POST['es_form_submit'] == 'yes')
 	$form['es_c_optinsubject'] = isset($_POST['es_c_optinsubject']) ? $_POST['es_c_optinsubject'] : '';
 	$form['es_c_optincontent'] = isset($_POST['es_c_optincontent']) ? $_POST['es_c_optincontent'] : '';
 	$form['es_c_optinlink'] = $optinlink; //isset($_POST['es_c_optinlink']) ? $_POST['es_c_optinlink'] : '';
+	$form['es_c_optinawaittitle'] = isset($_POST['es_c_optinawaittitle']) ? $_POST['es_c_optinawaittitle'] : '';
+	$form['es_c_optinawaittext'] = isset($_POST['es_c_optinawaittext']) ? $_POST['es_c_optinawaittext'] : '';
 	$form['es_c_unsublink'] = $unsublink; //isset($_POST['es_c_unsublink']) ? $_POST['es_c_unsublink'] : '';
 	$form['es_c_unsubtext'] = isset($_POST['es_c_unsubtext']) ? $_POST['es_c_unsubtext'] : '';
 	$form['es_c_unsubhtml'] = isset($_POST['es_c_unsubhtml']) ? $_POST['es_c_unsubhtml'] : '';
@@ -248,6 +254,20 @@ if ($es_error_found == FALSE && strlen($es_success) > 0)
 				<?php _e('Double Opt In confirmation link. You no need to change this value.', ES_TDOMAIN); ?></p></label>
 			</th>
 			<td><input name="es_c_optinlink" type="text" id="es_c_optinlink" value="<?php echo esc_html(stripslashes($form['es_c_optinlink'])); ?>" size="60" maxlength="225" /></td>
+		</tr>
+		<tr>
+			<th scope="row">
+				<label for="elp"><?php _e('Opt-in email submitted', ES_TDOMAIN); ?>
+					<p class="description"><?php _e('If using double opt in mail. This text will display once email has been submitted.', ES_TDOMAIN); ?></p></label>
+			</th>
+			<td><textarea size="100" id="es_c_optinawaittitle" rows="4" cols="58" name="es_c_optinawaittitle"><?php echo esc_html(stripslashes($form['es_c_optinawaittitle'])); ?></textarea></td>
+		</tr>
+		<tr>
+			<th scope="row">
+				<label for="elp"><?php _e('Opt-in email submitted', ES_TDOMAIN); ?>
+					<p class="description"><?php _e('If using double opt in mail. This text will display once email has been submitted.', ES_TDOMAIN); ?></p></label>
+			</th>
+			<td><textarea size="100" id="es_c_optinawaittext" rows="4" cols="58" name="es_c_optinawaittext"><?php echo esc_html(stripslashes($form['es_c_optinawaittext'])); ?></textarea></td>
 		</tr>
 		<tr>
 			<th scope="row"> 

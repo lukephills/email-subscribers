@@ -145,6 +145,11 @@ class es_widget_register extends WP_Widget
 		$es_desc	= $instance['es_desc'];
 		$es_name	= $instance['es_name'];
 		$es_group	= $instance['es_group'];
+		$settings = es_cls_settings::es_setting_select(1);
+		$es_c_optinawaittext = stripslashes($settings['es_c_optinawaittext']);
+		$es_c_optinawaittitle = stripslashes($settings['es_c_optinawaittitle']);
+
+
 
 		echo $args['before_widget'];
 		if ( ! empty( $es_title ) )
@@ -165,8 +170,7 @@ class es_widget_register extends WP_Widget
 		} 
 		?>
 		<script language="javascript" type="text/javascript" src="<?php echo ES_URL; ?>widget/es-widget.js"></script>
-		<div id="es_modal_container" class="es_modal_container"><div class="es_modal"><span id="es_modal_msg" class="es_modal_msg"></span><span id="es_modal_close" class="es_modal_close">Close</span></div></div>
-		<div>
+
 			<?php if( $es_desc <> "" ) { ?>
 			<div class="es_caption"><?php echo $es_desc; ?></div>
 			<?php } ?>
@@ -179,7 +183,7 @@ class es_widget_register extends WP_Widget
 			<?php } ?>
 			<div class="es_lablebox"><?php _e('Email *', ES_TDOMAIN); ?></div>
 			<div class="es_textbox">
-				<input class="es_textbox_class" name="es_txt_email" id="es_txt_email" onkeypress="if(event.keyCode==13) es_submit_page('<?php echo $url; ?>')" value="" maxlength="225" type="text">
+				<input class="es_textbox_class" name="es_txt_email" id="es_txt_email" placeholder="Email address" onkeypress="if(event.keyCode==13) es_submit_page('<?php echo $url; ?>')" value="" maxlength="225" type="text">
 			</div>
 			<div class="es_button">
 				<input class="es_textbox_button" name="es_txt_button" id="es_txt_button" onClick="return es_submit_page('<?php echo $url; ?>')" value="<?php _e('Subscribe', ES_TDOMAIN); ?>" type="button">
@@ -189,6 +193,14 @@ class es_widget_register extends WP_Widget
 			<?php } ?>
 			<input name="es_txt_group" id="es_txt_group" value="<?php echo $es_group; ?>" type="hidden">
 		</div>
+
+		<div id="es_modal" class="es_modal feedback">
+			<h2 id="es_modal_title" class="es_modal_title feedback-title"><?php echo $es_c_optinawaittitle; ?></h2>
+			<p id="es_modal_msg" class="es_modal_msg"><?php echo $es_c_optinawaittext; ?></p>
+			<a id="es_modal_close" class="es_modal_close alert-popup-close" href="#">
+				<span class="alert-popup-close-text">Close</span>
+			</a>
+
 		<?php
 		echo $args['after_widget'];
 	}

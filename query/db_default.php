@@ -35,7 +35,9 @@ class es_cls_default
 			$es_c_optinoption = "Double Opt In"; 
 			$es_c_optinsubject = $blogname . " confirm subscription";
 			$es_c_optincontent = "Hi ###NAME###, \r\n\r\nA newsletter subscription request for this email address was received. Please confirm it by <a href='###LINK###'>clicking here</a>. If you cannot click the link, please use the following link. \r\n\r\n ###LINK### \r\n\r\nThank You\r\n".$blogname;
-			$es_c_optinlink = $optinlink; 
+			$es_c_optinlink = $optinlink;
+			$es_c_optinawaittitle = "Thank you for subscribing";
+			$es_c_optinawaittext = "You have successfully subscribed to the newsletter. You will receive a confirmation email in few minutes. Please follow the link in it to confirm your subscription. If the email takes more than 15 minutes to appear in your mailbox, please check your spam folder.";
 			$es_c_unsublink = $unsublink;
 			$es_c_unsubtext = "No longer interested email from ".$blogname."?. Please <a href='###LINK###'>click here</a> to unsubscribe";
 			$es_c_unsubhtml = "Thank You, You have been successfully unsubscribed. You will no longer hear from us."; 
@@ -46,11 +48,11 @@ class es_cls_default
 			$sSql = $wpdb->prepare("INSERT INTO `".$prefix."es_pluginconfig` 
 					(`es_c_fromname`,`es_c_fromemail`, `es_c_mailtype`, `es_c_adminmailoption`, `es_c_adminemail`, `es_c_adminmailsubject`,
 					`es_c_adminmailcontant`,`es_c_usermailoption`, `es_c_usermailsubject`, `es_c_usermailcontant`, `es_c_optinoption`, `es_c_optinsubject`,
-					`es_c_optincontent`,`es_c_optinlink`, `es_c_unsublink`, `es_c_unsubtext`, `es_c_unsubhtml`, `es_c_subhtml`, `es_c_message1`, `es_c_message2`)
-					VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", 
+					`es_c_optincontent`,`es_c_optinlink`, `es_c_optinawaittitle`, `es_c_optinawaittext`, `es_c_unsublink`, `es_c_unsubtext`, `es_c_unsubhtml`, `es_c_subhtml`, `es_c_message1`, `es_c_message2`)
+					VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
 					array($es_c_fromname,$es_c_fromemail, $es_c_mailtype, $es_c_adminmailoption, $es_c_adminemail, $es_c_adminmailsubject,
 					$es_c_adminmailcontant,$es_c_usermailoption, $es_c_usermailsubject, $es_c_usermailcontant, $es_c_optinoption, $es_c_optinsubject,
-					$es_c_optincontent,$es_c_optinlink, $es_c_unsublink, $es_c_unsubtext, $es_c_unsubhtml, $es_c_subhtml, $es_c_message1, $es_c_message2));
+					$es_c_optincontent,$es_c_optinlink, $es_c_optinawaittitle, $es_c_optinawaittext, $es_c_unsublink, $es_c_unsubtext, $es_c_unsubhtml, $es_c_subhtml, $es_c_message1, $es_c_message2));
 			$wpdb->query($sSql);
 		}
 		return true;

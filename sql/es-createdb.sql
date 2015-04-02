@@ -77,6 +77,8 @@ CREATE TABLE IF NOT EXISTS `es_pluginconfig` (
   `es_c_optinsubject` VARCHAR(255) NOT NULL,
   `es_c_optincontent` TEXT NULL,
   `es_c_optinlink` VARCHAR(255) NOT NULL,
+  `es_c_optinawaittitle` TEXT NULL,
+  `es_c_optinawaittext` TEXT NULL,
   `es_c_unsublink`  VARCHAR(255) NOT NULL,
   `es_c_unsubtext` TEXT NULL,
   `es_c_unsubhtml` TEXT NULL,

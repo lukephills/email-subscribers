@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Email Subscribers
-Plugin URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
-Description: Email subscribers plugin has options to send newsletters to subscribers. It has a separate page with HTML editor to create a HTML newsletter. Also have options to send notification email to subscribers when new posts are published to your blog. Separate page available to include and exclude categories to send notifications.
-Version: 2.7
-Author: Gopi Ramasamy
+Plugin Name: Email Subscribers - Femur
+Plugin URI: https://github.com/lukephills/email-subscribers
+Description: Email subscribers plugin has options to send newsletters to subscribers. It has a separate page with HTML editor to create a HTML newsletter. Also have options to send notification email to subscribers when new posts are published to your blog. Separate page available to include and exclude categories to send notifications. This plugin has been enhanced by Luke Phillips for Wellcome Library.
+Version: 92.7
+Author: Gopi Ramasamy, Luke Phillips
 Donate link: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/
 License: GPLv2 or later

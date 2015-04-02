@@ -88,7 +88,8 @@ function eemail_submitresults()
 				}
 				else if((http_req.responseText).trim() == "subscribed-pending-doubleoptin")
 				{
-					document.getElementById("es_modal_msg").className += ' ' + 'show';
+					document.getElementById("es_modal").className = 'es_modal feedback show';
+					document.getElementById("es_modal_title").innerHTML = " Thank you for subscribing";
 					document.getElementById("es_modal_msg").innerHTML = "You have successfully subscribed to the newsletter. You will receive a confirmation email in few minutes. Please follow the link in it to confirm your subscription. If the email takes more than 15 minutes to appear in your mailbox, please check your spam folder.";
 
 					document.getElementById("es_msg_pg").className = "success";

@@ -17,8 +17,11 @@ class es_cls_widget
 //			$es = $es . '<link rel="stylesheet" media="screen" type="text/css" href="'.ES_URL.'widget/es-widget.css" />';
 		} 
 		$es = $es . '<script language="javascript" type="text/javascript" src="'.ES_URL.'widget/es-widget-page.js"></script>';
-		$es = $es . '<div id="es_modal_container" class="es_modal_container"><div class="es_modal"><span id="es_modal_msg" class="es_modal_msg"></span><span id="es_modal_close" class="es_modal_close">Close</span></div></div>';
-		$es = $es . "<div>";
+		$es = $es . '<div id="es_modal" class="es_modal feedback">';
+		$es = $es . '<h2 id="es_modal_title" class="es_modal_title feedback-title"></h2>';
+		$es = $es . '<p id="es_modal_msg" class="es_modal_msg"></p>';
+		$es = $es . '<a id="es_modal_close" class="es_modal_close alert-popup-close" href="#">';
+		$es = $es . '<span class="alert-popup-close-text">Close</span></a></div></div>';
 		
 		if( $es_desc <> "" ) 
 		{ 
@@ -34,7 +37,7 @@ class es_cls_widget
 		}
 		$es = $es . '<div class="es_lablebox">'.__('Email *', ES_TDOMAIN).'</div>';
 		$es = $es . '<div class="es_textbox">';
-			$es = $es . '<input class="es_textbox_class" name="es_txt_email_pg" id="es_txt_email_pg" onkeypress="if(event.keyCode==13) es_submit_pages('.$url.')" value="" maxlength="225" type="text">';
+			$es = $es . '<input class="es_textbox_class" name="es_txt_email_pg" id="es_txt_email_pg" placeholder="Email address" onkeypress="if(event.keyCode==13) es_submit_pages('.$url.')" value="" maxlength="225" type="text">';
 		$es = $es . '</div>';
 		$es = $es . '<div class="es_button">';
 			$es = $es . '<input class="es_textbox_button" name="es_txt_button_pg" id="es_txt_button_pg" onClick="return es_submit_pages('.$url.')" value="'.__('Subscribe', ES_TDOMAIN).'" type="button">';
